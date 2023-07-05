@@ -1,0 +1,2 @@
+AIO_USERNAME = "h0use"
+AIO_KEY = "2507ddf88a73494884935ca76ed2ae0e"

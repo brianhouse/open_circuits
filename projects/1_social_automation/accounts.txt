@@ -1,0 +1,3 @@
+@HouseProf is team admin account to add students
+@infr4s0und is demo account
+passwords in keychain
