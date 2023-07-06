@@ -21,26 +21,38 @@ T15 = TouchPad(Pin(15))
 
 
 # configure p2p networking
-sta = network.WLAN(network.STA_IF)
-sta.active(True)
-hex_mac = ubinascii.hexlify(sta.config('mac'), ':').decode().upper()
-print("MAC address is", hex_mac)
-e = espnow.ESPNow()
-e.active(True)
-bcast = b'\xff' * 6
-e.add_peer(bcast)
 
 def send(message):
-    print("Sending", message)
-    e.send(bcast, message)
+    for peer in peers:
+        try:
+            e.send(peer, message)
+        except Exception as exc:
+            print("Can't send to", bin_to_hex(peer))
 
 def receive():
-    host, msg = e.recv(0)
-    if msg:
-        mac = ubinascii.hexlify(host, ':').decode().upper()
-        return mac, msg.decode()
+    sender, msg = e.recv(0)
+    if msg and sender in peers:
+        return bin_to_hex(sender), msg.decode()
     else:
         return None, None
+
+def add_peer(hex_mac):
+    bin_mac = hex_to_bin(hex_mac)
+    e.add_peer(bin_mac)
+    peers.append(bin_mac)
+
+def bin_to_hex(bin_mac):
+    return ubinascii.hexlify(bin_mac, ':').decode().upper()
+
+def hex_to_bin(hex_mac):
+    return ubinascii.unhexlify(hex_mac.replace(':', '').lower())
+
+sta = network.WLAN(network.STA_IF)
+sta.active(True)
+print("MAC address is", bin_to_hex(sta.config('mac')))
+e = espnow.ESPNow()
+e.active(True)
+peers = []
 
 
 # utility classes
@@ -56,6 +68,7 @@ class Smoother():
         self.index = (self.index + 1) % self.factor
         value = sum(self.readings) / float(self.factor)
         return value
+
 
 
 

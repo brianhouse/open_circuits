@@ -59,6 +59,11 @@ ENTANGLERS
 - soldering
 
 
+IMU:
+https://stackoverflow.com/questions/64421476/installing-micropython-library-bno055-imu-properly
+
+https://github.com/micropython-IMU/micropython-bno055
+
 
 motors:
 https://www.seeedstudio.com/blog/2019/04/01/choosing-the-right-motor-for-your-project-dc-vs-stepper-vs-servo-motors/
