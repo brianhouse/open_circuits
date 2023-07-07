@@ -1,11 +1,12 @@
-import esp32, espnow, json
-import network, ubinascii
+import esp32, espnow, machine
+import network, ubinascii, json
 from esp32 import hall_sensor
 from machine import ADC, Pin, TouchPad, PWM
 from time import sleep, time
 
 
 # set up pins
+
 # https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts
 A2 = ADC(Pin(34), atten=ADC.ATTN_11DB)
 A3 = ADC(Pin(39), atten=ADC.ATTN_11DB)
@@ -55,6 +56,39 @@ e.active(True)
 peers = []
 
 
+# IMU
+imu = False
+calibrated = False
+try:
+    from bno055_base import BNO055_BASE
+    i2c = machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(23))
+    sleep(.5)
+    imu = BNO055_BASE(i2c)
+except Exception as exc:
+    print(exc)
+    
+def imu_calibrated():
+    global calibrated
+    if imu is False:
+        print("No IMU")
+        return False    
+    if not calibrated:
+        sys, gyro, accel, mag = imu.cal_status()
+        print(f"Calibrating: sys[{sys}] gyro[{gyro}] accel[{accel}] mag[{mag}]")
+        #calibrated = imu.calibrated()
+        calibrated = gyro + mag == 6 # calibrating accel is onerous and (maybe?) unnecessary
+        return False
+    return True
+    
+def get_orientation():
+    if imu is False or not calibrated:
+        return (0, 0, 0)    
+    return imu.euler() # heading, pitch, roll
+
+def get_accel():
+    return abs(sum([value for value in imu.lin_acc()]) / 3.0)
+
+
 # utility classes
 class Smoother():
 
@@ -68,6 +102,7 @@ class Smoother():
         self.index = (self.index + 1) % self.factor
         value = sum(self.readings) / float(self.factor)
         return value
+
 
 
 
