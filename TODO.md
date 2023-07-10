@@ -10,19 +10,21 @@ What does a midterm meeting consist of?
 
 ## tasks
 
-new hall sensor image
-
 project briefs
 
 can I do a meeting during exam week?
 
 artist project list, signups
 
-guide
+/
 
 write an introduction
 
-redo all circuit diagrams
+guide
+
+new hall sensor image
+
+redo all circuit diagrams?
 
 
 ## content
@@ -50,7 +52,8 @@ ENTANGLERS
 ## need
 
 capacitive pads
-
+long breadboards
+very short rail jumpers
 
 
 

@@ -1,6 +1,7 @@
 ESP:
 - [Setup](setup.md)
 - [Micropython](micropython.md)
+- [Breadboards](breadboards.md)
 
 Inputs:
 - [Sensors](sensors.md)

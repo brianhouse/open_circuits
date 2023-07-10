@@ -1,23 +1,26 @@
 # Sensors
 
-- [Range](#range)
-- [Sound level](#sound)
-- [Touch](#touch)
-
-The microcontroller provides a voltage to the sensor, takes a reading, and then you can use that value to respond in some way.
+In general, analog sensors work by the microcontroller providing a voltage to the sensor, taking a reading, and then responding to that value in some way.
 
 To provide voltage to the sensor, you'll need to connect the sensor to the 3.3v pin on the microcontroller, and also to ground (electricity always flows in a "circuit"—out from the source and then back to the ground).
 
-Sensors can break, but overall the ESP is pretty resilient. Two rules:
-- **Do not connect 3.3v to another pin or to ground without anything in between**
-- **Connect the ground between the ESP and a sensor first, and disconnect it last**
+Sensors can break, but overall the ESP is pretty resilient. But there's one important rule:  
+**Do not connect 3.3v to another pin or to ground without anything in between**
+
+This will short the connection and may damage the ESP.
+
+We will be working with the following sensors:
+
+- [Range](#range)
+- [Sound level](#sound)
+- [Touch](#touch)
 
 
 ## <a name="range"></a> Range
 
 Ultrasonic range / distance / presence finder! Detects if something is in front of it, from 6 inches to about 20 feet, at a resolution of about an inch. Use an analog input (A0–5, 37).
 
-![](img/7_motion.png)
+![](img/range_bb.png)
 
 ###### Code
 
@@ -63,7 +66,7 @@ while True:
 
 You can monitor sound level with the MAX9814. You might keep track of the ambient sound level over time, or look for spikes in the level that cross a particular threshold. Use an analog input (A0–5, 37).
 
-![](img/8_sound.png)
+![](img/sound_bb.png)
 
 ###### Code
 
@@ -99,7 +102,7 @@ The ESP32 has the built-in ability to measure the "capacitance" on several of it
 
 Use a GPIO Pin (13, 12, 27, 33, 15, 32, 14). To set up a pin to measure capacitance, use the `TOUCH()` function.
 
-![](img/9_touch.png)
+![](img/touch_bb.png)
 
 ###### Code
 ```py

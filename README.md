@@ -68,7 +68,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Wednesday 9/6
 - Introduction
-- Workshop: [Getting started with the ESP32](guide/setup.md)
+- Workshop: [Getting started with the ESP32](guide/setup.md) and [breadboards](guide/breadboards.md)
 
 ### Week 2    
 

@@ -81,4 +81,21 @@ while True:
     #...
 ```
 
+Multiple knobs:
+```py
+from esp_helper import *
 
+smoother_a = Smoother(3)
+smoother_b = Smoother(3)
+
+while True:
+    pot_a = A2.read()
+    pot_a = smoother_a.smooth(pot_a)
+
+    pot_b = A3.read()
+    pot_b = smoother_b.smooth(pot_b)
+
+    print('A', pot_a, 'B', pot_b)
+
+    sleep(.01)
+```
