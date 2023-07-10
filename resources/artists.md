@@ -1,49 +1,59 @@
 ## A randomized selection of new media artists
+
+
+## Responsive
+- Martin Howse
+- Gilberto Esparza
+- Rafael Lozano-Hemmer
+- Ben Rubin
+- Amor Muñoz
+- Paula Gaetano Adi
+- Jonah Brucker-Cohen
+- Julian Oliver
+
+
+## Body / Instrument
+- MSHR
+- Ranjit Bhatnagar
+- Afroditi Psarra
+- Daito Manabe
+
+## Network
+- Rafael Lozano-Hemmer
+
+
+
+
 - Iyvone Khoo
 - Karolina Sobecka
 - Paulo Criolo
-- Brenna Murphy
-- Laurie Spiegel
+
 - Jonas Lund
 - Aram Bartholl
 - Rick Silva
-- Julian Oliver
+
 - Wafaa Bilal
-- Gilberto Esparza
 - Fernanda Viégas & Martin Wattenberg
 - Carolee Schneemann
-- Martin Howse
 - Blast Theory
-- Ranjit Bhatnagar
 - R. Luke DuBois
-- Kelly Dobson
-- Mimi Onuoha
-- Stephanie Dinkins
-- Xin Liu
-- James Paterson
-- Rafael Lozano-Hemmer
 - Kate Hartman
 - Carlos Garcia
-- James Bridle
-- Alison Parrish
 - Meejin Yoon
-- Marisa Olson
 - Petra Cortright
-- F.A.T. Lab
-- Afroditi Psarra
-- Daito Manabe
+
+
 - Eva and Franco Mattes
-- Nathalie Meibach
 - Addie Wagenknecht
 - Olia Lialina
 - John Maeda
 - Rosa Menkman
 - Pinar Yoldas
-- Ben Rubin
+
 - Theun Karelse
 - Mendi & Keith Obadike
 - Michael Mandiberg
-- Everest Pipkin
+
 - LoVid
 - Kevin Slavin
 - Claudia Hart
@@ -59,21 +69,15 @@
 - Ali Momeni
 - Mario Kingemann
 - Roman Verostko
-- Janet Cardiff
-- Elisa Giardina-Papa
 - Jamie Allen
 - Eduardo Kac
 - Beatriz da Costa
 - Golan Levin
-- Tega Brain
-- Lauren McCarthy
 - Jonathan Harris
 - Morehshin Allahyari
-- Casey Reas
-- Amor Muñoz
+
 - Angela Washko
 - Heather Dewey-Hagborg
-- Jonah Brucker-Cohen
 - Kyle McDonald
 - Blast Theory
 - Reuben Margolin
@@ -95,7 +99,4 @@
 - Josh Begley
 - Timo Toots
 - Revita Cohen and Tuur Van Balen
-- Robert Henke
-- Steve Mann
 - Philip Beesley
-- Karolina Sobeka

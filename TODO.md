@@ -2,42 +2,26 @@
 
 ## plan
 
-What is this class?
-- build off of ART212 at LC
-- point toward Sound Art
+List of awesome pcomp projects, I talk about the ones that they don't do. 
 
-Every week is a workshop with an exercise due, and over the course of the semester there are 4 projects.
+What does a midterm meeting consist of?
+- 10 mins with each student, talking about their experience and my expectations, "If you can do X, you'll get an A"
 
-There are readings, and there are artist presentations. Maybe two each, given the small class size.
 
-No grades, midterm review.
+## tasks
 
+project briefs
+
+can I do a meeting during exam week?
+
+artist project list, signups
+
+guide
+
+write an introduction
 
 
 ## content
-
-should these be formal, or thematic?
-
-Projects:
-- Responsive object (detects its environment and does something)
-- Instrument (engage with the body)
-- Entanglers (engage with the other)
-- Final
-
-
-technical issues:
-
-- how many knobs
-- accelerometers
-- networking
-
-
-//
-
-new feathers: https://www.adafruit.com/product/5400
-
-
-they're all CS, so programming stuff can be limited
 
 
 RESPONSIVE OBJECT
@@ -48,32 +32,21 @@ RESPONSIVE OBJECT
 
 INSTRUMENT
 - input interface: switches, knobs, buttons  **how many**
-- acceleration and orientation  **how**
+- acceleration and orientation
 - laser cutting
 
 ENTANGLERS
 - networking
 - Servos (movement)         **how?**
 
-
 - soldering
-
-
-IMU:
-https://stackoverflow.com/questions/64421476/installing-micropython-library-bno055-imu-properly
-
-https://github.com/micropython-IMU/micropython-bno055
-
-
-motors:
-https://www.seeedstudio.com/blog/2019/04/01/choosing-the-right-motor-for-your-project-dc-vs-stepper-vs-servo-motors/
-
-https://learn.sparkfun.com/tutorials/basic-servo-control-for-beginners/all
-
-
 
 
 
 ## need
 
 capacitive pads
+
+
+
+

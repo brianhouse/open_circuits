@@ -5,23 +5,34 @@ from machine import ADC, Pin, TouchPad, PWM
 from time import sleep, time
 
 
-# set up pins
+# PINS
+# https://learn.adafruit.com/adafruit-esp32-feather-v2/pinouts
 
-# https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts
+A0 = ADC(Pin(26), atten=ADC.ATTN_11DB)  # ADC2
+A1 = ADC(Pin(25), atten=ADC.ATTN_11DB)  # ADC2
 A2 = ADC(Pin(34), atten=ADC.ATTN_11DB)
 A3 = ADC(Pin(39), atten=ADC.ATTN_11DB)
 A4 = ADC(Pin(36), atten=ADC.ATTN_11DB)
-D32 = Pin(32)
-D33 = Pin(33)
-S21 = Pin(21, Pin.OUT)
-S27 = Pin(27, Pin.OUT)
-LED = Pin(13, Pin.OUT)
-T12 = TouchPad(Pin(12))
-T14 = TouchPad(Pin(14))
-T15 = TouchPad(Pin(15))
+A5 = ADC(Pin(4), atten=ADC.ATTN_11DB)   # ADC2
+# A37 = ADC(Pin(37), atten=ADC.ATTN_11DB)
+
+# I/O Pins: 13 (also LED), 12, 27, 33, 15, 32, 14
+def IN(pin_n):
+    return Pin(pin_n, Pin.IN)
+
+def OUT(pin_n):
+    return Pin(pin_n, Pin.OUT)
+
+# use TouchPad(my_pin) to turn into a touch input
+
+# PIX = Pin(0, Pin.OUT)
+# can neopixels use the STEMMA connector?
+# SW38 = Pin(38, Pin.IN)  # hardware button
+# BAT = ADC(Pin(35), atten=ADC.ATTN_11DB)
 
 
-# configure p2p networking
+
+# P2P NETWORK
 
 def send(message):
     for peer in peers:
@@ -56,7 +67,9 @@ e.active(True)
 peers = []
 
 
+
 # IMU
+
 imu = False
 calibrated = False
 try:
@@ -89,7 +102,9 @@ def get_accel():
     return abs(sum([value for value in imu.lin_acc()]) / 3.0)
 
 
-# utility classes
+
+# UTIL
+
 class Smoother():
 
     def __init__(self, factor):
