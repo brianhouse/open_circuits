@@ -1,10 +1,12 @@
 # Networking
 
+
+###### Code
+
 ```py
 from esp_helper import *
 
-add_peer("24:6F:28:5F:0C:B8") # no bread
-add_peer("44:17:93:5F:98:70") # bread
+add_peer("24:6F:28:5F:0C:B8")
 
 i = 0
 while True:
@@ -25,3 +27,4 @@ while True:
     sleep(1)
 
 ```
+

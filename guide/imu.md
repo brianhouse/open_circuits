@@ -23,3 +23,23 @@ It takes more calibration movements to get the magnetometer calibrated than in t
 
 
 https://www.youtube.com/watch?v=Bw0WuAyGsnY
+
+
+###### Code
+
+```py
+from esp_helper import *
+
+i = 0
+while True:
+
+    if imu_calibrated():
+        LED.off()
+        heading, pitch, roll = get_orientation()
+        print(heading, pitch, roll)
+        print(get_accel())
+    else:
+        LED.on()
+    sleep(.5)
+```    
+

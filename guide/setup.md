@@ -1,4 +1,4 @@
-# <a name="setup"></a> Setup
+# Setup
 
 To write code for our ESP32s, we will be using Micropython via the Thonny IDE and virtual COM port. 
 
@@ -33,15 +33,13 @@ Finally, go to [esp_helper.py](../esp/esp_helper.py) and copy the contents. Open
 
 ## Testing
 
-##### Testing
-
 Create a new file containing the following, and save it on your ESP as `main.py`:
 
 ```py
 from esp_helper import *
 
 while True:
-    hall = esp32.hall_sensor()
+    hall = hall_sensor()
     print(hall)
 ```
 

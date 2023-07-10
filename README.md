@@ -68,30 +68,31 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Wednesday 9/6
 - Introduction
-- Workshop: Getting started with the ESP32
+- Workshop: [Getting started with the ESP32](guide/setup.md)
 
 ### Week 2    
 
 #### Monday 9/11
 <!-- confirm everyone is signed up for a presentation -->
-- Workshop: Micropython
+- Workshop: [Micropython](guide/micropython.md)
 
 #### Wednesday 9/13
-- Workshop: Sensor inputs
+- Workshop: [Sensors](guide/sensors.md)
 
 
 ### Week 3
 
 #### Monday 9/18
-- Workshop: Neopixels
+- Workshop: [Neopixels](guide/neopixels.md)
 
 #### Wednesday 9/20
-- Workshop: Sound with piezos
+- Workshop: Sound with [Piezos](guide/piezos.md)
 
 
 ### Week 4
 
 #### Monday 9/25
+- Presentations #1
 - Begin Responsive Object project
 - Work time
 
@@ -103,6 +104,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 5
 
 #### Monday 10/2
+- Presentations #2
 - Responsive Object check-in
 - Work time
 
@@ -116,12 +118,13 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Monday 10/9: Mid-Semester Break, no class
 
 #### Wednesday 10/11
-- Workshop: switches and buttons
+- Workshop: [buttons, toggles, and knobs](guide/interface.md)
 
 ### Week 7
 
 #### Monday 10/16
-- Workshop: accelerometers
+- Presentations #3
+- Workshop: [IMUs](guide/imu.md)
 
 #### Wednesday 10/18
 - Workshop: laser cutting
@@ -130,6 +133,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 8
 
 #### Monday 10/23
+- Presentations #4
 - Begin Instrument project
 - Work time
 
@@ -141,6 +145,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 9
 
 #### Monday 10/30
+- Presentations #5
 - Instrument project check-in
 - Work time
 
@@ -152,15 +157,17 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 10
 
 #### Monday 11/6
-- Workshop: peer-to-peer networking
+- Presentations #6
+- Workshop: [peer-to-peer networking](guide/networking.md)
 
 #### Wednesday 11/8
-- Workshop: servos (motors)
+- Workshop: [servos (motors)](guide/servos.md)
 
 
 ### Week 11
 
 #### Monday 11/13
+- Presentations #7
 - Begin Entanglement project
 - Work time
 
@@ -175,6 +182,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 12
 
 #### Monday 11/27
+- Presentations #8
 - Entanglement project check-in
 - Work time
 
@@ -186,6 +194,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 13
 
 #### Monday 12/4
+- Presentations #9
 - Final project proposals due
 - Work time
 
