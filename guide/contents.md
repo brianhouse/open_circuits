@@ -8,10 +8,10 @@ ESP:
 Inputs:
 - [Sensors](sensors.md)							 <!-- done -->
 - [Buttons, toggles, and knobs](interface.md)    <!-- done -->
-- [IMUs](imu.md)
+- [IMUs](imu.md)								 <!-- done -->
 
 Outputs:
-- [LEDs](leds.md)
+- [LEDs](leds.md)								<!-- done -->
 - [Neopixels](neopixels.md)
 - [Piezos](piezos.md)
 - [Servos](servos.md)

@@ -101,7 +101,7 @@ def imu_calibrated():
     try:
         if not calibrated:
             sys, gyro, accel, mag = imu.cal_status()
-            print(f"Calibrating: sys[{sys}] gyro[{gyro}] accel[{accel}] mag[{mag}]")
+            print(f"Calibrating: gyro[{gyro}] accel[{accel}] mag[{mag}]")
             #calibrated = imu.calibrated()
             calibrated = gyro + mag == 6 # calibrating accel is onerous and (maybe?) unnecessary
             return False
@@ -119,7 +119,9 @@ def get_orientation():
 
 def get_accel():
     try:
-        return abs(sum([value for value in imu.lin_acc()]) / 3.0)
+        if imu is False or not calibrated:
+            return 0
+        return sum([abs(value) for value in imu.lin_acc()])
     except NameError:
         raise Exception("IMU not started")
 

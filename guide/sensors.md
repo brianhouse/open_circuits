@@ -30,13 +30,12 @@ Some additional math is used to convert the sensor reading to feet. This makes i
 
 
 ```py
-# ...
+from esp_helper import *
 
 smoother = Smoother(3)   # create a smoother (averages over N values)
 triggered = False
-# ...
+
 while True:
-    # ...
 
     # convert sensor reading to feet
     value = (((A2.read() / 4095.0) * 248) + 12) / 12.0
@@ -57,7 +56,6 @@ while True:
     else:
         triggered = False
 
-    # ...        
 ```
 
 
@@ -71,13 +69,12 @@ You can monitor sound level with the MAX9814. You might keep track of the ambien
 ###### Code
 
 ```py
-# ...
+from esp_helper import *
+
 window = 50 / 1000.0 # sample for 50ms if testing for a threshold
 window = 1.0    # sample for 1 second if monitoring ambient level
-# ...
 
 while True:
-    # ...    
     start_time = time()
     high = 0
     low = 4096
@@ -91,7 +88,6 @@ while True:
 
     level = 100 * ((high - low) / 4095.0)
     print(level)
-    # ...
 ```
 
 
@@ -106,10 +102,11 @@ Use a GPIO Pin (13, 12, 27, 33, 15, 32, 14). To set up a pin to measure capacita
 
 ###### Code
 ```py
+from esp_helper import *
+
 touch_pad = TOUCH(14)
 
 while True:
-    # ...
     value = touch_pad.read()
     print(value)
     sleep(.1)

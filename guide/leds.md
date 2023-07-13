@@ -1,6 +1,6 @@
 # LEDs
 
-Light-emitting diodes! Connect the long leg (+) of these all purpose lofi lights to a resistor and an output pin (21 or 27) and the short leg (-) to ground.
+Light-emitting diodes! Connect the long leg (+) of these all purpose lofi lights to a resistor and a GPIO pin (13, 12, 27, 33, 15, 32, 14) and the short leg (-) to ground.
 
 - The forward voltage of an LED is how much it takes out of the circuit to turn on.
 - The current of an LED is how bright it's going to be.
@@ -27,23 +27,18 @@ Blue, White (~3v forward voltage at 20mA):
 
 ###### Code
 
-This example modifies the switch example to turn on and off an LED depending on whether the button is pressed:
+Alternating on two LEDs:
 ```py
-#...
-pressed = False
-#...
+from esp_helper import *
+
+led_1 = PIN(12)
+led_2 = PIN(27)
 
 while True:
-    #...
-    status = A2.read() > 0 # True or False
-    if pressed != status:
-        if status is True:
-            print("Switch turned on!")
-            S21.on() # turn on output pin / LED
-        else:
-            print("Switch turned off!")
-            S21.off() # turn off output pin / LED
-        pressed = status
-    sleep(.01)  # make it a bit faster for an interface where timing counts
-    #...
+    led_1.on()
+    led_2.off()
+    sleep(1)
+    led_1.off()
+    led_2.on()
+    sleep(1)
 ```
