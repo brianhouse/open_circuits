@@ -1,3 +1,13 @@
+# IMUs
+
+An IMU is an "Inertial Measurement Unit"—it's actually three sensors in one, a gyroscope, an accelerometer, and a compass. Put together, and with the addition of lots of math (that it does for us), an IMU can tell us how it is oriented in space. 
+
+This comes in the form `heading` (which direction it's pointing relative to the surface of the earth), `pitch` (how much it's angled up or down) and `roll` (how much it's angled side to side). Each of these is a degree value, 0-360.
+
+
+
+
+
 Accelerometer Calibration
 
 Place the device in 6 different stable positions for a period of few seconds to allow the accelerometer to calibrate.
@@ -21,25 +31,22 @@ Magnetometers in general are susceptible to both hard-iron and soft-iron distort
 Make some random movements (for example: writing the number ‘8’ on air) until the cal_status() method indicates fully calibrated.
 It takes more calibration movements to get the magnetometer calibrated than in the NDOF mode.
 
-
-https://www.youtube.com/watch?v=Bw0WuAyGsnY
-
+![](img/imu.png)
 
 ###### Code
 
 ```py
 from esp_helper import *
 
-i = 0
 while True:
 
     if imu_calibrated():
         LED.off()
         heading, pitch, roll = get_orientation()
-        print(heading, pitch, roll)
-        print(get_accel())
+        acceleration = get_accel()
+        print(int(pitch), int(roll))
     else:
-        LED.on()
-    sleep(.5)
+        LED.on()   # indicate whether we still need to calibrate
+    sleep(.1)
 ```    
 

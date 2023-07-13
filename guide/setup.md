@@ -1,6 +1,6 @@
 # Setup
 
-To write code for our ESP32s, we will be using Micropython via the Thonny IDE and virtual COM port. 
+To write code for our ESP32s, we will be using Micropython via the Thonny IDE. 
 
 ## Driver
 
@@ -27,10 +27,10 @@ Type "help()" for more information.
 >>>
 ```
 
-## Helper
+<!-- ## Helper
 
 Finally, go to [esp_helper.py](../esp/esp_helper.py) and copy the contents. Open Thonny and make a new file, and paste the contents into this file. Then choose `File > Save`, and select `MicroPython device`. Title the file `esp_helper.py` and save it. Once you've done this, close the file.
-
+ -->
 ## Testing
 
 Create a new file containing the following, and save it on your ESP as `main.py`:
@@ -49,6 +49,7 @@ The hall sensor is a built-in sensor on the ESP which detects magnetic fields. T
   <img src="img/2_hall.png" width=500 />
 </p>
 
-Congratulations! You've made a sensor.
+Congratulations! You've made a sensor running on a microcontroller.
 
-Note that this code is running on the ESP, not your computer—if you hook it up to a battery and disconnect it from your computer, it will still work.
+Note that this code is running on the ESP, not your computer—if you hook it up to a battery and disconnect it from your computer, it will still be working (we just won't see the log).
+

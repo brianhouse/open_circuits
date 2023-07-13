@@ -10,6 +10,10 @@ What does a midterm meeting consist of?
 
 ## tasks
 
+is the driver necessary?
+
+/
+
 project briefs
 
 can I do a meeting during exam week?

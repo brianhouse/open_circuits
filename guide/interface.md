@@ -1,35 +1,17 @@
-# Sensors
+# Interface
 
-- [Button](#button)
+By adding buttons, toggles, and knobs to microcontrollers, we can control aspects of the program while it's running, creating interfaces for an instrument. In essense, these are no different than sensors. 
+
+We'll work with the following components:
+
 - [Toggle](#toggle)
-- [Knob](#knob)
+- [Button](#button)
+- [Knob](#pot)
 
+We're limited to 4 knobs, which are used with analog inputs, and 7 buttons or toggles, which can use the GPIOS.
 
+Remember: **Do not connect 3.3v to another pin or to ground without anything in between**
 
-## <a name="button"></a> Buttons
-
-Otherwise knon as a "momentary switch," buttons are on when pushed and off otherwise. Use a 10k resistor. Keep track of the buttons's status with a variable so that you can trigger things based on a change.
-
-![](img/11_momentary.png)
-
-###### Code
-```py
-#...
-pressed = False
-#...
-
-while True:
-    #...
-    status = A2.read() > 0 # True or False
-    if pressed != status:
-        if status is True:
-            print("Switch turned on!")
-        else:
-            print("Switch turned off!")
-        pressed = status
-    sleep(.01)  # make it a bit faster for an interface where timing counts
-    #...
-```
 
 #### <a name="toggle"></a> Toggle switch
 
@@ -37,48 +19,66 @@ A simple switch that turns on and off and stays put. Use a 10k resistor. Keep tr
 
 Product: https://www.adafruit.com/product/805
 
-![](img/13_toggle.png)
+![](img/toggle.png)
 
 ###### Code
 ```py
-#...
-toggled = False
-#...
+from esp_helper import *
+
+toggle = IN(12)  # toggle on pin 12
 
 while True:
-    #...
-    status = A2.read() > 0 # True or False
-    if status != toggled:
+    if toggle.value() > 0:
+        print("Toggle is on!")
+    else:
+        print("Toggle is off!")
+    sleep(.1)
+```
+
+
+## <a name="button"></a> Button
+
+Otherwise knon as a "momentary switch," buttons are on when pushed and off otherwise. Use a 10k resistor and a GPIO Pin (13, 12, 27, 33, 15, 32, 14). Keep track of the buttons's status with a variable so that you can trigger things based on a change.
+
+![](img/momentary.png)
+
+###### Code
+```py
+from esp_helper import *
+
+button = IN(12)  # button on pin 12
+
+previous_status = False
+while True:
+    status = button.value() > 0         # get current status, True or False
+    if status != previous_status:       # detect a change
         if status is True:
             print("Switch turned on!")
         else:
             print("Switch turned off!")
-        toggled = status
-    sleep(.1)
-    #...
-
+        previous_status = status        # store the status for next time
+    sleep(.01)  # make it a bit faster for an interface where timing counts
 ```
 
 
+## <a name="pot"></a> Knob (aka potentiometer aka pot)
 
-## <a name="pot"></a> Knob aka Potentiometer (pot)
+This is a variable resistor—which means that as you turn the pot, more or less voltage is let through to the measuring pin. Use an analog pin (A2, A3, A4, A37). Pots in a 3.3v system can be jittery, so use a smoother to smooth some of that out.
 
-This is a variable resistor—which means that as you turn the pot, more or less voltage is let through to the measuring pin. Pots in a 3.3v system can be jittery, so use a smoother to smooth some of that out.
-
-![](img/14_pot.png)
+![](img/pot.png)
 
 ###### Code
 ```py
-#...
+from esp_helper import *
+
 smoother = Smoother(3)
-#...
+
 while True:
     #...
     pot = A2.read()
     pot = smoother.smooth(pot)
     print(pot)
     sleep(.01) # shorter delay
-    #...
 ```
 
 Multiple knobs:

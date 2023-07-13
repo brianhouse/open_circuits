@@ -1,11 +1,13 @@
 ESP:
-- [Setup](setup.md)
+- [ESP32](esp32.md)
+- [Setup](setup.md)								 <!-- done -->
 - [Micropython](micropython.md)
-- [Breadboards](breadboards.md)
+- [Breadboards](breadboards.md)					 <!-- done -->
+- [Batteries](batteries.md)
 
 Inputs:
-- [Sensors](sensors.md)
-- [Buttons, toggles, and knobs](interface.md)
+- [Sensors](sensors.md)							 <!-- done -->
+- [Buttons, toggles, and knobs](interface.md)    <!-- done -->
 - [IMUs](imu.md)
 
 Outputs:
@@ -15,7 +17,7 @@ Outputs:
 - [Servos](servos.md)
 
 Networking:
-- [P2P](networking.md)
+- [P2P](networking.md)							<!-- done -->
 
 
 

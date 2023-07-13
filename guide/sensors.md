@@ -18,9 +18,9 @@ We will be working with the following sensors:
 
 ## <a name="range"></a> Range
 
-Ultrasonic range / distance / presence finder! Detects if something is in front of it, from 6 inches to about 20 feet, at a resolution of about an inch. Use an analog input (A0–5, 37).
+Ultrasonic range / distance / presence finder! Detects if something is in front of it, from 6 inches to about 20 feet, at a resolution of about an inch. Use an analog input (A2, A3, A4, A37).
 
-![](img/range_bb.png)
+![](img/range.png)
 
 ###### Code
 
@@ -64,9 +64,9 @@ while True:
 
 ## <a name="sound"></a> Sound level
 
-You can monitor sound level with the MAX9814. You might keep track of the ambient sound level over time, or look for spikes in the level that cross a particular threshold. Use an analog input (A0–5, 37).
+You can monitor sound level with the MAX9814. You might keep track of the ambient sound level over time, or look for spikes in the level that cross a particular threshold. Use an analog input (A2, A3, A4, A37).
 
-![](img/sound_bb.png)
+![](img/sound.png)
 
 ###### Code
 
@@ -102,7 +102,7 @@ The ESP32 has the built-in ability to measure the "capacitance" on several of it
 
 Use a GPIO Pin (13, 12, 27, 33, 15, 32, 14). To set up a pin to measure capacitance, use the `TOUCH()` function.
 
-![](img/touch_bb.png)
+![](img/touch.png)
 
 ###### Code
 ```py
