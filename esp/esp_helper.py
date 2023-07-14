@@ -2,7 +2,9 @@ import esp32, espnow, machine
 import network, ubinascii, json
 from esp32 import hall_sensor
 from machine import ADC, Pin, TouchPad, PWM
+from neopixel import NeoPixel
 from time import sleep, time
+from random import random, choice
 
 
 # PINS
@@ -24,19 +26,21 @@ def OUT(pin_n):
     return Pin(pin_n, Pin.OUT)
 
 def TOUCH(pin_n):
-    return TouchPad(pin_n)
+    return TouchPad(Pin(pin_n))
 
 def TONE(pin_n):
     return PWM(OUT(pin_n))
 
-LED = OUT(13)
-# PIX = Pin(0, Pin.OUT)     # V2
-# can neopixels use the STEMMA connector?
-BTN = Pin(38, Pin.IN)  # hardware button, V2
-# BAT = ADC(Pin(35), atten=ADC.ATTN_11DB)
+def NEOPIXELS(num, pin_n=32, bpp=4):  # bpp=4 for RGBW mode. maybe it's 3 for regular?
+    return NeoPixel(OUT(pin_n), num, bpp)
+
+
 SCL = 22 # orig esp32 is 22, v2 is 20, but micropython cant use 20
 SDA = 23 # orig esp32 is 23
-
+LED = OUT(13)
+# PIX = Pin(0, Pin.OUT)     # V2
+# BTN = Pin(38, Pin.IN)  # hardware button, V2
+# BAT = ADC(Pin(35), atten=ADC.ATTN_11DB)
 
 
 # P2P NETWORK
@@ -92,7 +96,7 @@ def start_imu():
     global imu, calibrated
     imu = False
     calibrated = False
-    i2c = machine.SoftI2C(scl=machine.Pin(SCL), sda=machine.Pin(SDA))
+    i2c = machine.SoftI2C(scl=Pin(SCL), sda=Pin(SDA))
     sleep(.5)
     imu = imu_module.BNO055_BASE(i2c)
     
@@ -146,4 +150,5 @@ class Smoother():
 def map(value, in_min, in_max, out_min, out_max):
     value = (value - in_min) / float(in_max - in_min)
     return (value * (out_max - out_min)) + out_min
+
 

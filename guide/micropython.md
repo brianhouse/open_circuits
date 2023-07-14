@@ -173,5 +173,6 @@ click the button to reset the program
 
 casting
 
+random, choice
 
 ## Exercises
