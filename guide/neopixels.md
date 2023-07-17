@@ -1,24 +1,16 @@
 # Neopixels
 
-ALWAYS CONNECT GROUND (–) BEFORE ANYTHING ELSE. Conversely, disconnect ground last when separating.
+NeoPixels are colored lights that we can control with the ESP32s. Unlike regular LEDs, which are simply on and off, NeoPixels can be any color and brightness. They can be single lights, but they also come in strands, all of the lights of which can be controlled via a single pin on a microcontroller.
 
-the idea is to match the power and control voltages
-
-
-## Single pixels
-
-With through-hole NeoPixels (5mm or 8mm round), add a 0.1 µF capacitor between the + and – pins of EACH PIXEL. Individual pixels may misbehave without this “decoupling cap.” Strips and boards have these caps built-in.
+In the code, NeoPixels are represented as a [list](micropython.md#lists). Each item in the list corresponds to a pixel, and it's set to a color. In code, colors are often represented by a tuple of three values, one each for red, green, and blue. Conventionally, these values range from 0 to 255, and by mixing them together, all colors are possible. So, for example, red is `255, 0, 0`, green is `0, 255, 0`, and blue is `0, 0, 255`. Cyan would be `0, 255, 255`, and a deep purple is `158, 22, 113`. 
 
 
-## Short strips
+## Strips
 
-connect the +5V input on the strip to the pad labeled VBAT or BAT on the board, 
--or- just use 3.3v
+NeoPixel strips have three wires to connect: power, ground, and control. Connect power to 3.3v, ground to ground, and control to the GPIO pin of your choice via 470 ohm resistor.
 
-GND from the strip to any GND pad on the microcontroller board, and DIN to a GPIO 
 
-470ohm resistor on the data line
-
+![](img/neopixel_strip.png)
 
 
 ##### Code
@@ -26,34 +18,30 @@ GND from the strip to any GND pad on the microcontroller board, and DIN to a GPI
 ```py
 from esp_helper import *
 
-pixels = NEOPIXELS(32, 8)   # create NeoPixel driver on pin 32 for 8 pixels
-
+pixels = NEOPIXELS(32)   # create NeoPixel driver on pin 32 and get a list of pixels
 
 while True:
-    for i in range(15):        
-        pixels[i] = choice(((255, 0, 0), (0, 255, 0), (0, 0, 255)))
+    for i in range(20):         # there are 20 pixels in our strip        
+        pixels[i] = random(255), random(255), random(255)   # pick a random color
     pixels.write()              # write data to all pixels
-    sleep(.5)
-
-
-from esp_helper import *
-
-NUM_PIXELS = 60
-pixels = NEOPIXELS(NUM_PIXELS)   # create NeoPixel driver on pin 32 for 8 pixels
-
-
-while True:
-    for color in [(255, 0, 0, 0), (0, 255, 0, 0), (0, 0, 255, 0), (0, 0, 0, 255)]:
-        for i in range(NUM_PIXELS):
-            pixels[i] = color
-            pixels.write()
-            sleep(.1)
-
-    
+    sleep(.5)                   # wait a half second
 ```
 
+## Individual pixels
 
-## Long strips
+A single NeoPixel has four legs, shown here:
+
+![](img/neopixel_legs.jpg)
+
+Connect power and ground with a 0.1 µF capacitor between them. Then connect the "Data In" pin to a GPIO pin on the microcontroller.
+
+![](img/neopixel_individual.png)
+
+
+Note that you can chain several individual NeoPixels together by connecting the "Data Out" pin of one to the "Data In" pin of the next. This way, they all share the same GPIO pin, just like a NeoPixel strip. They all need a separate capacitor, however, and they'll need to be wired to power and ground individually.
+
+
+<!-- ## Long strips
 
 Separate power supply, 5V DC
 
@@ -66,10 +54,14 @@ If powering the pixels with a separate supply, apply power to the pixels before 
 
 If your microcontroller and NeoPixels are powered from two different sources (e.g. separate batteries for each), there must be a ground connection between the two.
 
+https://learn.adafruit.com/adafruit-neopixel-uberguide/powering-neopixels 
 
 
+## general
+
+the idea is to match the power and control voltages
+
+https://learn.adafruit.com/adafruit-neopixel-uberguide/basic-connections
 
 
-
-
-https://learn.adafruit.com/adafruit-neopixel-uberguide/powering-neopixels
+-->

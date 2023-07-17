@@ -1,10 +1,11 @@
 import esp32, espnow, machine
-import network, ubinascii, json
+import network, ubinascii, json, random
 from esp32 import hall_sensor
 from machine import ADC, Pin, TouchPad, PWM
 from neopixel import NeoPixel
 from time import sleep, time
-from random import random, choice
+from random import choice
+from random import random as rand
 
 
 # PINS
@@ -31,7 +32,7 @@ def TOUCH(pin_n):
 def TONE(pin_n):
     return PWM(OUT(pin_n))
 
-def NEOPIXELS(num, pin_n=32, bpp=4):  # bpp=4 for RGBW mode. maybe it's 3 for regular?
+def NEOPIXELS(pin_n=32, num=20, bpp=4):
     return NeoPixel(OUT(pin_n), num, bpp)
 
 
@@ -151,4 +152,10 @@ def map(value, in_min, in_max, out_min, out_max):
     value = (value - in_min) / float(in_max - in_min)
     return (value * (out_max - out_min)) + out_min
 
+
+def random(value):
+    if not (0 < value < 1):
+        return int(rand() * value)
+    else:
+        return rand()
 
