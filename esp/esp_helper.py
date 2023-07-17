@@ -158,9 +158,13 @@ class Servo():
             raise Exception("Servos not started")
 
     def speed(self, speed):
-        self.position((speed * 90) + 90)
+        try:
+            servos.position(self.id, (speed * 90) + 90)
+        except NameError:
+            raise Exception("Servos not started")
+
         
-    def release(self):
+    def stop(self):
         try:
             servos.release(self.id)
         except NameError:
@@ -193,6 +197,7 @@ def random(value):
         return int(rand() * value)
     else:
         return rand()
+
 
 
 

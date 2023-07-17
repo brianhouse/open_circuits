@@ -14,26 +14,58 @@ Servos have three wires coming out; black/brown is ground, red/orange is power, 
 
 Before we use the servo, we have to initialize it in the code, with `start_servos()`. We then initialize each servo we're going to use with the `Servo()` function, passing in the port number.
 
-Standard servos can rotate 180 degrees. In our code, we use the `.position()` method to set the position to what we want.
+## Standard servos
+
+Standard servos can rotate back and forth 180 degrees. In our code, we use the `.position()` method to set the position to what we want.
 
 
 ###### Code
 
 
+```py
+from esp_helper import *
+
+start_servos() 			# start the servos
+
+arm = Servo(0)			# set up a new servo, called "arm", plugged into slot 0
+
+arm.position(0)			# move the arm all the way one way and then back again
+arm.position(180)
+arm.position(0)
+```
 
 
+## Continuous rotation servos
 
+These type of servos are slightly different. The setup is the same, but in the code, we'll use the `.speed()` method to set the speed and direction of the servo. Instead of degrees, this method takes a number from -1 to 1 indicating how fast it should move relative to its top speed in either direction.
+
+Note that with this kind of servo, once they get going, they keep going, even if your code ends. So it's good practice to use the `.stop()` method to stop it. And in theory, setting the speed to 0 should also stop it, but in practice, the servo might still move a bit if it's not exactly calibrated, so `.stop()` is good for that, too.
+
+```py
+from esp_helper import *
+
+start_servos() 			# start the servos
+
+wheel = Servo(0)		# set up a new continuous servo, called "wheel", plugged into slot 0
+
+wheel.speed(1)			# go top speed in one direction, and then go in the other
+wheel.speed(-1)
+
+wheel.stop()			# stop the wheel
+```
+
+## Attaching things to servos
+
+Ideas?
+
+
+<!-- 
 
 https://learn.adafruit.com/adafruit-8-channel-pwm-or-servo-featherwing
 
 https://learn.adafruit.com/micropython-hardware-pca9685-pwm-and-servo-driver/micropython
 
-brown is ground
-orange is power
-yellow is PWM 
-
 Errno 19 ENODEV means that the module couldn't find the I2C sensor
 
 
-0.19sec/deg (4.8v) 0.15sec/deg (6.0v)
-
+ -->
