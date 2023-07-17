@@ -12,7 +12,7 @@ Inputs:
 
 Outputs:
 - [LEDs](leds.md)								<!-- done -->
-- [Neopixels](neopixels.md)
+- [Neopixels](neopixels.md)						<!-- done -->
 - [Piezos](piezos.md)
 - [Servos](servos.md)
 

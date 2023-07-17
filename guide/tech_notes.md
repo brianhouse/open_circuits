@@ -59,13 +59,6 @@ battery holder https://www.adafruit.com/product/830 (and batteries)
 
 
 
-ok, so I need external power; there's a series of ports
-
-thonny and micropython work, but Mu and circuitpython does not, needs a web interface
-
-so can I try and port the circuitpython library to micropython? like what's the difference anyway?
-
-
 
 
 ## analog inputs

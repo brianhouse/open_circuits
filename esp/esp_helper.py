@@ -131,6 +131,41 @@ def get_accel():
         raise Exception("IMU not started")
 
 
+# SERVOS
+
+def start_servos():
+    from servo import Servos
+    global servos
+    i2c = machine.SoftI2C(scl=Pin(SCL), sda=Pin(SDA))
+    servos = Servos(i2c)
+
+class Servo():
+
+    def __init__(self, id):
+        self.id = id
+
+    def duty(self):
+        return servos.position(self.id)
+
+    def position(self, degrees):
+        try:
+            current_duty = servos.position(self.id)
+            current_degrees = map(current_duty, 491, 1965, 0, 180)
+            delta_degrees = abs(degrees - current_degrees)
+            servos.position(self.id, degrees)
+            sleep(.0035 * delta_degrees)
+        except NameError:
+            raise Exception("Servos not started")
+
+    def speed(self, speed):
+        self.position((speed * 90) + 90)
+        
+    def release(self):
+        try:
+            servos.release(self.id)
+        except NameError:
+            raise Exception("Servos not started")
+
 
 # UTIL
 
@@ -158,4 +193,7 @@ def random(value):
         return int(rand() * value)
     else:
         return rand()
+
+
+
 
