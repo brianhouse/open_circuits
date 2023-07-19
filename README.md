@@ -72,16 +72,16 @@ The material we will cover for working with electronics can be found online [her
 
 #### Wednesday 9/6
 - Introduction
-- Workshop: [Getting started with the ESP32](guide/setup.md) and [breadboards](guide/breadboards.md)
+- Workshop: [Getting started with the ESP32](guide/setup.md) and [Micropython](guide/micropython.md)
 
 ### Week 2    
 
 #### Monday 9/11
 <!-- confirm everyone is signed up for a presentation -->
-- Workshop: [Micropython](guide/micropython.md)
+- Workshop: [breadboards](guide/breadboards.md) and [sensors](guide/sensors.md)
 
 #### Wednesday 9/13
-- Workshop: [Sensors](guide/sensors.md)
+- Breadboards and sensors continued
 
 
 ### Week 3
@@ -90,7 +90,7 @@ The material we will cover for working with electronics can be found online [her
 - Workshop: [Neopixels](guide/neopixels.md)
 
 #### Wednesday 9/20
-- Workshop: Sound with [Piezos](guide/piezos.md)
+- Workshop: Sound with [piezos](guide/piezos.md)
 
 
 ### Week 4

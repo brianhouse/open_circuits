@@ -26,8 +26,7 @@ is the driver necessary?
 
 - guide
 
-- new hall sensor image
-
+- buy magnets
 
 
 ## content

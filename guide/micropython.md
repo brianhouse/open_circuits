@@ -55,7 +55,7 @@ else:
 In this case, if `a` _isn't_ greater than `b`, the code performs an alternative.
 
 
-### `while`
+### `while` and `for` loops
 
 Another type of conditional is a `while` loop. This does things over and over until the condition is no longer valid. For example:
 ```py
@@ -67,7 +67,7 @@ while a < 10:
 
 This code first creates a variable, `a`, and sets it to 0. As long as `a` is less than 10, it prints out the value and then increments the value by 1. As soon as it hits 10, the loop is no longer valid and the code moves on. Note that colon and the indentation.
 
-`print()` is a _function_ that prints a variable or a text string to the console (in our case, the output within Thonny). `print()` can print multiple variables or text strings by separating them with commas. Something like:
+`print()` is a _function_ also a function that prints a variable or a text string to the console (in our case, the output within Thonny). `print()` can print multiple variables or text strings by separating them with commas. Something like:
 ```py
 print("a", a, "b", b)
 ```
@@ -92,7 +92,7 @@ Not all the available functions are listed here. Those relevant to specific hard
 
 ### `sleep()`
 
-A particularly useful function is `sleep()`, which makes the microcontroller wait a moment. Because sensors and components can't always keep up with the speed of the processor, this is often adviseable to use in a loop between reading sensors. Sleep takes a parameter, which is the number of seconds to wait:
+A particularly useful function is `sleep()`, which makes the microcontroller wait a moment. Because sensors and components can't always keep up with the speed of the processor, this is often adviseable to use in a loop between reading sensors. Sleep takes a parameter, also known as an argument, which is the number of seconds to wait:
 ```py
 sleep(1) # wait one second
 ```
@@ -108,6 +108,53 @@ while time() - start_time < 10:
 
 print("10 seconds have elapsed!")
 ```
+
+## Indeterminacy
+
+
+### `random()`
+
+Returns a random value. Without an argument, this value is a decimal number between 0 and 1:
+```py
+# print a random number between 0 and 1 every second
+while True:
+    r = random()
+    print(r)
+    sleep(1)
+```
+
+With an argument, this value is an integer between 0 and the given number:
+
+```py
+# print a random integer between 0 and 100 every second
+while True:
+    r = random(100)
+    print(r)
+    sleep(1)
+```
+
+
+### `choice()`
+
+This function returns a random element from a list or tuple (see below).
+
+```py
+numbers = 1000, 42, 19, 256  # print one of these numbers every second
+
+while True:
+    r = choice(numbers)
+    print(r)
+    sleep(1)
+```
+
+
+## Casting
+
+In some situations, you want a decimal number to be an integer, or to convert an integer into one with decimals. Or sometimes, you want a number to be understood as text. To convert variables from one type of information to another, we use "casting" functions.
+
+- `int()` convert to integer
+- `float()` convert to float / decimal
+- `str()` convert to a string / text
 
 
 ## ESP32 pin setup
@@ -125,6 +172,61 @@ value = A0.read()
 Here, the ESP32 reads the voltage from the A0 pin and stores it in a new "value" variable.
 
 For the specifics of how and why to use this, check out the [sensors](sensors.md) section.
+
+
+## Tuples and Lists
+
+In Micropython, you can store multiple items in a single variable. Like this:
+
+```py
+fruits = "apple", "banana", "cherry"
+```
+
+Each item has an 'index'. The first item is index 0, the second is index 1, and so forth (counting starting with 0 can be confusing at first, but there's reasons why it is ultimately helpful).
+
+Printing out the second item (banana) in a tuple or list, for example, is like this:
+
+```py
+print(fruits[1])
+```
+
+The difference between a tuple and a list is that lists can change. To define a list instead of a tuple, we put brackets around it.
+
+So this will not work:
+
+```py
+small_numbers = 0.001, 0.5, 2
+small_numbers[2] = 1.5
+```
+
+...but this will:
+```py
+small_numbers = [0.001, 0.5, 2]    # brackets!
+small_numbers[2] = 1.5
+```
+
+Additionally, with lists we can add items to the end as we go:
+```py
+small_numbers = [0.001, 0.5, 2]
+small_numbers.append(1.5)
+```
+
+Often, this means it's helpful to start with an empty list:
+```py
+small_numbers = []
+```
+
+Tuples and loops can work well with a special kind of loop called a `for` loop:
+```py
+fruits = "apple", "banana", "cherry"
+for fruit in fruits:
+    print("Have a", fruit)
+```
+```
+Have a apple
+Have a banana
+Have a cherry
+```
 
 
 ### Digital pins
@@ -155,28 +257,44 @@ while True:
 
 You'll see the specifics of how to use these in subsequent sections.
 
-In addition, pins can be configured via [`TOUCH()`](sensors.md#touch) and [`TONE()`](piezos.md).
+In addition, pins can be configured via [`TOUCH()`](sensors.md#touch), [`TONE()`](piezos.md), and [`NEOPIXELS()`](neopixels.md), which are described in the corresponding sections.
 
 
 
+## Generalizing from the examples
+
+The examples in this guide include short code snippets to accomplish a single task. But your programs will likely need to do several things simultaneously. 
+
+Rather than cutting and pasting everything from the examples, make sure that your program has one main loop. This should come last, after your input statement, starting any special sensors, and initializing your pins (in that order). Finally, include a short `sleep()`.
+
+As you go, you'll get a better hang of the syntax.
+
+```py
+from esp_helper import *
+
+# start any special sensors
+start_wifi()
+start_imu()
+
+# initialize pins here
+sound = TONE(27)
+robot_lights = NEOPIXELS(32)
+start_btn = IN(10)
+presence = A2
 
 
-## Lists
+
+# start the loop
+while True:
+    do stuff
+
+    sleep(.1) # include a sleep statement
+```
 
 
-## On the ESP32
+## Resetting the ESP32
 
-keeps running regardless
+Note that whenever the ESP32 turns on it will automatically run the code in `main.py`. However, if you disconnect the ESP32 from Thonny while it's not running, you'll need to either unplug and plug it in again or reset it to make the code start. And in some cases, you may just want your code to restart manually. 
 
-click the button to reset the program
+In these cases, press on the small button on the ES32 Feather board to reset.
 
-
-casting
-
-random, choice
-
-## Exercises
-
-
-
-## How to Generalize from the examples

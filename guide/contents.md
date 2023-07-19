@@ -5,8 +5,9 @@ Guide for working with the ESP32 using Micropython and basic components.
 
 ### Basics
 - [ESP32](esp32.md)								 
-- [Setup](setup.md)								 
-- [Micropython](micropython.md)                 <!-- TBD -->
+- [Setup](setup.md)			
+- [Thonny](thonny.md)			                <!-- TBD -->		 
+- [Micropython](micropython.md)                
 - [Breadboards](breadboards.md)					 
 - [Batteries](batteries.md)                     <!-- TBD -->
 

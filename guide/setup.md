@@ -46,10 +46,12 @@ while True:
 The hall sensor is a built-in sensor on the ESP which detects magnetic fields. This code will read data from the sensor and print it to console. Run it by clicking the green triangle. You should see a stream of numbers in the console ("Shell"). If you choose `View > Plotter`, you should see a constantly changing graph:
 
 <p align="center">
-  <img src="img/2_hall.png" width=500 />
+  <img src="img/hall.png" width=500 />
 </p>
 
 Congratulations! You've made a sensor running on a microcontroller.
 
 Note that this code is running on the ESP, not your computer—if you hook it up to a battery and disconnect it from your computer, it will still be working (we just won't see the log).
+
+Always write your code in `main.py`—this is the file that the ESP32 will load at startup.
 

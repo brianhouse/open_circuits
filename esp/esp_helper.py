@@ -192,8 +192,8 @@ def map(value, in_min, in_max, out_min, out_max):
     return (value * (out_max - out_min)) + out_min
 
 
-def random(value):
-    if not (0 < value < 1):
+def random(value=None):
+    if value is not None:
         return int(rand() * value)
     else:
         return rand()
