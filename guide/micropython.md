@@ -176,3 +176,7 @@ casting
 random, choice
 
 ## Exercises
+
+
+
+## How to Generalize from the examples
