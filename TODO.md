@@ -14,21 +14,20 @@ is the driver necessary?
 
 /
 
-project briefs
+- project briefs
 
-can I do a meeting during exam week?
+- can I do a meeting during exam week?
 
-artist project list, signups
+- artist project list, signups
 
 /
 
-write an introduction
+- write an introduction class
 
-guide
+- guide
 
-new hall sensor image
+- new hall sensor image
 
-redo all circuit diagrams?
 
 
 ## content

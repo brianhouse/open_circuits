@@ -24,6 +24,18 @@
 
 
 
+- [Nathalie Miebach](https://nathaliemiebach.com) (weather data)
+- [Karolina Sobecka](http://cargocollective.com/karolinasobecka/filter/matterOfAir/Puff) (car exhaust)
+- [Jer Thorp](https://www.jerthorp.com/herald-harbinger)
+- [Georgia Lupi](http://giorgialupi.com) (hand-drawn data visualization)
+- [Martin Howse](http://www.1010.co.uk/org/radiomycelium.html) (mycelium)
+- [Afroditi Psarra](http://afroditipsarra.com/index.php?/older-projects/cosmic-bitcasting/) (cosmic rays)
+- [Ali Momeni](http://alimomeni.net/gutwise) (the gut)
+- [Brian House](https://brianhouse.net/works/animas/) (water quality)
+- [Chris Woebken](https://chriswoebken.com/Amphibious-Architecture) (fish)
+- [Timo Toots](https://www.timo.ee/psa/) (ants)
+
+
 - Iyvone Khoo
 - Karolina Sobecka
 - Paulo Criolo
