@@ -13,7 +13,7 @@ We will be working with the following sensors:
 
 - [Range](#range)
 - [Sound level](#sound)
-- [Touch](#touch)
+- [Capacitance](#capacitance)
 
 
 ## <a name="range"></a> Range
@@ -92,11 +92,11 @@ while True:
 
 
 
-## <a name="touch"></a> Touch
+## <a name="capacitance"></a> Capacitance
 
-The ESP32 has the built-in ability to measure the "capacitance" on several of its pins. Hooking a wire from one of these to a conductive surface can therefore serve as a "touch" sensor that responds to skin contact (or the conductivity of any organic matter).
+The ESP32 has the built-in ability to measure the "capacitance" on several of its pins. Hooking a wire from one of these to a conductive surface can therefore serve as a touch sensor that responds to skin contact, liquid level, humidity, or material composition.
 
-Use a GPIO Pin (13, 12, 27, 33, 15, 32, 14). To set up a pin to measure capacitance, use the `TOUCH()` function.
+Use a GPIO Pin (13, 12, 27, 33, 15, 32, 14). To set up a pin to measure capacitance, use the `CAP()` function.
 
 ![](img/touch.png)
 
@@ -104,7 +104,7 @@ Use a GPIO Pin (13, 12, 27, 33, 15, 32, 14). To set up a pin to measure capacita
 ```py
 from esp_helper import *
 
-touch_pad = TOUCH(14)
+touch_pad = CAP(14)
 
 while True:
     value = touch_pad.read()

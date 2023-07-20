@@ -97,7 +97,7 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 9/25
 - Presentations #1
-- Begin Responsive Object project
+- Begin [Responsive Object](projects/responsive_object.md) project
 - Work time
 
 #### Wednesday 9/27
@@ -138,7 +138,7 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 10/23
 - Presentations #4
-- Begin Instrument project
+- Begin [Instrument](projects/instrument.md) project
 - Work time
 
 #### Wednesday 10/25
@@ -172,7 +172,7 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 11/13
 - Presentations #7
-- Begin Entanglement project
+- Begin [Entanglement](projects/entanglement.md) project
 - Work time
 
 #### Wednesday 11/15
@@ -192,6 +192,7 @@ The material we will cover for working with electronics can be found online [her
 
 #### Wednesday 11/29
 - Entanglement project crit
+- Start [Final project](projects/final.md)
 - Final project discussion
 - Work time
 

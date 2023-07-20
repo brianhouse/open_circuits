@@ -26,7 +26,7 @@ def IN(pin_n):
 def OUT(pin_n):
     return Pin(pin_n, Pin.OUT)
 
-def TOUCH(pin_n):
+def CAP(pin_n):
     return TouchPad(Pin(pin_n))
 
 def TONE(pin_n):

@@ -147,6 +147,18 @@ while True:
     sleep(1)
 ```
 
+## Scaling values
+
+### `map()`
+
+Map is useful for when you have an input range of values that you want to scale to a different output range of values. It takes five parameters—the variable you want to (re)map, the input minimum and maxiumum, and the output minimum and maximum. It returns the rescaled value. In this example, a sensor that returns values from 0 to 4095 is mapped to piezo that plays frequencies from 100 to 1000 Hz.
+
+```py
+sensor_value = A2.read()
+frequency = map(sensor_value, 0, 4095, 100, 1000)  # scale 0–4095 to 0–10
+beeper.freq(frequency)
+```
+
 
 ## Casting
 
