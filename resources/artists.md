@@ -1,114 +1,57 @@
-## A randomized selection of new media artists
+## A Selection of Artworks Using Microcontrollers
+
+- [Radio Mycelium](http://1010.co.uk/org/radiomycelium.html) (Martin Howse, 2018)
+- [Urban Parasites](https://gilbertoesparza.net/portfolio/parasitos-urbanos/) (Gilberto Esparza, 2006)
+- [Last Breath](https://www.lozano-hemmer.com/last_breath.php) (Rafael Lozano-Hemmer, 2012)
+- [Yuca_Tech](https://amormunoz.net/wp-content/uploads/2022/02/PORTFOLIO-2021.pdf) (Amor Muñoz)
+- [Hybrida](https://amormunoz.net/wp-content/uploads/2022/02/PORTFOLIO-2021.pdf) (Amor Muñoz, 2020)
+- [Alexitimia](https://static1.squarespace.com/static/62c85c54112ed547c23c0e3b/t/63cbd1fd7d73700b4ddd124b/1674301978779/PGA_Alexitimia.pdf) (Paula Gaetano Adi, 2005)
+- [Alerting Infrastructure!](http://www.coin-operated.com/2010/05/09/alerting-infrastructure-2003/) (Jonah Brucker-Cohen, 2003)
+- [Extinction Gong](https://julianoliver.com/projects/extinction-gong/) (Julian Oliver and Crystelle Vu, 2017)
+- [Puff](http://cargocollective.com/karolinasobecka/filter/matterOfAir/Puff) (Karolina Sobecka, 2013)
+- [Cosmic Bitcasting](http://afroditipsarra.com/index.php?/older-projects/cosmic-bitcasting/) (Afroditi Psarra, 2016)
+- [Slow Games](http://www.ishback.com/slowgames/index.html) (Ishac Bertran, 2014)
+- [Amphibious Architecture](https://chriswoebken.com/Amphibious-Architecture) (Chris Woebken, 2009)
+- [Listen to Your Gut](https://alimomeni.net/gutwise) (Ali Momeni, 2017)
+- [Botanicalls](http://www.katehartman.com/projects/botanicalls/) (Kate Hartman, Rob Faludi, Kati London, and Rebecca Bray, 2006)
+- [The Very Loud Chamber Orchestra of Endangered Species](https://www.pinaryoldas.info/WORK/The-Very-Loud-Chamber-Orchestra-of-Endangered-Species-2013) (Pinar Yoldas, 2013)
+- [Wooden Mirror](https://www.smoothware.com/danny/woodenmirror.html) (Daniel Rozin, 1999)
+- [Aurora Organ](https://camilleutterback.com/projects/aurora-organ/) (Camille Utterback, 2009)
+/
+- [Electronic Instruments](https://mshr.info/MSHRinstruments) (MSHR, 2023–2020)
+- [Laser Mice](https://www.kanno.so/project/lasermice) (So Kanno, 2018)
+- [In Love With the World](https://www.anickayistudio.biz/exhibitions/in-love-with-the-world) (Anicka Yi, 2021)
+- [BeatJazz system](https://www.youtube.com/user/onyxashanti) (Onyx Ashanti, 2008–2023)
 
 
-## Responsive
-- Martin Howse
-- Gilberto Esparza
-- Rafael Lozano-Hemmer
-- Ben Rubin
-- Amor Muñoz
-- Paula Gaetano Adi
-- Jonah Brucker-Cohen
-- Julian Oliver
-
-
-## Body / Instrument
-- MSHR
-- Ranjit Bhatnagar
-- Afroditi Psarra
-- Daito Manabe
-
-## Network
-- Rafael Lozano-Hemmer
-
-
-
-
-- [Nathalie Miebach](https://nathaliemiebach.com) (weather data)
-- [Karolina Sobecka](http://cargocollective.com/karolinasobecka/filter/matterOfAir/Puff) (car exhaust)
-- [Jer Thorp](https://www.jerthorp.com/herald-harbinger)
-- [Georgia Lupi](http://giorgialupi.com) (hand-drawn data visualization)
-- [Martin Howse](http://www.1010.co.uk/org/radiomycelium.html) (mycelium)
-- [Afroditi Psarra](http://afroditipsarra.com/index.php?/older-projects/cosmic-bitcasting/) (cosmic rays)
-- [Ali Momeni](http://alimomeni.net/gutwise) (the gut)
-- [Brian House](https://brianhouse.net/works/animas/) (water quality)
-- [Chris Woebken](https://chriswoebken.com/Amphibious-Architecture) (fish)
-- [Timo Toots](https://www.timo.ee/psa/) (ants)
-
-
-- Iyvone Khoo
-- Karolina Sobecka
-- Paulo Criolo
-
-- Jonas Lund
-- Aram Bartholl
-- Rick Silva
-
-- Wafaa Bilal
-- Fernanda Viégas & Martin Wattenberg
-- Carolee Schneemann
-- Blast Theory
-- R. Luke DuBois
-- Kate Hartman
-- Carlos Garcia
-- Meejin Yoon
-- Petra Cortright
-
-
-- Eva and Franco Mattes
-- Addie Wagenknecht
-- Olia Lialina
-- John Maeda
-- Rosa Menkman
-- Pinar Yoldas
-
-- Theun Karelse
 - Mendi & Keith Obadike
-- Michael Mandiberg
-
-- LoVid
 - Kevin Slavin
-- Claudia Hart
-- Cory Arcangel
 - Critical Art Ensemble
 - American Artist
-- Onyx Ashanti
+- 
 - Carsten Nicolai
 - Nadav Assor
 - Wesley Goatley
-- Lillian Schwartz
-- Marina Zurkow
-- Ali Momeni
-- Mario Kingemann
-- Roman Verostko
 - Jamie Allen
 - Eduardo Kac
 - Beatriz da Costa
 - Golan Levin
-- Jonathan Harris
 - Morehshin Allahyari
 
 - Angela Washko
-- Heather Dewey-Hagborg
-- Kyle McDonald
-- Blast Theory
+- 
 - Reuben Margolin
-- Ryoji Ikeda
+
 - Taeyoon Choi
 - Andrea Polli
-- Lynn Hershman Leeson
-- Giorgia Lupi
-- Nicole Aptekar
+
 - Natalie Jeremijenko
 - Liat Berdugo
-- Marius Watz
 - Christian Marclay
 - Trevor Paglen
-- Daphne Oram
-- Adam Harvey
-- Laura Kurgan
-- Chris Woebken
 - Josh Begley
-- Timo Toots
 - Revita Cohen and Tuur Van Balen
-- Philip Beesley
+
+
+https://www.amazon.com/Make-Wearable-Electronics-prototype-interactive/dp/1449336515
+
