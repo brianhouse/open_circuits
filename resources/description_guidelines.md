@@ -1,4 +1,4 @@
-# Statement Guidelines
+# Description Guidelines
 
 The statement that accompanies your work should give the viewer/listener an idea of how the work should be should approached. Giving some background information, adding context, revealing your artistic intent, or giving special instructions might all be meaningful purposes this can serve. Remember that your artwork should also have a title, which is another way to position how your piece will be understood.
 
