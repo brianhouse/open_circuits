@@ -75,9 +75,6 @@ Serial.print("VBat: " ); Serial.println(measuredvbat)
 
 ### problems
 
-ok, so SCL 32 and SDA 14 works fine; 14 and 22 did not. Could be a problem with the board itself. So look out to see if it works on another esp. This is fine for the IMU.
-
-but the next question is can I used the servo wing?
-
+ok, so SCL 32 and SDA 14 works fine; 14 and 22 did not. Could be a problem with the board itself. So look out to see if it works on another esp. This is fine for the IMU. pin 20 not available in micropython for whatever reason.
 
 

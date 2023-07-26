@@ -1,4 +1,4 @@
-## A Selection of Artworks Using Microcontrollers
+## A Selection of Artworks Using Microcontrollers in No Particular Order
 
 - [Radio Mycelium](http://1010.co.uk/org/radiomycelium.html) (Martin Howse, 2018)
 - [Urban Parasites](https://gilbertoesparza.net/portfolio/parasitos-urbanos/) (Gilberto Esparza, 2006)
@@ -17,41 +17,20 @@
 - [The Very Loud Chamber Orchestra of Endangered Species](https://www.pinaryoldas.info/WORK/The-Very-Loud-Chamber-Orchestra-of-Endangered-Species-2013) (Pinar Yoldas, 2013)
 - [Wooden Mirror](https://www.smoothware.com/danny/woodenmirror.html) (Daniel Rozin, 1999)
 - [Aurora Organ](https://camilleutterback.com/projects/aurora-organ/) (Camille Utterback, 2009)
-/
 - [Electronic Instruments](https://mshr.info/MSHRinstruments) (MSHR, 2023–2020)
 - [Laser Mice](https://www.kanno.so/project/lasermice) (So Kanno, 2018)
 - [In Love With the World](https://www.anickayistudio.biz/exhibitions/in-love-with-the-world) (Anicka Yi, 2021)
 - [BeatJazz system](https://www.youtube.com/user/onyxashanti) (Onyx Ashanti, 2008–2023)
+- [Robotic Chair](https://raffaello.name/projects/robotic-chair/) (Raffaello D'Andrea, 2004)
+- [Carboard Boxes](https://www.zimoun.net) (Zimoun)
+- [Various](https://alanrath.org) (Alan Rath)
+- [Chorus for the Untrained Operator](https://www.triangleline.com/chorus) (Peter Bussigel, 2016)
+- [Urban Armor](https://urbanarmor.org) (Kathleen McDermott) 
+- [Feral Robot Dogs](https://www.google.com/search?q=Natalie+Jeremijenko+robots) (Natalie Jeremijenko, 2014)
 
 
-- Mendi & Keith Obadike
-- Kevin Slavin
-- Critical Art Ensemble
-- American Artist
-- 
-- Carsten Nicolai
-- Nadav Assor
-- Wesley Goatley
-- Jamie Allen
-- Eduardo Kac
-- Beatriz da Costa
-- Golan Levin
-- Morehshin Allahyari
-
-- Angela Washko
-- 
-- Reuben Margolin
-
-- Taeyoon Choi
-- Andrea Polli
-
-- Natalie Jeremijenko
-- Liat Berdugo
-- Christian Marclay
-- Trevor Paglen
-- Josh Begley
-- Revita Cohen and Tuur Van Balen
+Add to this list!
 
 
-https://www.amazon.com/Make-Wearable-Electronics-prototype-interactive/dp/1449336515
+
 

@@ -10,7 +10,7 @@ Fayerweather 306
 
 
 ## Course Description
-Introduction to basic electronics and microcontrollers for studio artists. Students will program chips to control sensors, switches, motors, and lights to create responsive objects and performative tools. Readings and critical discussion will situate our circuits in histories of interactive art, electronics-based and otherwise. Students will create studio-based art for critique. No prior experience with electronics or programming is required, but ARHA 278: Art + Code is recommended.
+Introduction to basic electronics and microcontrollers for studio artists. Students will program chips to control sensors, switches, motors, and lights to create responsive objects and performative tools. Critical discussion will situate our circuits in histories of interactive art, electronics-based and otherwise. Students will create studio-based art for critique. No prior experience with electronics or programming is required, but ARHA 278: Art + Code is recommended.
 
 #### Objectives:
 - Cultivate an ability to think in terms of systems that span the physical and the digital
@@ -28,7 +28,7 @@ This course is built around four projects completed over the course of the semes
 Over the course of the semester, there will be many hands-on workshops in class. These workshops are the basis for learning the technical skills you will apply to your projects. Each will include an exercise to be completed.
 
 ### Survey presentations
-Each student will give a 10-minute presentation on an artwork involving electronics. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working, a few other pieces for context, and then precede to show the primary work in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1HHoVP1O-VfYFJsBo8tri8cBQmJLKuMkgraGmMaQAIxU/edit?usp=sharing) on an artist chosen from [a list](resources/artists.md) on a first-come, first-served basis. 
+Each student will give two 10-minute presentations on an artwork involving electronics. These presentations should be organized in a few slides: 1) give an overview of the artists' biography and the context in which they are working; 2) show the primary work in detail; 3) bring up three conceptual or technical issues raised by the work for discussion. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1u-zuOeo9osRbM8WJ1LqEMxA-a1uRpD4oVfG5W-4zi5o/edit?usp=sharing) on an artist chosen from [a list](resources/artists.md) on a first-come, first-served basis. 
 
 <!-- ### Reading
 Each week we will read critical texts that situate technology in society. Reading is due on the day where the text is listed; a reading response must be submitted before class via Moodle. This can be a question raised by the text, a critique of it, a link to related artistic work, or some other brief comment which can stimulate our discussion. -->
@@ -87,6 +87,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 3
 
 #### Monday 9/18
+- Presentations #1
 - Workshop: [Neopixels](guide/neopixels.md)
 
 #### Wednesday 9/20
@@ -96,7 +97,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 4
 
 #### Monday 9/25
-- Presentations #1
+- Presentations #2
 - Begin [Responsive Object](projects/responsive_object.md) project
 - Work time
 
@@ -108,7 +109,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 5
 
 #### Monday 10/2
-- Presentations #2
+- Presentations #3
 - Responsive Object check-in
 - Work time
 
@@ -127,7 +128,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 7
 
 #### Monday 10/16
-- Presentations #3
+- Presentations #4
 - Workshop: [IMUs](guide/imu.md)
 
 #### Wednesday 10/18
@@ -137,7 +138,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 8
 
 #### Monday 10/23
-- Presentations #4
+- Presentations #5
 - Begin [Instrument](projects/instrument.md) project
 - Work time
 
@@ -149,7 +150,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 9
 
 #### Monday 10/30
-- Presentations #5
+- Presentations #6
 - Instrument project check-in
 - Work time
 
@@ -161,7 +162,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 10
 
 #### Monday 11/6
-- Presentations #6
+- Presentations #7
 - Workshop: [peer-to-peer networking](guide/networking.md)
 
 #### Wednesday 11/8
@@ -171,7 +172,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 11
 
 #### Monday 11/13
-- Presentations #7
+- Presentations #8
 - Begin [Entanglement](projects/entanglement.md) project
 - Work time
 
@@ -186,7 +187,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 12
 
 #### Monday 11/27
-- Presentations #8
+- Presentations #9
 - Entanglement project check-in
 - Work time
 
@@ -199,7 +200,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 13
 
 #### Monday 12/4
-- Presentations #9
+- Presentations #10
 - Final project proposals due
 - Work time
 

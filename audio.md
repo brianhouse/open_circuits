@@ -26,3 +26,28 @@ ok, so regardless, this is interesting and should be pursued. maybe PWM for now,
 but can PWM just go straight to an amp/speaker? 
 
 this is what I did for Acid Love. so yeah.
+
+
+
+//
+
+https://www.coderdojotc.org/micropython/sound/
+
+//
+
+so check this out:
+
+https://www.electro-smith.com/daisy/daisy
+
+
+this isn't different from an ESP with an audio dac on it. and the code is from various platforms. but it's obviously not micropython.
+
+...but it _is_ Pd. so could totally use that in a music course. design a synth, put it in a box with knobs. basically what Seth is doing.
+
+too much for this course.
+
+
+[
+do I care about this kind of thing in my own practice anymore?
+that's the thing -- I'm looking for it to go somewhere. not for the sake of the thing.
+]

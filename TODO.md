@@ -3,18 +3,12 @@
 
 ## need
 
-magnets
-capacitive pads
+capacitive pads -- test tin foil
 very short rail jumpers
-photocells
+add photocells
 phone tripods
 
 more esp32s for entanglement?
-
-
-
-//
-
 
 
 ## tasks
@@ -23,17 +17,14 @@ more esp32s for entanglement?
 
 - can I do a meeting during exam week?
 
-- artist project list, signups
-
 /
 
 - write an introduction class
 
+- how is it that I will present artists' work? double them up.
 
 
 ## midterm
-
-List of awesome pcomp projects, I talk about the ones that they don't do. 
 
 What does a midterm meeting consist of?
 - 10 mins with each student, talking about their experience and my expectations, "If you can do X, you'll get an A"
@@ -60,9 +51,6 @@ ENTANGLERS
 
 
 
-
-left out temperature, FSRs, and light level. FSRs are a pain and barely work. light level is fine, right? temperature is fine but not that responsive and kind of pointless?
-
 ## resources
 
 
@@ -73,4 +61,8 @@ https://makeabilitylab.github.io/physcomp/
 ## future
 
 design thinking? there's tons of pedagogical content around the issues I'm bringing up here that I am leaving by the wayside, or leaving to intuition.
+
+
+
+https://www.amazon.com/Make-Wearable-Electronics-prototype-interactive/dp/1449336515
 
