@@ -1,27 +1,25 @@
 # TODO
 
+- write an introduction class
+- prep ESPs
+- purchase the below
+--> instrument unit is weak
+
+- tell everyone to bring their laptops!
+
 
 ## need
 
 capacitive pads -- test tin foil
+
+100 ohm resistors
 very short rail jumpers
-add photocells
+photocells
 phone tripods
 
+do I have enough neopixels?
 more esp32s for entanglement?
 
-
-## tasks
-
-- moodle
-
-- can I do a meeting during exam week?
-
-/
-
-- write an introduction class
-
-- how is it that I will present artists' work? double them up.
 
 
 ## midterm

@@ -33,6 +33,8 @@ Finally, go to [esp_helper.py](../esp/esp_helper.py) and copy the contents. Open
  -->
 ## Testing
 
+When it starts up, the ESP will automatically run your custom code in a file called `main.py`.
+
 Create a new file containing the following, and save it on your ESP as `main.py`:
 
 ```py
@@ -41,6 +43,7 @@ from esp_helper import *
 while True:
     hall = hall_sensor()
     print(hall)
+    sleep(.1)
 ```
 
 The hall sensor is a built-in sensor on the ESP which detects magnetic fields. This code will read data from the sensor and print it to console. Run it by clicking the green triangle. You should see a stream of numbers in the console ("Shell"). If you choose `View > Plotter`, you should see a constantly changing graph:
@@ -49,9 +52,9 @@ The hall sensor is a built-in sensor on the ESP which detects magnetic fields. T
   <img src="img/hall.png" width=500 />
 </p>
 
-Congratulations! You've made a sensor running on a microcontroller.
+Now take a strong magnet, and move it around your ESP—watch how the numbers change. Note that this code is running on the ESP, not your computer—if you hook it up to a battery and disconnect it from your computer, it will still be working (we just won't see the log).
 
-Note that this code is running on the ESP, not your computer—if you hook it up to a battery and disconnect it from your computer, it will still be working (we just won't see the log).
+Congratulations! You've made a sensor running on a microcontroller. 
 
-Always write your code in `main.py`—this is the file that the ESP32 will load at startup.
+
 

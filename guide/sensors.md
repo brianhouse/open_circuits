@@ -11,9 +11,29 @@ This will short the connection and may damage the ESP.
 
 We will be working with the following sensors:
 
+- [Light level](#light)
 - [Range](#range)
 - [Sound level](#sound)
 - [Capacitance](#capacitance)
+
+
+#### <a name="light"></a> Light Level
+
+A photocell measures the light level. Hook it up with 2k resistor and use an analog input (A2, A3, A4, A37). If the values you get with 2k are too high, reduce the resistor value until the numbers fall within a range that works.
+
+
+![](img/photocell.png)
+
+
+###### Code
+```py
+from esp_helper import *
+
+while True:
+    value = A2.read() / 4095.0  
+    print(value)
+    sleep(.1)    # sleep for stability
+```
 
 
 ## <a name="range"></a> Range
@@ -57,7 +77,6 @@ while True:
         triggered = False
 
 ```
-
 
 
 ## <a name="sound"></a> Sound level

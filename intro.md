@@ -1,16 +1,60 @@
 # Introduction
 
+Hi everyone, welcome to Open Circuits.
 
-### What this course is
+Intros:
+- name + pronouns
+- art courses at Amherst
+- experience with programming
+- experience with electronics
 
-physical computing
+(second semester, sound artist, experienced programmer, novice with electronics)
 
 
 ### What this course is not
 
-We will not be learning the mathematics of circuitry or general engineering priciples. It's not about understanding electricity; it's about the process of experimentation within a studio art environment.
+- It's not a science or engineering course
+
+We will not be learning the mathematics of circuitry or general engineering priciples. It's not about understanding electricity. There are no formulas. 
 
 
 
+### What this course is
+
+#### This is a studio art course
+
+What happens in an artist's studio?
+- experimentation
+- exploration
+- tinkering with materials
+- self-expression
+- creative misuse
+- wrestle with social issues through making
+- goal: to produce something aesthetically beautiful and/or interesting
 
 
+This space: has been the artist-in-residence studio on campus, and now it's the Sound + Electronics studio. Just cleaned it out last week. 
+
+...and this course is a brand new course. Never been taught.
+
+So you all are the guinea pigs, and we're going to be figuring some stuff out together.
+
+
+#### Media art
+
+In this course, we are going to be building circuits using microcontrollers. And we'll dive in to the specifics soon enough. 
+
+But to situate it further, we're loosely in the genre of media art. Which is art that not only uses technology, but also reflects on technology and our relationship to it.
+
+
+#### Examples
+
+
+
+### Syllabus
+
+
+
+### Getting setup
+
+guide/setup.md

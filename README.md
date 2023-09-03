@@ -5,8 +5,8 @@ Fayerweather 303
 
 Prof. Brian House (he/him)  
 [bhouse@amherst.edu](mailto:bhouse@amherst.edu)  
-Office hours Tuesday 11:00–11:45  
-Fayerweather 306
+Office hours: [https://calendly.com/bhouse-amherst/student-meeting](https://calendly.com/bhouse-amherst/student-meeting)
+Fayerweather 308
 
 
 ## Course Description
@@ -19,7 +19,7 @@ Introduction to basic electronics and microcontrollers for studio artists. Stude
 - Survey contemporary artists working critically with physical computing
 
 
-## Assignments and Grading
+## Assignments and Evaluation
 
 ### Projects
 This course is built around four projects completed over the course of the semester, which will be [critiqued by the class](https://github.com/brianhouse/open_circuits/blob/master/resources/crit_guidelines.md). While there are technical and conceptual parameters for each project, you are expected to experiment and to develop a personal artistic trajectory. Projects must have a title and [3-sentence description](https://github.com/brianhouse/open_circuits/blob/master/resources/description_guidelines.md), which must be turned in via Moodle along with a documentation video. As work is evaluated via in-class crit, no late work can be accepted.
@@ -36,7 +36,7 @@ Each week we will read critical texts that situate technology in society. Readin
 ### Participation
 Attendance is mandatory, and motivated and mindful participation in crit and classroom disscussion is expected.
 
-### Grading
+### Evaluation
 In this course, you are expected to earnestly engage in the practice of studio artmaking, and doing so is the basis of your grade at the discretion of the professor. In other words, your grade is about process, not about product. Completing all work on time and participating in class is the baseline standard. Beyond that, your work will be evaluated subjectively via peer critique and feedback from the instructor, and you are expected to incorporate that feedback into your future work while pursuing your own creative impulses. Midway through the semester, students will meet individually with the professor to track their progress.
 
 
