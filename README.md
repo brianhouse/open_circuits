@@ -19,7 +19,7 @@ Introduction to basic electronics and microcontrollers for studio artists. Stude
 - Survey contemporary artists working critically with physical computing
 
 
-## Assignments and Evaluation
+## Coursework and Evaluation
 
 ### Projects
 This course is built around four projects completed over the course of the semester, which will be [critiqued by the class](https://github.com/brianhouse/open_circuits/blob/master/resources/crit_guidelines.md). While there are technical and conceptual parameters for each project, you are expected to experiment and to develop a personal artistic trajectory. Projects must have a title and [3-sentence description](https://github.com/brianhouse/open_circuits/blob/master/resources/description_guidelines.md), which must be turned in via Moodle along with a documentation video. As work is evaluated via in-class crit, no late work can be accepted.
@@ -36,8 +36,8 @@ Each week we will read critical texts that situate technology in society. Readin
 ### Participation
 Attendance is mandatory, and motivated and mindful participation in crit and classroom disscussion is expected.
 
-### Evaluation
-In this course, you are expected to earnestly engage in the practice of studio artmaking, and doing so is the basis of your grade at the discretion of the professor. In other words, your grade is about process, not about product. Completing all work on time and participating in class is the baseline standard. Beyond that, your work will be evaluated subjectively via peer critique and feedback from the instructor, and you are expected to incorporate that feedback into your future work while pursuing your own creative impulses. Midway through the semester, students will meet individually with the professor to track their progress.
+### Grading
+In this course, you are expected to earnestly engage in the practice of studio artmaking, and doing so is the basis of your grade at the discretion of the professor. In other words, your grade is about process, not about product. Completing all work on time and participating in class is the baseline standard. Beyond grades, your work will be evaluated subjectively via peer critique and feedback from the instructor, and you are expected to incorporate that feedback into your future work while pursuing your own creative direction. Midway through the semester, students will meet individually with the professor to track their progress.
 
 
 ## Policies
@@ -46,7 +46,7 @@ In this course, you are expected to earnestly engage in the practice of studio a
 It is my intent to lead a course that serves students from diverse backgrounds and perspectives, and that our varied life experiences may be a common benefit. Content in this studio art course may at times challenge our aesthetic and/or ethical values; free exchange of ideas and critique is encouraged and expected, but harassment and disrespect will not be tolerated. During class discussion and critique we aim to be mindful and generous in our interactions and to make everyone feel heard.
 
 ### Access to 303
-While all students must complete their own work, you are encouraged to help each other. To facilitate collective learning, students are also able to work in Fayerweather 303 outside of class hours. We will choose designated open studios in the first week. Keys to 303 will be distributed to all students.
+While all students must complete their own work, you are encouraged to help each other. To facilitate collective learning, students are also able to work in Fayerweather 303 outside of class hours. We will choose designated open studio hours in the first week. Keys to 303 will be distributed to all students after Add/Drop.
 
 ### Dynamic Syllabus
 The version of this syllabus posted online will be updated periodically and is the definitive version. It is your responsibility to consult it and stay up-to-date.
@@ -92,6 +92,7 @@ The material we will cover for working with electronics can be found online [her
 #### Monday 9/18
 - Presentations #1
 - Workshop: [Neopixels](guide/neopixels.md)
+- Distribute 303 keys
 
 #### Wednesday 9/20
 - Workshop: Sound with [piezos](guide/piezos.md)

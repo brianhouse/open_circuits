@@ -51,3 +51,9 @@ too much for this course.
 do I care about this kind of thing in my own practice anymore?
 that's the thing -- I'm looking for it to go somewhere. not for the sake of the thing.
 ]
+
+////
+
+
+hold the phone, there's wav examples on this: https://github.com/miketeachman/micropython-i2s-examples
+

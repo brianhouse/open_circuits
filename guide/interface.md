@@ -1,6 +1,6 @@
 # Interface
 
-By adding buttons, toggles, and knobs to microcontrollers, we can control aspects of the program while it's running, creating interfaces for an instrument. In essense, these are no different than sensors. 
+By adding buttons, toggles, and knobs to microcontrollers, we can control aspects of the program while it's running, creating interfaces for an instrument. In essence, these are no different than sensors. 
 
 We'll work with the following components:
 
@@ -38,7 +38,7 @@ while True:
 
 ## <a name="button"></a> Button
 
-Otherwise knon as a "momentary switch," buttons are on when pushed and off otherwise. Use a 10k resistor and a GPIO Pin (13, 12, 27, 33, 15, 32, 14). Keep track of the buttons's status with a variable so that you can trigger things based on a change.
+Otherwise known as a "momentary switch," buttons are on when pushed and off otherwise. Use a 10k resistor and a GPIO Pin (13, 12, 27, 33, 15, 32, 14). Keep track of a button's status with a variable so that you can trigger things based on a change.
 
 ![](img/momentary.png)
 

@@ -1,25 +1,14 @@
 # TODO
 
-- write an introduction class
-- prep ESPs
-- purchase the below
---> instrument unit is weak
-
 - tell everyone to bring their laptops!
 
+- prep ESPs
+- capacitive pads -- test tin foil
+- 100 ohm resistors -- have?
 
-## need
+--> instrument unit is weak
 
-capacitive pads -- test tin foil
-
-100 ohm resistors
-very short rail jumpers
-photocells
-phone tripods
-
-do I have enough neopixels?
-more esp32s for entanglement?
-
+- guide (Zac's suggestions! and additions!)
 
 
 ## midterm
@@ -59,8 +48,6 @@ https://makeabilitylab.github.io/physcomp/
 ## future
 
 design thinking? there's tons of pedagogical content around the issues I'm bringing up here that I am leaving by the wayside, or leaving to intuition.
-
-
 
 https://www.amazon.com/Make-Wearable-Electronics-prototype-interactive/dp/1449336515
 

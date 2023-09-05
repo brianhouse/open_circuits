@@ -1,6 +1,6 @@
 # Piezos
 
-The [piezoelectric effect](https://en.wikipedia.org/wiki/Piezoelectricity) is a property of some materials to respond mechanically to elecricity. In this case, a small ceramic disc, when glued to a larger metal one, will bend. Do this fast enough, and at a specific frequency, and you have a very basic speaker—one that can be controlled directly from a microcontroller.
+The [piezoelectric effect](https://en.wikipedia.org/wiki/Piezoelectricity) is a property of some materials to respond mechanically to electricity. In this case, a small ceramic disc, when glued to a larger metal one, will bend. Do this fast enough, and at a specific frequency, and you have a very basic speaker—one that can be controlled directly from a microcontroller.
 
 Hookup is simple—connect the piezo to ground and to a GPIO pin of your choice. You may need to strip some insulation off the ends of the wires, and/or [tin](soldering.md#tinning) them. Your piezo may or may not have a plastic housing around it.
 

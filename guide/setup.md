@@ -46,7 +46,7 @@ while True:
     sleep(.1)
 ```
 
-The hall sensor is a built-in sensor on the ESP which detects magnetic fields. This code will read data from the sensor and print it to console. Run it by clicking the green triangle. You should see a stream of numbers in the console ("Shell"). If you choose `View > Plotter`, you should see a constantly changing graph:
+The hall sensor is a built-in sensor on the ESP that detects magnetic fields. This code will read data from the sensor and print it to the console. Run it by clicking the green triangle. You should see a stream of numbers in the console ("Shell"). If you choose `View > Plotter`, you should see a constantly changing graph:
 
 <p align="center">
   <img src="img/hall.png" width=500 />

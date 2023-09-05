@@ -50,7 +50,7 @@ Adding a 300 to 500 Ohm resistor between your microcontroller's data pin and the
 
 On larger projects, you may need to add a capacitor (100 to 1000 µF, 6.3V or higher) across the + and – terminals for more reliable operation. See the photo on the next page for an example.
 
-If powering the pixels with a separate supply, apply power to the pixels before applying power to the microcontroller. Otherwise they’ll try to power “parasitically” through the data line, which could spell trouble for the microcontroller.
+If powering the pixels with a separate supply, apply power to the pixels before applying power to the microcontroller. Otherwise, they’ll try to power “parasitically” through the data line, which could spell trouble for the microcontroller.
 
 If your microcontroller and NeoPixels are powered from two different sources (e.g. separate batteries for each), there must be a ground connection between the two.
 
@@ -59,7 +59,7 @@ https://learn.adafruit.com/adafruit-neopixel-uberguide/powering-neopixels
 
 ## general
 
-the idea is to match the power and control voltages
+The idea is to match the power and control voltages
 
 https://learn.adafruit.com/adafruit-neopixel-uberguide/basic-connections
 

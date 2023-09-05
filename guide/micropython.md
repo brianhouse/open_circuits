@@ -65,7 +65,7 @@ while a < 10:
     a += 1 
 ```
 
-This code first creates a variable, `a`, and sets it to 0. As long as `a` is less than 10, it prints out the value and then increments the value by 1. As soon as it hits 10, the loop is no longer valid and the code moves on. Note that colon and the indentation.
+This code first creates a variable, `a`, and sets it to 0. As long as `a` is less than 10, it prints out the value and then increments the value by 1. As soon as it hits 10, the loop is no longer valid and the code moves on. Note the colon and the indentation.
 
 `print()` is a _function_ also a function that prints a variable or a text string to the console (in our case, the output within Thonny). `print()` can print multiple variables or text strings by separating them with commas. Something like:
 ```py
@@ -92,7 +92,7 @@ Not all the available functions are listed here. Those relevant to specific hard
 
 ### `sleep()`
 
-A particularly useful function is `sleep()`, which makes the microcontroller wait a moment. Because sensors and components can't always keep up with the speed of the processor, this is often adviseable to use in a loop between reading sensors. Sleep takes a parameter, also known as an argument, which is the number of seconds to wait:
+A particularly useful function is `sleep()`, which makes the microcontroller wait a moment. Because sensors and components can't always keep up with the speed of the processor, this is often advisable to use in a loop between reading sensors. Sleep takes a parameter, also known as an argument, which is the number of seconds to wait:
 ```py
 sleep(1) # wait one second
 ```
@@ -194,7 +194,7 @@ In Micropython, you can store multiple items in a single variable. Like this:
 fruits = "apple", "banana", "cherry"
 ```
 
-Each item has an 'index'. The first item is index 0, the second is index 1, and so forth (counting starting with 0 can be confusing at first, but there's reasons why it is ultimately helpful).
+Each item has an 'index'. The first item is index 0, the second is index 1, and so forth (counting starting with 0 can be confusing at first, but there are reasons why it is ultimately helpful).
 
 Printing out the second item (banana) in a tuple or list, for example, is like this:
 
@@ -308,5 +308,5 @@ while True:
 
 Note that whenever the ESP32 turns on it will automatically run the code in `main.py`. However, if you disconnect the ESP32 from Thonny while it's not running, you'll need to either unplug and plug it in again or reset it to make the code start. And in some cases, you may just want your code to restart manually. 
 
-In these cases, press on the small button on the ES32 Feather board to reset.
+In these cases, press the small button on the ES32 Feather board to reset.
 

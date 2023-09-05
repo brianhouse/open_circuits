@@ -81,7 +81,7 @@ while True:
 
 ## <a name="sound"></a> Sound level
 
-You can monitor sound level with the MAX9814. You might keep track of the ambient sound level over time, or look for spikes in the level that cross a particular threshold. Use an analog input (A2, A3, A4, A37).
+You can monitor the sound level with the MAX9814. You might keep track of the ambient sound level over time, or look for spikes in the level that cross a particular threshold. Use an analog input (A2, A3, A4, A37).
 
 ![](img/sound.png)
 

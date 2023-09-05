@@ -1,12 +1,12 @@
 # LEDs
 
-Light-emitting diodes! Connect the long leg (+) of these all purpose lofi lights to a resistor and a GPIO pin (13, 12, 27, 33, 15, 32, 14) and the short leg (-) to ground.
+Light-emitting diodes! Connect the long leg (+) of these all-purpose lofi lights to a resistor and a GPIO pin (13, 12, 27, 33, 15, 32, 14) and the short leg (-) to ground.
 
 - The forward voltage of an LED is how much it takes out of the circuit to turn on.
 - The current of an LED is how bright it's going to be.
 - ...but LEDs don't have any inherent resistance, so an added resistor is always needed to limit the current to prevent a short (aka, no infinite brightness).
 
-For the 3.3v ESP32 and the resistors we have on hand, use an 100ohm resistor (or the smallest you can find).
+For the 3.3v ESP32 and the resistors we have on hand, use a 100ohm resistor (or the smallest you can find).
 
 <!-- To calculate the value of resistor given a 3.3v (ESP32) or 5v (Arduino) supply_voltage:
 `R = (supply_voltage - forward_voltage) / current` (or use a [resistor calculator](https://www.digikey.in/en/resources/conversion-calculators/conversion-calculator-led-series-resistor))

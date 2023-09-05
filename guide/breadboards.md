@@ -1,6 +1,6 @@
 # Breadboards
 
-In order of ease of use, and reverse order of permanency, circuits can be made on a breadboard, soldered onto a prototype board, or printed (a PCB, "Printed Circuit Board"). 
+In order of ease of use, and increasing order of permanency, circuits can be made on a breadboard, soldered onto a prototype board, or printed (a PCB, "Printed Circuit Board"). 
 
 Breadboards are awesome because they let us work through our ideas quickly and reward experimentation. Wires can sometimes pop loose, but that's a small price to pay for not having to undo soldered connections to change something.
 
