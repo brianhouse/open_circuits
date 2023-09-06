@@ -2,13 +2,12 @@
 
 - tell everyone to bring their laptops!
 
-- prep ESPs
 - capacitive pads -- test tin foil
 - 100 ohm resistors -- have?
 
 --> instrument unit is weak
 
-- guide (Zac's suggestions! and additions!)
+- guide additions
 
 
 ## midterm

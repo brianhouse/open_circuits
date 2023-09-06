@@ -90,6 +90,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 3
 
 #### Monday 9/18
+- Safety Trainings
 - Presentations #1
 - Workshop: [Neopixels](guide/neopixels.md)
 - Distribute 303 keys
