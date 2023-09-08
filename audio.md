@@ -57,3 +57,13 @@ that's the thing -- I'm looking for it to go somewhere. not for the sake of the 
 
 hold the phone, there's wav examples on this: https://github.com/miketeachman/micropython-i2s-examples
 
+
+so look, the MAX chip is I2S, the TPA is just an amplifier for PWM. that's the default here, but the instrument is just going to be making square waves, which is not so satisfying. 
+
+...but real synthesis is unlikely, right? unless I make a wavetable library.
+
+playing a wave file could work, but requires an SD card reader. exists?
+
+
+
+

@@ -63,7 +63,7 @@ while True:
 
 ## <a name="pot"></a> Knob (aka potentiometer aka pot)
 
-This is a variable resistor—which means that as you turn the pot, more or less voltage is let through to the measuring pin. Use an analog pin (A2, A3, A4, A37). Pots in a 3.3v system can be jittery, so use a smoother to smooth some of that out.
+This is a variable resistor—which means that as you turn the pot, more or less voltage is let through to the measuring pin. Use an analog pin (A2, A3, A4). Pots in a 3.3v system can be jittery, so use a smoother to smooth some of that out.
 
 ![](img/pot.png)
 

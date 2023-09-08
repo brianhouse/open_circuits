@@ -176,7 +176,7 @@ There are several functions that configure and use the pins on the ESP32.
 
 ### Analog pins
 
-The ESP32 has several analog sensor pins, marked A2, A3, A4, and A37 on board (A0, A1, A5 work slightly differently and are best avoided for now). These names are available as variables in Micropython. To read the voltage from one of these pins, we use a "method", which is a function that is attached to a variable with a dot. Like this:
+The ESP32 has several analog sensor pins, marked A2, A3, A4 (A0, A1, A5 work slightly differently and are best avoided for now). These names are available as variables in Micropython. To read the voltage from one of these pins, we use a "method", which is a function that is attached to a variable with a dot. Like this:
 
 ```py
 value = A0.read()

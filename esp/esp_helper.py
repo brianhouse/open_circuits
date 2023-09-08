@@ -17,9 +17,9 @@ A2 = ADC(Pin(34), atten=ADC.ATTN_11DB)
 A3 = ADC(Pin(39), atten=ADC.ATTN_11DB)
 A4 = ADC(Pin(36), atten=ADC.ATTN_11DB)
 #A5 = ADC(Pin(4), atten=ADC.ATTN_11DB)   # ADC2
-A37 = ADC(Pin(37), atten=ADC.ATTN_11DB)
+#A37 = ADC(Pin(37), atten=ADC.ATTN_11DB)
 
-# I/O Pins: 13 (also LED), 12, 27, 33, 15, 32, 14
+# I/O Pins: 13 (also LED), 12, 27, 33, 15, 32, 14, 21
 def IN(pin_n):
     return Pin(pin_n, Pin.IN)
 

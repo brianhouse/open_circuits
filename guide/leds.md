@@ -1,6 +1,6 @@
 # LEDs
 
-Light-emitting diodes! Connect the long leg (+) of these all-purpose lofi lights to a resistor and a GPIO pin (13, 12, 27, 33, 15, 32, 14) and the short leg (-) to ground.
+Light-emitting diodes! Connect the long leg (+) of these all-purpose lofi lights to a resistor and a GPIO pin (13, 12, 27, 33, 15, 32, 14, 21) and the short leg (-) to ground.
 
 - The forward voltage of an LED is how much it takes out of the circuit to turn on.
 - The current of an LED is how bright it's going to be.

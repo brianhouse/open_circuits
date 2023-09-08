@@ -19,7 +19,7 @@ We will be working with the following sensors:
 
 #### <a name="light"></a> Light Level
 
-A photocell measures the light level. Hook it up with 2k resistor and use an analog input (A2, A3, A4, A37). If the values you get with 2k are too high, reduce the resistor value until the numbers fall within a range that works.
+A photocell measures the light level. Hook it up with 2k resistor and use an analog input (A2, A3, A4). If the values you get with 2k are too high, reduce the resistor value until the numbers fall within a range that works.
 
 
 ![](img/photocell.png)
@@ -38,7 +38,7 @@ while True:
 
 ## <a name="range"></a> Range
 
-Ultrasonic range / distance / presence finder! Detects if something is in front of it, from 6 inches to about 20 feet, at a resolution of about an inch. Use an analog input (A2, A3, A4, A37).
+Ultrasonic range / distance / presence finder! Detects if something is in front of it, from 6 inches to about 20 feet, at a resolution of about an inch. Use an analog input (A2, A3, A4).
 
 ![](img/range.png)
 
@@ -81,7 +81,7 @@ while True:
 
 ## <a name="sound"></a> Sound level
 
-You can monitor the sound level with the MAX9814. You might keep track of the ambient sound level over time, or look for spikes in the level that cross a particular threshold. Use an analog input (A2, A3, A4, A37).
+You can monitor the sound level with the MAX9814. You might keep track of the ambient sound level over time, or look for spikes in the level that cross a particular threshold. Use an analog input (A2, A3, A4).
 
 ![](img/sound.png)
 
@@ -115,7 +115,7 @@ while True:
 
 The ESP32 has the built-in ability to measure the "capacitance" on several of its pins. Hooking a wire from one of these to a conductive surface can therefore serve as a touch sensor that responds to skin contact, liquid level, humidity, or material composition.
 
-Use a GPIO Pin (13, 12, 27, 33, 15, 32, 14). To set up a pin to measure capacitance, use the `CAP()` function.
+Use a GPIO Pin (13, 12, 27, 33, 15, 32, 14, 21). To set up a pin to measure capacitance, use the `CAP()` function.
 
 ![](img/touch.png)
 
@@ -131,7 +131,7 @@ while True:
     sleep(.1)
 
     # threshold-based trigger
-    if value > 100:
+    if value < 100:
         print("Touch is happening!")
 ```
 

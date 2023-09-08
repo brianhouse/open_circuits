@@ -1,9 +1,7 @@
 # TODO
 
-- tell everyone to bring their laptops!
-
+- PIN reference!
 - capacitive pads -- test tin foil
-- 100 ohm resistors -- have?
 
 --> instrument unit is weak
 
