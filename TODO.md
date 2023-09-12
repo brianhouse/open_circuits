@@ -1,9 +1,9 @@
 # TODO
 
-- PIN reference!
-- capacitive pads -- test tin foil
-
+- test USB / BAT with the range sensor
+- is it 2048 or 4096?
 --> instrument unit is weak
+
 
 - guide additions
 
@@ -47,4 +47,9 @@ https://makeabilitylab.github.io/physcomp/
 design thinking? there's tons of pedagogical content around the issues I'm bringing up here that I am leaving by the wayside, or leaving to intuition.
 
 https://www.amazon.com/Make-Wearable-Electronics-prototype-interactive/dp/1449336515
+
+
+
+## next updates
+
 

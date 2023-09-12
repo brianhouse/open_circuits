@@ -84,6 +84,8 @@ The material we will cover for working with electronics can be found online [her
 - Workshop: [breadboards](guide/breadboards.md) and [sensors](guide/sensors.md)
 
 #### Wednesday 9/13
+- LEDs
+- Batteries
 - Breadboards and sensors continued
 
 

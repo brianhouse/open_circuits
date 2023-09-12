@@ -3,10 +3,10 @@ import network, ubinascii, json, random
 from esp32 import hall_sensor
 from machine import ADC, Pin, TouchPad, PWM
 from neopixel import NeoPixel
-from time import sleep, time
+from time import sleep
+from time import ticks_ms as time
 from random import choice
 from random import random as rand
-
 
 # PINS
 # https://learn.adafruit.com/adafruit-esp32-feather-v2/pinouts
@@ -32,7 +32,7 @@ def CAP(pin_n):
 def TONE(pin_n):
     return PWM(OUT(pin_n))
 
-def NEOPIXELS(pin_n=32, num=20, bpp=4):
+def NEOPIXELS(pin_n=32, num=20, bpp=3):
     return NeoPixel(OUT(pin_n), num, bpp)
 
 
@@ -197,6 +197,7 @@ def random(value=None):
         return int(rand() * value)
     else:
         return rand()
+
 
 
 

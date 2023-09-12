@@ -18,7 +18,8 @@ NeoPixel strips have three wires to connect: power, ground, and control. Connect
 ```py
 from esp_helper import *
 
-pixels = NEOPIXELS(32)   # create NeoPixel driver on pin 32 and get a list of pixels
+pixels = NEOPIXELS(32, 20, 3)   # create NeoPixel driver on pin 32 for 20 RGB pixels
+                                # get a list of pixels in return
 
 while True:
     for i in range(20):         # there are 20 pixels in our strip        
