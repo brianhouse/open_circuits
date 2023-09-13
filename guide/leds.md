@@ -1,12 +1,3 @@
-from esp_helper import *
-
-led = OUT(21)
-
-while True:
-    led.on()
-    sleep(1)
-    led.off()
-    sleep(1)
 # LEDs
 
 Light-emitting diodes! Connect the long leg (+) of these all-purpose lofi lights to a resistor and a GPIO pin (13, 12, 27, 33, 15, 32, 14, 21) and the short leg (-) to ground.
