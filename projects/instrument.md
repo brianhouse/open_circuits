@@ -13,12 +13,14 @@ How you design the relationship between the interface and the output is most imp
 
 ## Proposal
 
-Your proposal should be a Google Slides or Keynote presentation that consists of:
+Your proposal should be a Google Slides / Keynote / PowerPoint presentation that consists of:
 - An explanation of the concept you want to explore
 - Three artistic precedents that we've seen in class or that you've independently researched
 - Your idea
 - The technical approach you are planning on taking
 - What materials you are planning on using
+
+Turn in your proposal on Moodle and be prepared to talk about it in class.
 
 
 ## Documentation
