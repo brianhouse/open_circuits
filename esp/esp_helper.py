@@ -3,10 +3,8 @@ import network, ubinascii, json, random
 from esp32 import hall_sensor
 from machine import ADC, Pin, TouchPad, PWM
 from neopixel import NeoPixel
-from time import sleep
-from time import ticks_ms as time
-from random import choice
-from random import random as rand
+from time import sleep, ticks_ms
+from random import random, randint, choice
 
 # PINS
 # https://learn.adafruit.com/adafruit-esp32-feather-v2/pinouts
@@ -190,13 +188,6 @@ class Smoother():
 def map(value, in_min, in_max, out_min, out_max):
     value = (value - in_min) / float(in_max - in_min)
     return (value * (out_max - out_min)) + out_min
-
-
-def random(value=None):
-    if value is not None:
-        return int(rand() * value)
-    else:
-        return rand()
 
 
 

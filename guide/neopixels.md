@@ -23,7 +23,7 @@ pixels = NEOPIXELS(32, 20, 3)   # create NeoPixel driver on pin 32 for 20 RGB pi
 
 while True:
     for i in range(20):         # there are 20 pixels in our strip        
-        pixels[i] = random(255), random(255), random(255)   # pick a random color
+        pixels[i] = randint(0, 255), randint(0, 255), randint(0, 255)   # pick a random color
     pixels.write()              # write data to all pixels
     sleep(.5)                   # wait a half second
 ```

@@ -92,15 +92,16 @@ You can monitor the sound level with the MAX9814. You might keep track of the am
 ```py
 from esp_helper import *
 
-window = 50 / 1000.0 # sample for 50ms if testing for a threshold
-window = 1.0    # sample for 1 second if monitoring ambient level
+# comment one of these out
+window = 1000    # sample for 1 second (1000ms) if monitoring ambient level
+window = 50      # sample for 50ms if testing for a threshold
 
 while True:
-    start_time = time()
+    start_time = ticks_ms()
     high = 0
     low = 4096
 
-    while time() - start_time < window:
+    while ticks_ms() - start_time < window:
         sample = A2.read()
         if sample > high:
             high = sample

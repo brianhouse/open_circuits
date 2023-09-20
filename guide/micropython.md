@@ -97,12 +97,12 @@ A particularly useful function is `sleep()`, which makes the microcontroller wai
 sleep(1) # wait one second
 ```
 
-### `time()`
+### `ticks_ms()`
 
-On a computer, `time()` returns the number of seconds that have elapsed since January 1st, 1970. However, when a microcontroller like the ESP32 is turned on, it has no idea what the date is. So it will pick an arbitrary number and start counting seconds up from there. You can use it to determine how much time has elapsed. For example:
+This returns the number of milliseconds since the microcontroller was powered on. You can use it to determine how much time has elapsed. For example:
 ```py
-start_time = time()
-while time() - start_time < 10:
+start_time = ticks_ms()
+while ticks_ms() - start_time < 10000: # wait 10 seconds (10000 milliseconds)
     print("Still waiting...")
     # do other stuff
 
@@ -111,10 +111,8 @@ print("10 seconds have elapsed!")
 
 ## Indeterminacy
 
-
 ### `random()`
 
-Returns a random value. Without an argument, this value is a decimal number between 0 and 1:
 ```py
 # print a random number between 0 and 1 every second
 while True:
@@ -123,12 +121,14 @@ while True:
     sleep(1)
 ```
 
-With an argument, this value is an integer between 0 and the given number:
 
+### `randint()`
+
+Returns a random integer.
 ```py
 # print a random integer between 0 and 100 every second
 while True:
-    r = random(100)
+    r = randint(0, 100)
     print(r)
     sleep(1)
 ```
