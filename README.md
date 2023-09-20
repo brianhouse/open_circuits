@@ -98,18 +98,20 @@ The material we will cover for working with electronics can be found online [her
 - Distribute 303 keys
 
 #### Wednesday 9/20
+<!-- distribute keys -->
+<!-- materials purchasing -->
 - Workshop: Sound with [piezos](guide/piezos.md)
+- Begin [Responsive Object](projects/responsive_object.md) project
 
 
 ### Week 4
 
 #### Monday 9/25
 - Presentations #2
-- Begin [Responsive Object](projects/responsive_object.md) project
+- Responsive Object proposals due
 - Work time
 
 #### Wednesday 9/27
-- Responsive Object proposals due
 - Work time
 
 
