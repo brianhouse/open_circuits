@@ -11,12 +11,14 @@ Conceptually, your project should address themes of social dynamics in some way,
 
 ## Proposal
 
-Your proposal should be a Google Slides or Keynote presentation that consists of:
+Your proposal should be a Google Slides / Keynote / PowerPoint presentation that consists of:
 - An explanation of the concept you want to explore
 - Three artistic precedents that we've seen in class or that you've independently researched
 - Your idea
 - The technical approach you are planning on taking
 - What materials you are planning on using
+
+Turn in your proposal on Moodle and be prepared to talk about it in class.
 
 
 ## Documentation
