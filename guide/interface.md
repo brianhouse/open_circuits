@@ -99,3 +99,10 @@ while True:
 
     sleep(.01)
 ```
+
+<!-- WORKSHOP
+
+Use LEDs for buttons
+Use Neopixels or Piezo for knobs
+
+-->

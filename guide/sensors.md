@@ -54,17 +54,19 @@ Some additional math is used to convert the sensor reading to feet. This makes i
 ```py
 from esp_helper import *
 
-smoother = Smoother(3)   # create a smoother (averages over N values)
+smoother = Smoother(5)   # create a smoother (averages over N values)
 triggered = False
 
 while True:
 
-    # map voltage to inches
-    value = map(A2.read(), 0, 2048, 6, 254)  / 12.0 # make it feet
+    # map voltage to feet
+    value = map(A3.read(), 0, 4095, 1, 50) # (use 30 if using USB as power pin)
 
     # smooth out subsequent values
     value = smoother.smooth(value)
-    print(value)    
+
+    print(0, 20, value)
+    # (printing 0 and 20 to keep the range of Thonny's plotter stable)
 
     # sleep for stability
     sleep(.1)
@@ -77,7 +79,6 @@ while True:
             triggered = True
     else:
         triggered = False
-
 ```
 
 
@@ -139,3 +140,8 @@ while True:
 ```
 
 
+<!-- WORKSHOP
+
+Just use plotter to see results. But anticipate LEDs next class.
+
+-->

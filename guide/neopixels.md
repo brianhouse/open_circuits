@@ -42,6 +42,13 @@ Connect power and ground with a 0.1 µF capacitor between them. Then connect the
 Note that you can chain several individual NeoPixels together by connecting the "Data Out" pin of one to the "Data In" pin of the next. This way, they all share the same GPIO pin, just like a NeoPixel strip. They all need a separate capacitor, however, and they'll need to be wired to power and ground individually.
 
 
+<!-- WORKSHOP
+
+Make an animated pattern
+
+-->
+
+
 <!-- ## Long strips
 
 Separate power supply, 5V DC

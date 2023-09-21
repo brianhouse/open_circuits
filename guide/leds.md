@@ -39,3 +39,12 @@ while True:
     led.off()
     sleep(1)
 ```
+
+
+<!-- WORKSHOP
+
+Make an LED light with a sensor
+EG, a handclap, or if you get to close, or depending on light level
+
+-->
+

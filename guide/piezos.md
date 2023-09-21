@@ -10,6 +10,7 @@ Hookup is simple—connect the piezo to ground and to a GPIO pin of your choice.
 
 ###### Code
 
+Play a major scale:
 ```py
 from esp_helper import *
 
@@ -42,6 +43,44 @@ beeper.freq(R)
 beeper.deinit()
 
 ```
+
+Random robot:
+```py
+from esp_helper import *
+from random import randint
+
+beeper = TONE(27)
+
+while True:
+    beeper.freq(randint(500, 10000))     # random frequency between 500 and 10,000
+    sleep(map(randint(1, 100) / 100.0)   # sleep a random duration between .01 and 1 seconds
+
+beeper.freq(1)
+beeper.deinit()
+```
+
+Mapping a sensor value to frequency:
+```py
+from esp_helper import *
+
+beeper = TONE(27)
+
+while True:
+    sensor_value = A2.read()
+    frequency = map(sensor_value, 0, 4095, 100, 1000)  # scale 0–4095 to 0–10
+    beeper.freq(frequency)
+    sleep(.1)
+
+beeper.freq(1)
+beeper.deinit()
+```
+
+
+<!-- WORKSHOP
+
+Make a cool changing sound or melody
+
+-->
 
 
 
