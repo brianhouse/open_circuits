@@ -219,9 +219,13 @@ The material we will cover for working with electronics can be found online [her
 
 ### Week 14
 
-#### Monday 5/8
+#### Monday 12/11
 - Final project check-in
 - Work time
+
+#### Wednesday 12/13
+- Work Time / TBD
+
 
 #### Exam Week
 - Final project crit

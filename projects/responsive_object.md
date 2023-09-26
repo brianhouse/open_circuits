@@ -16,6 +16,7 @@ Your proposal should be a Google Slides / Keynote / PowerPoint presentation that
 - Your idea
 - The technical approach you are planning on taking
 - What materials you are planning on using
+- Questions for the class regarding your idea or its execution
 
 Turn in your proposal on Moodle and be prepared to talk about it in class.
 
