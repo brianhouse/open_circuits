@@ -1,6 +1,6 @@
 # Instrument
 
-For this project, you will make an instrument that you will use to perform.
+For this project, you will make an "instrument" that you will use to "perform."
 
 "Instrument" is loosely defined. It can be musical in a traditional sense, or it can just make abstract noise. Or it might not make noise at all—its output might be lights.
 

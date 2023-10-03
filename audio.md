@@ -114,3 +114,40 @@ missing the USB though, with power.
 what other things can I make?
 
 
+//
+
+DIN 14
+BCLK 32
+LRC 15
+
+///
+
+MAX98357A I2S breakout:
+LRC (Left/Right Clock) - this is the pin that tells the amplifier when the data is for the left channel and when its for the right channel
+BCLK (Bit Clock) - This is the pin that tells the amplifier when to read data on the data pin.
+DIN (Data In) - This is the pin that has the actual data coming in, both left and right data are sent on this pin, the LRC pin indicates when left or right is being transmitted
+GAIN	Can change gain setting with resistors
+SD		Shutdown and channel select                  ---> do I need to connect this or no?
+Vin 	Power
+GND		Ground
+
+15dB if a 100K resistor is connected between GAIN and GND
+12dB if GAIN is connected directly to GND                       <-- do this one
+9dB if GAIN is not connected to anything (this is the default)
+6dB if GAIN is connected directly to Vin
+3dB if a 100K resistor is connected between GAIN and Vin
+
+If SD is connected to ground directly (voltage is under 0.16V) then the amp is shut down
+If the voltage on SD is between 0.16V and 0.77V then the output is (Left + Right)/2, that is the stereo average. 
+If the voltage on SD is between 0.77V and 1.4V then the output is just the Right channel
+If the voltage on SD is higher than 1.4V then the output is the Left channel.
+
+///
+
+From the ESP32
+sck_pin   # Serial clock output   ---> BCLK
+ws_pin    # Word clock output     ---> LRC ??
+sd_pin    # Serial data output    ---> DIN
+
+
+<!-- https://learn.sparkfun.com/tutorials/i2s-audio-breakout-hookup-guide/all -->

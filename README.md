@@ -123,8 +123,12 @@ The material we will cover for working with electronics can be found online [her
 - Work time
 
 #### Wednesday 10/4
-- Responsive Object crit
-<!-- - start with switches -->
+- Responsive Object work-in-progress
+<!-- 
+neopixel connectors
+soldering
+documentation
+ -->
 
 
 ### Week 6
@@ -132,12 +136,13 @@ The material we will cover for working with electronics can be found online [her
 #### Monday 10/9: Mid-Semester Break, no class
 
 #### Wednesday 10/11
-- Workshop: [buttons, toggles, and knobs](guide/interface.md)
+- Responsive Object final crit
 
 ### Week 7
 
 #### Monday 10/16
 - Presentations #4
+- Workshop: [buttons, toggles, and knobs](guide/interface.md)
 - Workshop: [IMUs](guide/imu.md)
 
 #### Wednesday 10/18
@@ -148,11 +153,12 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 10/23
 - Presentations #5
-- Begin [Instrument](projects/instrument.md) project
+- Laser cutting exercise due
+- Workshop: servos
 - Work time
 
 #### Wednesday 10/25
-- Instrument project proposals due
+- Workshop: servos continued
 - Work time
 
 
@@ -160,11 +166,10 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 10/30
 - Presentations #6
-- Instrument project check-in
-- Work time
+- Project #2 discussion
 
 #### Wednesday 11/1
-- Instrument project crit
+- Project #2 proposals due
 - Midterm review meetings
 
 
@@ -172,21 +177,21 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 11/6
 - Presentations #7
-- Workshop: [peer-to-peer networking](guide/networking.md)
+- Project #2 check-in
 
 #### Wednesday 11/8
-- Workshop: [servos (motors)](guide/servos.md)
+- Workshop: prototype boards
+- Work time
 
 
 ### Week 11
 
 #### Monday 11/13
 - Presentations #8
-- Begin [Entanglement](projects/entanglement.md) project
 - Work time
 
 #### Wednesday 11/15
-- Begin Entanglement project proposal due
+- Project #2 final crit
 - Work time
 
 
@@ -197,37 +202,35 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 11/27
 - Presentations #9
-- Entanglement project check-in
-- Work time
+- Workshop: [peer-to-peer networking](guide/networking.md)
+- Project #3 discussion
 
 #### Wednesday 11/29
 - Entanglement project crit
-- Start [Final project](projects/final.md)
-- Final project discussion
+- Project #3 proposals
 - Work time
 
 ### Week 13
 
 #### Monday 12/4
 - Presentations #10
-- Final project proposals due
 - Work time
 
 #### Wednesday 12/6
 - Work time
+- Project #3 work-in-progress
 
 
 ### Week 14
 
 #### Monday 12/11
-- Final project check-in
 - Work time
 
 #### Wednesday 12/13
-- Work Time / TBD
+- Project #3 check-in
 
 
 #### Exam Week
-- Final project crit
+- Final project final crit
 
 
