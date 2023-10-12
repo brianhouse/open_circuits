@@ -230,7 +230,9 @@ documentation
 - Project #3 check-in
 
 
-#### Exam Week
+### Exam Week
+
+#### Final Crit 12/18 9am–12pm
 - Final project final crit
 
 

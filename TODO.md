@@ -8,6 +8,21 @@
 - guide additions
 
 
+dont touch the hot part
+feed it in
+electrical tape
+
+
+"sensors vs actuators"
+
+https://medium.com/spatial-pixel/periodic-table-of-spatial-computing-3f40ed162b2e
+
+/
+
+
+dont need to save files to the microcontroller -- better, because then no need to back up
+
+
 ## midterm
 
 What does a midterm meeting consist of?
