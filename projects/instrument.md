@@ -28,4 +28,4 @@ Turn in your proposal on Moodle and be prepared to talk about it in class.
 
 In addition to demoing your instrument during critique, the final deliverable for your project will consist of a title, 3-sentence artist description, and a short documentation video. These should be uploaded to Moodle prior to the crit.
 
-Your video should be 1–2 mins long. You may use your phone, but film in **landscape** and use a tripod (tripods are available in 303). You do not need titles or a spoken explanation—your performance should demonstrate the capabilities of your instrument (and include close-up shots of its interface).
+Your video should be 1–2 mins long. You may use your phone, but film in **landscape**, [use AE/AF Lock](https://improvephotography.com/53127/what-is-ae-af-lock-on-an-iphone-and-how-does-that-help-my-pictures/), and use a tripod (tripods are available in 303). You do not need titles or a spoken explanation—your performance should demonstrate the capabilities of your instrument (and include close-up shots of its interface).

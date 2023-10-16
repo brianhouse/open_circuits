@@ -25,7 +25,7 @@ Turn in your proposal on Moodle and be prepared to talk about it in class.
 
 In addition to presenting your object itself for critique, the final deliverable for your project will consist of a title, 3-sentence artist description, and a short documentation video. These should be uploaded to Moodle prior to the crit.
 
-Your video should be 1–2 mins long. You may use your phone, but film in **landscape** and use a tripod (tripods are available in 303). You do not need titles or a spoken explanation—visually tell the story of how your object is working.
+Your video should be 1–2 mins long. You may use your phone, but film in **landscape**, [use AE/AF Lock](https://improvephotography.com/53127/what-is-ae-af-lock-on-an-iphone-and-how-does-that-help-my-pictures/), and use a tripod (tripods are available in 303). You do not need titles or a spoken explanation—visually tell the story of how your object is working.
 
 
 
