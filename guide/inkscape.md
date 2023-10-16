@@ -7,7 +7,7 @@ Inkscape is a free vector graphics editor for GNU/Linux, Windows and macOS. You 
 
 ## Set Up
 
-1. Download [GlowforgeTemplate.svg](GlowforgeTemplate.svg)
+1. Download [GlowforgeTemplate.svg](cuts/GlowforgeTemplate.svg)
 1. Open GlowforgeTemplate.svg using Inkscape
 1. Choose `File > Save Template...`, call it "Glowforge Template" and make sure `Set as default template` is checked
 1. Close the file
@@ -15,7 +15,8 @@ Inkscape is a free vector graphics editor for GNU/Linux, Windows and macOS. You 
 
 ## Examples
 
-1. Box with puzzle sides: [box.svg](box.svg)
+1. Box with puzzle sides: [box.svg](cuts/box.svg)
+1. Holes to fit regular and micro servos: [servos.svg](cuts/servos.svg)
 
 ## Creation
 
