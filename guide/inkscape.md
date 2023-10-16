@@ -13,6 +13,10 @@ Inkscape is a free vector graphics editor for GNU/Linux, Windows and macOS. You 
 1. Close the file
 1. Select `File > New` — you should see a light orange grid
 
+## Examples
+
+1. Box with puzzle sides: [box.svg](box.svg)
+
 ## Creation
 
 Understand what you are planning on creating. You should know the answers to these questions: What are you making? How big will it be? What parts will be cut/engraved/scored?
