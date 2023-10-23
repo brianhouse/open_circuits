@@ -64,7 +64,7 @@ Ideas?
 
 ## Inkscape template
 
-[box.svg](cuts/box.svg)
+[servos.svg](cuts/servos.svg)
 
 
 <!-- 
