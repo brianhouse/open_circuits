@@ -62,6 +62,11 @@ wheel.stop()			# stop the wheel
 Ideas?
 
 
+## Inkscape template
+
+[box.svg](cuts/box.svg)
+
+
 <!-- 
 
 https://learn.adafruit.com/adafruit-8-channel-pwm-or-servo-featherwing
