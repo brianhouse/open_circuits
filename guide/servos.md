@@ -49,7 +49,10 @@ start_servos() 			# start the servos
 wheel = Servo(0)		# set up a new continuous servo, called "wheel", plugged into slot 0
 
 wheel.speed(1)			# go top speed in one direction, and then go in the other
+sleep(1)
+
 wheel.speed(-1)
+sleep(1)
 
 wheel.stop()			# stop the wheel
 ```
