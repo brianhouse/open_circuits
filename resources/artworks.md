@@ -38,3 +38,10 @@ Add to this list!
 
 
 <!-- https://www.pinterest.com/annlepore/physical-computing/ -->
+
+<!--
+Can't Help Myself
+https://www.guggenheim.org/teaching-materials/teaching-modern-and-contemporary-asian-art/sun-yuan-孙-原-and-peng-yu-彭-禹
+
+get rid of some that are too tech-world centric
+-->

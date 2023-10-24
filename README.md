@@ -142,11 +142,12 @@ documentation
 
 #### Monday 10/16
 - Presentations #4
-- Workshop: [buttons, toggles, and knobs](guide/interface.md)
-- Workshop: [IMUs](guide/imu.md)
+- Workshop: laser cutting
+<!-- - Workshop: [buttons, toggles, and knobs](guide/interface.md)
+- Workshop: [IMUs](guide/imu.md) -->
 
 #### Wednesday 10/18
-- Workshop: laser cutting
+- Workshop: laser cutting continued
 
 
 ### Week 8
@@ -158,7 +159,9 @@ documentation
 - Work time
 
 #### Wednesday 10/25
+- Workshop: [buttons, toggles, and knobs](guide/interface.md)
 - Workshop: servos continued
+- Begin [Dynamic Being](projects/dynamic_being.md) project
 - Work time
 
 
@@ -166,22 +169,22 @@ documentation
 
 #### Monday 10/30
 - Presentations #6
-- Project #2 discussion
+- Dynamic Being proposals due
+- Work time
 
 #### Wednesday 11/1
-- Project #2 proposals due
 - Midterm review meetings
+- Work time
 
 
 ### Week 10
 
 #### Monday 11/6
 - Presentations #7
-- Project #2 check-in
 
 #### Wednesday 11/8
-- Workshop: prototype boards
 - Work time
+- Dynamic Being check-in
 
 
 ### Week 11
@@ -191,7 +194,7 @@ documentation
 - Work time
 
 #### Wednesday 11/15
-- Project #2 final crit
+- Dynamic Being final crit
 - Work time
 
 
@@ -202,32 +205,34 @@ documentation
 
 #### Monday 11/27
 - Presentations #9
+- Final project discussion
 - Workshop: [peer-to-peer networking](guide/networking.md)
-- Project #3 discussion
 
 #### Wednesday 11/29
-- Entanglement project crit
-- Project #3 proposals
+- Workshop: peer-to-peer networking, continued
 - Work time
+
 
 ### Week 13
 
 #### Monday 12/4
+- Final project proposals due
 - Presentations #10
+- Workshop: prototype boards
 - Work time
 
 #### Wednesday 12/6
 - Work time
-- Project #3 work-in-progress
 
 
 ### Week 14
 
 #### Monday 12/11
 - Work time
+- Final project work-in-progress crits
 
 #### Wednesday 12/13
-- Project #3 check-in
+- Work time
 
 
 ### Exam Week

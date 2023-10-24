@@ -1,6 +1,6 @@
 # Entanglement
 
-For this project, you will build two entities that communicate with one another and move in response.
+For this project, you will build two entities that communicate with one another using the wifi capability of two ESP32s. 
 
 Using the wifi capability of two ESP32s, your entities will exchange messages. These messages could consist of data from sensors (the environment), information about internal states (thoughts?), intentions, or anything else that can be expressed in a small amount of transmittable data.
 
