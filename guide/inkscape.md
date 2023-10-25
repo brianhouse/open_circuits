@@ -16,7 +16,9 @@ Inkscape is a free vector graphics editor for GNU/Linux, Windows and macOS. You 
 ## Examples
 
 1. Box with puzzle sides: [box.svg](cuts/box.svg)
-1. Holes to fit regular and micro servos: [servos.svg](cuts/servos.svg)
+1. Holes that fit regular and micro servos: [servos.svg](cuts/servos.svg)
+1. Holes that fit a panel pushbutton, a potentiometer/knob, and a panel switch: [interface_elements.svg](cuts/interface_elements.svg)
+1. Holes that fit a 5mm LED and an 8mm single Neopixel: [lights.svg](cuts/lights.svg)
 
 ## Creation
 
