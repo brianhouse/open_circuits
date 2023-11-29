@@ -39,3 +39,23 @@ while True:
     sleep(1)
 ```
 
+
+# Getting on the Internet
+
+THe ESP32 can also get on the internet! It just has to connect to an access point. That said, many access points will not work—"Amherst Guest", for example, has a portal page that will be difficult to for the ESP32 to navigate, and "eduroam" needs to have a MAC address authenticated with IP. But a phone hotspot might be a workable alternative.
+
+See https://realpython.com/python-requests/#the-response for info about how to handle responses.
+
+###### Code
+
+```py
+from esp_helper import *
+
+start_wifi()
+connect('SSID', 'password') # replace with the access point name and password
+
+r = get("https://www.amherst.edu")
+print(r.text)
+
+sleep(1)
+```

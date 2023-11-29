@@ -5,6 +5,7 @@ from machine import ADC, Pin, TouchPad, PWM
 from neopixel import NeoPixel
 from time import sleep, ticks_ms
 from random import random, randint, choice
+from urequests import get, post
 
 # PINS
 # https://learn.adafruit.com/adafruit-esp32-feather-v2/pinouts
@@ -46,18 +47,35 @@ LED = OUT(13)
 peers = []
 
 def start_wifi():
-    global e
+    global mesh
+    global sta
     sta = network.WLAN(network.STA_IF)
     sta.active(True)
     print("MAC address is", bin_to_hex(sta.config('mac')))
-    e = espnow.ESPNow()
-    e.active(True)
+    mesh = espnow.ESPNow()
+    mesh.active(True)
 
+def connect(ssid, pw):
+    try:
+        if not sta.isconnected():
+            print("Connecting to network...")
+            try:
+                sta.connect(ssid, pw)
+            except Exception as e:
+                print(e)
+            while not sta.isconnected():
+                print("...not connected")
+                sleep(1)
+        print("Network config:", sta.ifconfig())
+    except NameError as e:
+        print(e)
+        print("Wifi not started")
+    
 def send(message):
     try:
         for peer in peers:
             try:
-                e.send(peer, message)
+                mesh.send(peer, message)
             except Exception as exc:
                 print("Can't send to", bin_to_hex(peer))
     except NameError:
@@ -65,7 +83,7 @@ def send(message):
 
 def receive():
     try:
-        sender, msg = e.recv(0)
+        sender, msg = mesh.recv(0)
         if msg and sender in peers:
             return bin_to_hex(sender), msg.decode()
         else:
@@ -76,7 +94,7 @@ def receive():
 def add_peer(hex_mac):
     try:
         bin_mac = hex_to_bin(hex_mac)
-        e.add_peer(bin_mac)
+        mesh.add_peer(bin_mac)
         peers.append(bin_mac)
     except NameError:
         raise Exception("Wifi not started")        
@@ -188,6 +206,8 @@ class Smoother():
 def map(value, in_min, in_max, out_min, out_max):
     value = (value - in_min) / float(in_max - in_min)
     return (value * (out_max - out_min)) + out_min
+
+
 
 
 
