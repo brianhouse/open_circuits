@@ -21,22 +21,21 @@ from esp_helper import *
 start_wifi()
 add_peer("24:6F:28:5F:0C:B8")  # change address for the second ESP32
 
-i = 0
 while True:
 
-    sender, message = receive()
-    if message:
-        print("Received", message, "from", sender)
-        LED.on()
-        sleep(1)
-        LED.off()
+    sender, in_message = receive()
+    if in_message:
+        print("Received", in_message, "from", sender)
+        if in_message == "ON":
+            LED.on()
+        if in_message == "OFF":
+            LED.off()
     
-    message = str(i)
-    print("Sending", message)
-    send(message)
+
+    out_message = choice(["ON", "OFF"])
+    print("Sending", out_message)
+    send(out_message)
     
-    i += 1
-    i %= 100
     sleep(1)
 ```
 

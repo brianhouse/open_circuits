@@ -1,3 +1,8 @@
+policies and rules around materials
+no painting except gouach, etc
+clean up main tables after use
+tools don't leave
+
 
 there's room for readings and discussion during times when there's not a project (same goes for sound art)
 
@@ -20,6 +25,11 @@ prosthetics, disability studies
 replace piezo with motors right off the bat to use as an output?
 
 
+need examples of servo mechanics -- how to hook it up and how to make it move
+
+beware sticking something into the RST jack
+
+
 
 ///
 
@@ -30,8 +40,27 @@ once that's fixed, could uprade controllers to v2
 
 //
 
-entanglement is pretty good.
 
-so maybe it's
-- responsive object
-- 
+continuous rotation control seems iffy
+
+
+//
+
+
+projects, what's good:
+floaters
+afrodidti
+esparza
+
+what's not:
+- design things, sobecka puff
+
+//
+
+
+physical space:
+- individual organized temp space and individual organized display space
+- materials storage
+- glowforge materials management for scraps (proper bin, for big and for small)
+
+

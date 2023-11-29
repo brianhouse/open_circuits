@@ -34,7 +34,7 @@ Each student will give two 10-minute presentations on an artwork involving elect
 Each week we will read critical texts that situate technology in society. Reading is due on the day where the text is listed; a reading response must be submitted before class via Moodle. This can be a question raised by the text, a critique of it, a link to related artistic work, or some other brief comment which can stimulate our discussion. -->
 
 ### Participation
-Attendance is mandatory, and motivated and mindful participation in crit and classroom disscussion is expected.
+Attendance is mandatory, and motivated and mindful participation in crit and classroom discussion is expected.
 
 ### Grading
 In this course, you are expected to earnestly engage in the practice of studio artmaking, and doing so is the basis of your grade at the discretion of the professor. In other words, your grade is about process, not about product. Completing all work on time and participating in class is the baseline standard. Beyond grades, your work will be evaluated subjectively via peer critique and feedback from the instructor, and you are expected to incorporate that feedback into your future work while pursuing your own creative direction. Midway through the semester, students will meet individually with the professor to track their progress.
@@ -205,12 +205,13 @@ documentation
 
 #### Monday 11/27
 - Presentations #9
-- Final project discussion
 - Workshop: [peer-to-peer networking](guide/networking.md)
 
 #### Wednesday 11/29
 - Workshop: peer-to-peer networking, continued
+- Final project discussion
 - Work time
+- (Dynamic Being documentation due Friday)
 
 
 ### Week 13

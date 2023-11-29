@@ -148,7 +148,7 @@ class Servo():
     def position(self, degrees):
         try:
             current_duty = servos.position(self.id)
-            current_degrees = map(current_duty, 491, 1965, 0, 180)
+            current_degrees = map(current_duty, 491, 1965, 0.0, 180.0)
             delta_degrees = abs(degrees - current_degrees)
             servos.position(self.id, degrees)
             sleep(.0035 * delta_degrees)
@@ -157,7 +157,7 @@ class Servo():
 
     def speed(self, speed):
         try:
-            servos.position(self.id, (speed * 90) + 90)
+            servos.position(self.id, (speed * 90.0) + 90)
         except NameError:
             raise Exception("Servos not started")
 
@@ -188,6 +188,7 @@ class Smoother():
 def map(value, in_min, in_max, out_min, out_max):
     value = (value - in_min) / float(in_max - in_min)
     return (value * (out_max - out_min)) + out_min
+
 
 
 
