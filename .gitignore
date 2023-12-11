@@ -1,3 +1,5 @@
 .DS_Store
 dev
 students*
+__pycache__
+venv
