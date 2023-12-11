@@ -24,7 +24,7 @@ add_peer("24:6F:28:5F:0C:B8")  # change address for the second ESP32
 while True:
 
     sender, in_message = receive()
-    if in_message:
+    if in_message is not None:
         print("Received", in_message, "from", sender)
         if in_message == "ON":
             LED.on()

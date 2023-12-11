@@ -30,6 +30,9 @@ need examples of servo mechanics -- how to hook it up and how to make it move
 beware sticking something into the RST jack
 
 
+minimum line size in Inkscape
+
+
 
 ///
 
@@ -64,3 +67,7 @@ physical space:
 - glowforge materials management for scraps (proper bin, for big and for small)
 
 
+
+connectors to horns
+
+max limits on draftboard

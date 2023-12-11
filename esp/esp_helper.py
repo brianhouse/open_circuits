@@ -1,5 +1,5 @@
 import esp32, espnow, machine
-import network, ubinascii, json, random
+import network, ubinascii, json, random, socket
 from esp32 import hall_sensor
 from machine import ADC, Pin, TouchPad, PWM
 from neopixel import NeoPixel
@@ -49,11 +49,13 @@ peers = []
 def start_wifi():
     global mesh
     global sta
+    global udp
     sta = network.WLAN(network.STA_IF)
     sta.active(True)
     print("MAC address is", bin_to_hex(sta.config('mac')))
     mesh = espnow.ESPNow()
     mesh.active(True)
+    udp = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)            
 
 def connect(ssid, pw):
     try:
@@ -70,6 +72,17 @@ def connect(ssid, pw):
     except NameError as e:
         print(e)
         print("Wifi not started")
+
+def send_udp(ip, message, port=5005):
+    try:
+        if not sta.isconnected():
+            print("Network not connected")
+            return        
+        udp.sendto(str(message).encode('utf-8'), (ip, port))
+    except NameError:
+        raise Exception("Wifi not started")
+    except Exception as e:
+        print("Error:", e)    
     
 def send(message):
     try:
@@ -206,6 +219,7 @@ class Smoother():
 def map(value, in_min, in_max, out_min, out_max):
     value = (value - in_min) / float(in_max - in_min)
     return (value * (out_max - out_min)) + out_min
+
 
 
 
