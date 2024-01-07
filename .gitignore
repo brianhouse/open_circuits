@@ -3,3 +3,7 @@ dev
 students*
 __pycache__
 venv
+presentations
+student_work
+*.mov
+*.mp4

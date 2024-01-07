@@ -1,3 +1,9 @@
+if we use V2, could use this to boost volume:
+https://www.adafruit.com/product/5791
+(can only use V2 if micropython + servo breakout is compatible)
+
+/
+
 policies and rules around materials
 no painting except gouach, etc
 clean up main tables after use
@@ -71,3 +77,15 @@ physical space:
 connectors to horns
 
 max limits on draftboard
+
+//
+
+heat shrink
+heat guns
+
+common resource wiki 
+
+short readings ok 
+
+
+make a notch for draftboard usage, honor system tracking 
