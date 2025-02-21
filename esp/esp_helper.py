@@ -1,6 +1,6 @@
 import esp32, espnow, machine
 import network, ubinascii, json, random, socket
-from esp32 import hall_sensor
+from esp32 import hall_sensor   ## they took out the hall sensor on recent firmware
 from machine import ADC, Pin, TouchPad, PWM
 from neopixel import NeoPixel
 from time import sleep, ticks_ms
