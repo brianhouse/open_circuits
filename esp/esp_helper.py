@@ -1,6 +1,6 @@
 import esp32, espnow, machine
 import network, ubinascii, json, random, socket
-from esp32 import hall_sensor   ## they took out the hall sensor on recent firmware
+from esp32 import hall_sensor  # they took out the hall sensor on recent firmware
 from machine import ADC, Pin, TouchPad, PWM
 from neopixel import NeoPixel
 from time import sleep, ticks_ms
@@ -10,33 +10,38 @@ from urequests import get, post
 # PINS
 # https://learn.adafruit.com/adafruit-esp32-feather-v2/pinouts
 
-#A0 = ADC(Pin(26), atten=ADC.ATTN_11DB)  # ADC2
-#A1 = ADC(Pin(25), atten=ADC.ATTN_11DB)  # ADC2
+# A0 = ADC(Pin(26), atten=ADC.ATTN_11DB)  # ADC2
+# A1 = ADC(Pin(25), atten=ADC.ATTN_11DB)  # ADC2
 A2 = ADC(Pin(34), atten=ADC.ATTN_11DB)
 A3 = ADC(Pin(39), atten=ADC.ATTN_11DB)
 A4 = ADC(Pin(36), atten=ADC.ATTN_11DB)
-#A5 = ADC(Pin(4), atten=ADC.ATTN_11DB)   # ADC2
-#A37 = ADC(Pin(37), atten=ADC.ATTN_11DB)
+# A5 = ADC(Pin(4), atten=ADC.ATTN_11DB)   # ADC2
+# A37 = ADC(Pin(37), atten=ADC.ATTN_11DB)
+
 
 # I/O Pins: 13 (also LED), 12, 27, 33, 15, 32, 14, 21
 def IN(pin_n):
     return Pin(pin_n, Pin.IN)
 
+
 def OUT(pin_n):
     return Pin(pin_n, Pin.OUT)
+
 
 def CAP(pin_n):
     return TouchPad(Pin(pin_n))
 
+
 def TONE(pin_n):
     return PWM(OUT(pin_n))
+
 
 def NEOPIXELS(pin_n=32, num=20, bpp=3):
     return NeoPixel(OUT(pin_n), num, bpp)
 
 
-SCL = 22 # orig esp32 is 22, v2 is 20, but micropython cant use 20
-SDA = 23 # orig esp32 is 23
+SCL = 22  # orig esp32 is 22, v2 is 20, but micropython cant use 20
+SDA = 23  # orig esp32 is 23
 LED = OUT(13)
 # PIX = Pin(0, Pin.OUT)     # V2
 # BTN = Pin(38, Pin.IN)  # hardware button, V2
@@ -45,6 +50,7 @@ LED = OUT(13)
 
 # P2P NETWORK
 peers = []
+
 
 def start_wifi():
     global mesh
@@ -55,7 +61,8 @@ def start_wifi():
     print("MAC address is", bin_to_hex(sta.config('mac')))
     mesh = espnow.ESPNow()
     mesh.active(True)
-    udp = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)            
+    udp = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
 
 def connect(ssid, pw):
     try:
@@ -73,26 +80,29 @@ def connect(ssid, pw):
         print(e)
         print("Wifi not started")
 
+
 def send_udp(ip, message, port=5005):
     try:
         if not sta.isconnected():
             print("Network not connected")
-            return        
+            return
         udp.sendto(str(message).encode('utf-8'), (ip, port))
     except NameError:
         raise Exception("Wifi not started")
     except Exception as e:
-        print("Error:", e)    
-    
+        print("Error:", e)
+
+
 def send(message):
     try:
         for peer in peers:
             try:
                 mesh.send(peer, message)
-            except Exception as exc:
+            except Exception:
                 print("Can't send to", bin_to_hex(peer))
     except NameError:
         raise Exception("Wifi not started")
+
 
 def receive():
     try:
@@ -104,16 +114,19 @@ def receive():
     except NameError:
         raise Exception("Wifi not started")
 
+
 def add_peer(hex_mac):
     try:
         bin_mac = hex_to_bin(hex_mac)
         mesh.add_peer(bin_mac)
         peers.append(bin_mac)
     except NameError:
-        raise Exception("Wifi not started")        
+        raise Exception("Wifi not started")
+
 
 def bin_to_hex(bin_mac):
     return ubinascii.hexlify(bin_mac, ':').decode().upper()
+
 
 def hex_to_bin(hex_mac):
     return ubinascii.unhexlify(hex_mac.replace(':', '').lower())
@@ -129,7 +142,8 @@ def start_imu():
     i2c = machine.SoftI2C(scl=Pin(SCL), sda=Pin(SDA))
     sleep(.5)
     imu = imu_module.BNO055_BASE(i2c)
-    
+
+
 def imu_calibrated():
     global calibrated
     try:
@@ -142,14 +156,16 @@ def imu_calibrated():
         return True
     except NameError:
         raise Exception("IMU not started")
-    
+
+
 def get_orientation():
     try:
         if imu is False or not calibrated:
-            return (0, 0, 0)    
-        return imu.euler() # heading, pitch, roll
+            return (0, 0, 0)
+        return imu.euler()  # heading, pitch, roll
     except NameError:
         raise Exception("IMU not started")
+
 
 def get_accel():
     try:
@@ -167,6 +183,7 @@ def start_servos():
     global servos
     i2c = machine.SoftI2C(scl=Pin(SCL), sda=Pin(SDA))
     servos = Servos(i2c)
+
 
 class Servo():
 
@@ -192,7 +209,6 @@ class Servo():
         except NameError:
             raise Exception("Servos not started")
 
-        
     def stop(self):
         try:
             servos.release(self.id)
@@ -219,13 +235,3 @@ class Smoother():
 def map(value, in_min, in_max, out_min, out_max):
     value = (value - in_min) / float(in_max - in_min)
     return (value * (out_max - out_min)) + out_min
-
-
-
-
-
-
-
-
-
-
