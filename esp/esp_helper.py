@@ -48,10 +48,6 @@ LED = OUT(13)
 # BAT = ADC(Pin(35), atten=ADC.ATTN_11DB)
 
 
-# P2P NETWORK
-peers = []
-
-
 def start_wifi():
     global mesh
     global sta
@@ -61,6 +57,7 @@ def start_wifi():
     print("MAC address is", bin_to_hex(sta.config('mac')))
     mesh = espnow.ESPNow()
     mesh.active(True)
+    mesh.add_peer(b'\xff' * 6)
     udp = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 
@@ -95,11 +92,10 @@ def send_udp(ip, message, port=5005):
 
 def send(message):
     try:
-        for peer in peers:
-            try:
-                mesh.send(peer, message)
-            except Exception:
-                print("Can't send to", bin_to_hex(peer))
+        try:
+            mesh.send(message)
+        except Exception:
+            print("Can't send to", bin_to_hex(peer))
     except NameError:
         raise Exception("Wifi not started")
 
@@ -107,19 +103,7 @@ def send(message):
 def receive():
     try:
         sender, msg = mesh.recv(0)
-        if msg and sender in peers:
-            return bin_to_hex(sender), msg.decode()
-        else:
-            return None, None
-    except NameError:
-        raise Exception("Wifi not started")
-
-
-def add_peer(hex_mac):
-    try:
-        bin_mac = hex_to_bin(hex_mac)
-        mesh.add_peer(bin_mac)
-        peers.append(bin_mac)
+        return bin_to_hex(sender), msg.decode()
     except NameError:
         raise Exception("Wifi not started")
 
