@@ -83,6 +83,7 @@ The material we will cover for working with electronics can be found online [her
 #### Monday 9/8
 <!-- confirm everyone is signed up for a presentation -->
 - Workshop: [breadboards](guide/breadboards.md) and [sensors](guide/sensors.md)
+- Exercise: plot the response of several different sensors
 
 #### Wednesday 9/10
 - Breadboards and sensors continued
@@ -123,24 +124,25 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 9/29
 - Presentations #3
-- Responsive Object check-in
+- Responsive Object check-in <!-- individual at desk -->
 - Work time
 
 #### Wednesday 10/1
-- Responsive Object work-in-progress
+- Responsive Object work-in-progress <!-- present to the desk -->
 
 
 ### Week 6
 
 #### Monday 10/6
 - Responsive Object final crit
+- Workshop: [Vector Drawing](inkscape.md)
+- Exercise: Make an interesting 3D shape
 
 
 #### Wednesday 10/8
 - Presentations #4
-- Workshop: laser cutting
-- Workshop: [buttons, toggles, and knobs](guide/interface.md)
-- Workshop: [IMUs](guide/imu.md)
+- Workshop: [Laser Cutting](glowforge.md)
+- Exercise: Make an interesting 3D shape
 
 
 ### Week 7
@@ -148,21 +150,18 @@ The material we will cover for working with electronics can be found online [her
 #### Monday 10/13 — NO CLASS
 
 #### Wednesday 10/15
-- Workshop: laser cutting continued
+- Workshop: [buttons, toggles, and knobs](guide/interface.md)
+- Workshop: [IMUs](guide/imu.md)
 
 
 ### Week 8
 
 #### Monday 10/20
 - Presentations #5
-- Laser cutting exercise due
-- Workshop: servos
+- Begin [Instrument](projects/instrument.md) project
 - Work time
 
 #### Wednesday 10/22
-- Workshop: [buttons, toggles, and knobs](guide/interface.md)
-- Workshop: servos continued
-- Begin [Dynamic Being](projects/dynamic_being.md) project
 - Work time
 
 
@@ -170,7 +169,7 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 10/27
 - Presentations #6
-- Dynamic Being proposals due
+- Instrument proposals due
 - Work time
 
 #### Wednesday 10/29
@@ -182,21 +181,23 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 11/3
 - Presentations #7
+- Instrument check-in
 
 #### Wednesday 11/5
 - Work time
-- Dynamic Being check-in
+- Instrument work-in-progress
 
 
 ### Week 11
 
 #### Monday 11/10
 - Presentations #8
-- Work time
+- Instrument final crit
+
 
 #### Wednesday 11/12
-- Dynamic Being final crit
-- Work time
+- Workshop: [peer-to-peer networking](guide/networking.md)
+- Exercise: Play a game of "telephone" (review [strings in micropython](guide/microphython.md#strings))
 
 
 ### THANKSGIVING BREAK
@@ -206,13 +207,11 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 11/17
 - Presentations #9
-- Workshop: [peer-to-peer networking](guide/networking.md)
+- Workshop: [Servos](guide/servos.md)
 
 #### Wednesday 11/19
-- Workshop: peer-to-peer networking, continued
 - Final project discussion
 - Work time
-- (Dynamic Being documentation due Friday)
 
 
 ### Week 13
@@ -235,12 +234,12 @@ The material we will cover for working with electronics can be found online [her
 - Final project work-in-progress crits
 
 #### Wednesday 12/10
-- Work time
+- Final final crit
 
 
 ### Exam Week
 
 #### Friday 12/19
-- Final documentation due
+- Final documentation due for all projects
 
 

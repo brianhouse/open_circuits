@@ -17,30 +17,19 @@ prosthetics, disability studies
 
 
 
-replace piezo with motors right off the bat to use as an output?
-
-
 need examples of servo mechanics -- how to hook it up and how to make it move
 
 beware sticking something into the RST jack
 
 
-minimum line size in Inkscape
-
-
-
-///
-
-be aware of and check for the pin 20 issue in Micropython
-https://github.com/micropython/micropython/issues/8440
-once that's fixed, could uprade controllers to v2
+replace piezo with motors right off the bat to use as an output?
 
 
 //
 
 
 continuous rotation control seems iffy
-
+connectors to horns
 
 //
 
@@ -53,28 +42,5 @@ esparza
 what's not:
 - design things, sobecka puff
 
-//
 
 
-physical space:
-- individual organized temp space and individual organized display space
-- materials storage
-- glowforge materials management for scraps (proper bin, for big and for small)
-
-
-
-connectors to horns
-
-max limits on draftboard
-
-//
-
-heat shrink
-heat guns
-
-common resource wiki 
-
-short readings ok 
-
-
-make a notch for draftboard usage, honor system tracking 

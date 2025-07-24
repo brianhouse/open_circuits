@@ -6,7 +6,8 @@
 - esps
 - neopixels?
 - https://www.adafruit.com/product/5791
-
+- PCA9685 wings
+- batteries
 
 https://www.amazon.com/Make-Embedded-Projects-Hardware-Technology/dp/1449389716/ref=tmm_pap_swatch_0
 
@@ -22,28 +23,10 @@ https://www.amazon.com/Make-Embedded-Projects-Hardware-Technology/dp/1449389716/
 
 ## more
 
-workshop goals
-
-
-dont touch the hot part
-feed it in
-electrical tape
-
+draftboard tracking
+- glowforge materials management for scraps (proper bin, for big and for small)
 
 "sensors vs actuators"
 
 https://medium.com/spatial-pixel/periodic-table-of-spatial-computing-3f40ed162b2e
-
-/
-
-
-dont need to save files to the microcontroller -- better, because then no need to back up
-
-
-## midterm
-
-What does a midterm meeting consist of?
-- 10 mins with each student, talking about their experience and my expectations, "If you can do X, you'll get an A"
-
-
 

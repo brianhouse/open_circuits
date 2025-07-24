@@ -1,6 +1,6 @@
 # Servos
 
-A servomechanism is a little motor with a built-in sensor that can (reasonably) accurately rotate its arm to a specific position. It's the fundamental means of performing physical actions with microcontrollers, whether that's opening a container or flapping some wings. Additionally, there are "continuous rotation servos" which are just motors that can be turned at a specific speed.
+A servomechanism is a little motor with a built-in sensor that can (somewhat) accurately rotate its arm to a specific position. It's the fundamental means of performing physical actions with microcontrollers, whether that's opening a container or flapping some wings. Additionally, there are "continuous rotation servos" which are just motors that can be turned at a specific speed.
 
 To use servos with the ESP32, we need to use a second circuit board that stacks on top of it. This second board includes a PCA9685 chip, which controls the servos, and an interface so the ESP32 and PCA9685 can talk to each other. It also has various headers to attach and power the servos. This board plugs right into the top of the ESP32.
 
@@ -39,7 +39,7 @@ arm.position(0)
 
 This type of servo is slightly different. The setup is the same, but in the code, we'll use the `.speed()` method to set the speed and direction of the servo. Instead of degrees, this method takes a number from -1 to 1 indicating how fast it should move relative to its top speed in either direction.
 
-Note that with this kind of servo, once they get going, they keep going, even if your code ends. So it's good practice to use the `.stop()` method to stop it. And in theory, setting the speed to 0 should also stop it, but in practice, the servo might still move a bit if it's not exactly calibrated, so `.stop()` is good for that, too.
+Note that with this kind of servo, once they get going, they keep going, even if your code ends. So it's good practice to use the `.stop()` method to stop it. And while in theory, setting the speed to 0 should also stop it, in practice, the servo might still move a bit if it's not exactly calibrated, so `.stop()` is good for that, too.
 
 ```py
 from esp_helper import *
@@ -71,9 +71,6 @@ Ideas?
 
 https://learn.adafruit.com/adafruit-8-channel-pwm-or-servo-featherwing
 
-https://learn.adafruit.com/micropython-hardware-pca9685-pwm-and-servo-driver/micropython
-
 Errno 19 ENODEV means that the module couldn't find the I2C sensor
-
 
  -->

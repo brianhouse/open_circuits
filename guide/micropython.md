@@ -169,21 +169,18 @@ In some situations, you want a decimal number to be an integer, or to convert an
 - `str()` convert to a string / text
 
 
-## ESP32 pin setup
+## Strings
 
-There are several functions that configure and use the pins on the ESP32.
-
-
-### Analog pins
-
-The ESP32 has several analog sensor pins, marked A2, A3, A4 (A0, A1, A5 work slightly differently and are best avoided for now). These names are available as variables in Micropython. To read the voltage from one of these pins, we use a "method", which is a function that is attached to a variable with a dot. Like this:
+A "string" is a string of characters. With microcontrollers, this comes up most often when passing messages between them. 
 
 ```py
-value = A0.read()
+sentence = "This is a sentence"
+sentence = sentence.replace("a", "a boring")
+print(sentence)
 ```
-Here, the ESP32 reads the voltage from the A0 pin and stores it in a new "value" variable.
 
-For the specifics of how and why to use this, check out the [sensors](sensors.md) section.
+For more: https://www.w3schools.com/python/python_ref_string.asp
+
 
 
 ## Tuples and Lists
@@ -239,6 +236,24 @@ Have a apple
 Have a banana
 Have a cherry
 ```
+
+
+
+## ESP32 pin setup
+
+There are several functions that configure and use the pins on the ESP32.
+
+
+### Analog pins
+
+The ESP32 has several analog sensor pins, marked A2, A3, A4 (A0, A1, A5 work slightly differently and are best avoided for now). These names are available as variables in Micropython. To read the voltage from one of these pins, we use a "method", which is a function that is attached to a variable with a dot. Like this:
+
+```py
+value = A0.read()
+```
+Here, the ESP32 reads the voltage from the A0 pin and stores it in a new "value" variable.
+
+For the specifics of how and why to use this, check out the [sensors](sensors.md) section.
 
 
 ### Digital pins
