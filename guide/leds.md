@@ -27,7 +27,7 @@ Blue, White (~3v forward voltage at 20mA):
 
 ###### Code
 
-Alternating on two LEDs:
+Flash an LED:
 ```py
 from esp_helper import *
 
@@ -44,7 +44,7 @@ while True:
 <!-- WORKSHOP
 
 Make an LED light with a sensor
-EG, a handclap, or if you get to close, or depending on light level
+EG, a handclap, or if you get too close, or depending on light level
 
 -->
 

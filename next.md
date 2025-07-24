@@ -1,14 +1,3 @@
-if we use V2, could use this to boost volume:
-https://www.adafruit.com/product/5791
-(can only use V2 if micropython + servo breakout is compatible)
-
-/
-
-policies and rules around materials
-no painting except gouach, etc
-clean up main tables after use
-tools don't leave
-
 
 there's room for readings and discussion during times when there's not a project (same goes for sound art)
 

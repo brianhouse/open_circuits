@@ -2,7 +2,9 @@
 
 NeoPixels are colored lights that we can control with the ESP32s. Unlike regular LEDs, which are simply on and off, NeoPixels can be any color and brightness. They can be single lights, but they also come in strands, all of the lights of which can be controlled via a single pin on a microcontroller.
 
-In the code, NeoPixels are represented as a [list](micropython.md#lists). Each item in the list corresponds to a pixel, and it's set to a color. In code, colors are often represented by a tuple of three values, one each for red, green, and blue. Conventionally, these values range from 0 to 255, and by mixing them together, all colors are possible. So, for example, red is `255, 0, 0`, green is `0, 255, 0`, and blue is `0, 0, 255`. Cyan would be `0, 255, 255`, and a deep purple is `158, 22, 113`. 
+In the code, NeoPixels are represented as a [list](micropython.md#tuples-and-lists). Each item in the list corresponds to a pixel, and it's set to a color. In code, colors are often represented by a tuple of three values, one each for red, green, and blue. Conventionally, these values range from 0 to 255, and by mixing them together, all colors are possible. So, for example, red is `255, 0, 0`, green is `0, 255, 0`, and blue is `0, 0, 255`. Cyan would be `0, 255, 255`, and a deep purple is `158, 22, 113`. 
+
+To explore colors, open a browser and google "color picker". Look at the RGB values to determine what you should use (although note that screen colors and neopixels will never exactly match).
 
 
 ## Strips

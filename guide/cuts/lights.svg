@@ -25,14 +25,14 @@
      inkscape:document-units="in"
      showgrid="true"
      inkscape:zoom="0.8359833"
-     inkscape:cx="342.7102"
-     inkscape:cy="168.06556"
+     inkscape:cx="113.63863"
+     inkscape:cy="337.92541"
      inkscape:window-width="1352"
      inkscape:window-height="764"
      inkscape:window-x="0"
      inkscape:window-y="35"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="svg1">
     <inkscape:grid
        id="grid1"
        units="in"
@@ -52,28 +52,12 @@
   </sodipodi:namedview>
   <defs
      id="defs1" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer5"
-     inkscape:label="ENGRAVE"
-     inkscape:highlight-color="#3af335" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer6"
-     inkscape:label="SCORE"
-     inkscape:highlight-color="#3537f3" />
-  <g
-     inkscape:label="CUT"
-     inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:highlight-color="#000000">
-    <path
-       style="fill:none;stroke:#625366;stroke-width:0.0330729"
-       d="m 14.367537,13.540939 a 4.0005005,4.0005005 0 0 1 -8.0010005,0 4.0005005,4.0005005 0 0 1 8.0010005,0 z"
-       id="path3" />
-    <path
-       style="fill:none;stroke:#625366;stroke-width:0.0330729"
-       d="m 30.420537,12.043536 a 2.5020005,2.5020005 0 0 1 -5.004001,0 2.5020005,2.5020005 0 0 1 5.004001,0 z"
-       id="path1" />
-  </g>
+  <path
+     style="fill:none;stroke:#625366;stroke-width:0.254;stroke-dasharray:none"
+     d="m 14.367537,13.540939 a 4.0005005,4.0005005 0 0 1 -8.0010005,0 4.0005005,4.0005005 0 0 1 8.0010005,0 z"
+     id="path3" />
+  <path
+     style="fill:none;stroke:#625366;stroke-width:0.254;stroke-dasharray:none"
+     d="m 30.420537,12.043536 a 2.5020005,2.5020005 0 0 1 -5.004001,0 2.5020005,2.5020005 0 0 1 5.004001,0 z"
+     id="path1" />
 </svg>

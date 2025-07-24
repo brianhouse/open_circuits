@@ -8,9 +8,7 @@ Once you've done this, every time your program calls `receive()` it will check i
 
 How do you find the MAC address? When you activate wifi, the ESP32 will print its own MAC address to the console in Thonny. Copy this value so that you can paste it into the code on another ESP32.
 
-When working with more than one ESP32, when you need to switch from one to another in Thonny, 
-
-Close all the files and physically disconnect the previous one from your computer (and power it from a power brick instead). This is the best way to avoid confusion. When working with peer-to-peer networking, make sure that code is running on both ESP32; you may need to hit the reset button.
+When working with more than one ESP32, when you need to switch from one to another in Thonny, close all the files and physically disconnect the previous one from your computer (and power it from a power brick instead). This is the best way to avoid confusion. When working with peer-to-peer networking, make sure that code is running on both ESP32; you may need to hit the reset button.
 
 
 ###### Code

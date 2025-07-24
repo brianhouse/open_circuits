@@ -5,7 +5,7 @@ In general, analog sensors work by the microcontroller providing a voltage to th
 To provide voltage to the sensor, you'll need to connect the sensor to the 3.3v pin on the microcontroller, and also to ground (electricity always flows in a "circuit"—out from the source and then back to the ground).
 
 Sensors can break, but overall the ESP is pretty resilient. But there's one important rule:  
-**Do not connect 3.3v to another pin or to ground without anything in between**
+**Do not connect 3.3v to another pin or to ground without anything in between!**
 
 This will short the connection and may damage the ESP.
 

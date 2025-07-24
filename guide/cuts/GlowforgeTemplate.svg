@@ -24,15 +24,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="in"
      showgrid="true"
-     inkscape:zoom="0.89726537"
-     inkscape:cx="456.38672"
-     inkscape:cy="312.61654"
+     inkscape:zoom="1.0988945"
+     inkscape:cx="456.82274"
+     inkscape:cy="312.58688"
      inkscape:window-width="1336"
      inkscape:window-height="760"
      inkscape:window-x="16"
      inkscape:window-y="35"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="svg1">
     <inkscape:grid
        id="grid1"
        units="in"
@@ -52,21 +52,6 @@
   </sodipodi:namedview>
   <defs
      id="defs1" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer5"
-     inkscape:label="ENGRAVE"
-     inkscape:highlight-color="#3af335" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer6"
-     inkscape:label="SCORE"
-     inkscape:highlight-color="#3537f3" />
-  <g
-     inkscape:label="CUT"
-     inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:highlight-color="#000000" />
   <inkscape:templateinfo>
     <inkscape:name>GlowforgeTemplate</inkscape:name>
     <inkscape:author>Brian House</inkscape:author>

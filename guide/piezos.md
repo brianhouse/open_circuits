@@ -89,3 +89,4 @@ Make a cool changing sound or melody
 On its own, a piezo is very quiet. Try attaching it to a thin, rigid material, or even building an enclosure, to increase the volume.
 
 Keep in mind that the connections to the ceramic disc are fragile; you may want to use some hot glue to strengthen that connection.
+

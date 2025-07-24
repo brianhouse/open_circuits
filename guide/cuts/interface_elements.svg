@@ -25,14 +25,14 @@
      inkscape:document-units="in"
      showgrid="true"
      inkscape:zoom="1.1789508"
-     inkscape:cx="305.78036"
-     inkscape:cy="189.57534"
+     inkscape:cx="97.544359"
+     inkscape:cy="74.218534"
      inkscape:window-width="1352"
      inkscape:window-height="764"
      inkscape:window-x="0"
      inkscape:window-y="35"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="svg1">
     <inkscape:grid
        id="grid1"
        units="in"
@@ -52,32 +52,16 @@
   </sodipodi:namedview>
   <defs
      id="defs1" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer5"
-     inkscape:label="ENGRAVE"
-     inkscape:highlight-color="#3af335" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer6"
-     inkscape:label="SCORE"
-     inkscape:highlight-color="#3537f3" />
-  <g
-     inkscape:label="CUT"
-     inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:highlight-color="#000000">
-    <path
-       style="fill:none;stroke:#625366;stroke-width:0.0330729"
-       d="m 19.05,11.172902 a 8.001001,8.001001 0 0 1 -16.0020011,0 8.001001,8.001001 0 0 1 16.0020011,0 z"
-       id="path5" />
-    <path
-       id="path4"
-       style="fill:none;stroke:#625366;stroke-width:0.0330729"
-       d="m 52.781056,12.652254 h 2.54 v 1.620354 h -2.54 z m 1.177407,-9.4607176 a 3.1750005,3.1750005 0 0 1 0,6.350001 3.1750005,3.1750005 0 0 1 0,-6.350001 z" />
-    <path
-       id="path2"
-       style="fill:none;stroke:#625366;stroke-width:0.0330729"
-       d="m 34.924999,3.1915366 a 3.6830007,3.6830007 0 0 1 0,7.3660014 3.6830007,3.6830007 0 0 1 0,-7.3660014 z M 33.060717,14.450749 h 3.175 v 1.841312 h -3.175 z" />
-  </g>
+  <path
+     style="fill:none;stroke:#625366;stroke-width:0.254;stroke-dasharray:none"
+     d="m 19.05,11.172902 a 8.001001,8.001001 0 0 1 -16.0020011,0 8.001001,8.001001 0 0 1 16.0020011,0 z"
+     id="path5" />
+  <path
+     id="path4"
+     style="fill:none;stroke:#625366;stroke-width:0.254;stroke-dasharray:none"
+     d="m 52.781056,12.652254 h 2.54 v 1.620354 h -2.54 z m 1.177407,-9.4607176 a 3.1750005,3.1750005 0 0 1 0,6.350001 3.1750005,3.1750005 0 0 1 0,-6.350001 z" />
+  <path
+     id="path2"
+     style="fill:none;stroke:#625366;stroke-width:0.254;stroke-dasharray:none"
+     d="m 34.924999,3.1915366 a 3.6830007,3.6830007 0 0 1 0,7.3660014 3.6830007,3.6830007 0 0 1 0,-7.3660014 z M 33.060717,14.450749 h 3.175 v 1.841312 h -3.175 z" />
 </svg>

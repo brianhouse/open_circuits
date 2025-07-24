@@ -26,9 +26,9 @@ Guide for working with the ESP32 using Micropython and basic components.
 - [P2P](networking.md)							
 
 ### Building
-- [Laser Cutter](glowforge.md)                  <!-- TBD -->
-- [Vector Drawing](inkscape.md)                 <!-- TBD -->
+- [Laser Cutter](glowforge.md)                  
+- [Vector Drawing](inkscape.md)                 
 - [Panel Mounts](panel_mount.md)                <!-- TBD -->
-- [Soldering](soldering.md)                     <!-- TBD -->
+- [Soldering](soldering.md)                     
 - [Prototype boards](prototype_boards.md)       <!-- TBD -->
 
