@@ -11,18 +11,16 @@
 https://www.amazon.com/Make-Embedded-Projects-Hardware-Technology/dp/1449389716/ref=tmm_pap_swatch_0
 
 
-## organize
+## test
 
 - test USB / BAT with the range sensor
 - is it 2048 or 4096?
 --> instrument unit is weak
 
-
-having lots of smaller assignments
-
+- test peer communication
 
 
-- guide additions
+## more
 
 workshop goals
 

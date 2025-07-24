@@ -57,7 +57,6 @@ def start_wifi():
     print("MAC address is", bin_to_hex(sta.config('mac')))
     mesh = espnow.ESPNow()
     mesh.active(True)
-    mesh.add_peer(b'\xff' * 6)
     udp = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 
@@ -90,12 +89,20 @@ def send_udp(ip, message, port=5005):
         print("Error:", e)
 
 
+def add_peer(hex_mac):
+    try:
+        bin_mac = hex_to_bin(hex_mac)
+        mesh.add_peer(bin_mac)
+    except NameError:
+        raise Exception("Wifi not started")
+
+
 def send(message):
     try:
         try:
-            mesh.send(message)
+            mesh.send(None, message)
         except Exception:
-            print("Can't send to", bin_to_hex(peer))
+            print("Can't send")
     except NameError:
         raise Exception("Wifi not started")
 
