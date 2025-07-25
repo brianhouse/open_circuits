@@ -11,7 +11,7 @@ The key point is that you will remotely control some mechanism that is experienc
 
 ## Proposal
 
-Your proposal should be a Google Slides / Keynote / PowerPoint presentation that consists of:
+Your proposal should be a PDF document that consists of:
 - An explanation of the concept you want to explore
 - Three artistic precedents that we've seen in class or that you've independently researched
 - Your idea
@@ -19,7 +19,7 @@ Your proposal should be a Google Slides / Keynote / PowerPoint presentation that
 - What materials you are planning on using
 - Questions for the class regarding your idea or its execution
 
-Turn in your proposal on Moodle and be prepared to talk about it in class.
+Turn in your proposal on Moodle under the section for this project and be prepared to talk about it in class.
 
 
 ## Documentation

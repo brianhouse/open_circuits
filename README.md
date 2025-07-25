@@ -22,7 +22,8 @@ Introduction to basic electronics and microcontrollers for studio artists. Stude
 ## Coursework and Evaluation
 
 ### Projects
-This course is built around three projects completed over the course of the semester, which will be [critiqued by the class](https://github.com/brianhouse/open_circuits/blob/master/resources/crit_guidelines.md). While there are technical and conceptual parameters for each project, you are expected to experiment and to develop a personal artistic trajectory. Projects must have a title and [3-sentence description](https://github.com/brianhouse/open_circuits/blob/master/resources/description_guidelines.md), which must be turned in via Moodle along with a documentation video. As work is evaluated via in-class crit, no late work can be accepted.
+This course is built around three projects completed over the course of the semester, which will be [critiqued by the class](https://github.com/brianhouse/open_circuits/blob/master/resources/crit_guidelines.md). While there are technical and conceptual parameters for each project, you are expected to experiment and to develop a personal artistic trajectory. Prior to each project, a proposal is due, which will be discussed in class. Completed projects must have a title and [3-sentence description](https://github.com/brianhouse/open_circuits/blob/master/resources/description_guidelines.md), which must be turned in via Moodle along with a documentation video. As work is evaluated via in-class crit, no late work can be accepted.
+
 
 ### Workshops
 Over the course of the semester, there will be many hands-on workshops in class. These workshops provide a material understanding of the subject matter and establish the technical skills that you will apply to your projects. Each will include an exercise to be completed.
@@ -69,7 +70,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 ## Electronics Reference
 
-The material we will cover for working with electronics can be found online [here](guide/contents.md).
+The material we will cover for working with electronics can be found online [here](guide/README.md).
 
 ## Schedule
 
@@ -113,22 +114,22 @@ The material we will cover for working with electronics can be found online [her
 ### Week 4
 
 #### Monday 9/22
-- Presentations #2
 - Responsive Object proposals due
 - Work time
 
 #### Wednesday 9/24
+- Presentations #2
 - Work time
 
 
 ### Week 5
 
 #### Monday 9/29
-- Presentations #3
 - Responsive Object check-in <!-- individual at desk -->
 - Work time
 
 #### Wednesday 10/1
+- Presentations #3
 - Responsive Object work-in-progress <!-- present to the desk -->
 
 
@@ -138,7 +139,6 @@ The material we will cover for working with electronics can be found online [her
 - Responsive Object final crit
 
 #### Wednesday 10/8
-- Presentations #4
 - Workshop: [Vector Drawing](inkscape.md)
 - Workshop: [Laser Cutting](glowforge.md)
 - Exercise: Make an interesting 3D shape
@@ -149,18 +149,20 @@ The material we will cover for working with electronics can be found online [her
 #### Monday 10/13 — NO CLASS
 
 #### Wednesday 10/15
+- Presentations #4
 - Workshop: [Servos](guide/servos.md)
 <!-- - Exercise: -->
+- Begin [Kinetic Being](projects/kinetic_being.md) project
 
 
 ### Week 8
 
 #### Monday 10/20
-- Presentations #5
-- Begin [Kinetic Being](projects/kinetic_being.md) project
+- Kinetic Being proposals due
 - Work time
 
 #### Wednesday 10/22
+- Presentations #5
 - Work time
 
 
@@ -168,7 +170,6 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 10/27
 - Presentations #6
-- Kinetic Being proposals due
 - Work time
 
 #### Wednesday 10/29
@@ -179,23 +180,26 @@ The material we will cover for working with electronics can be found online [her
 ### Week 10
 
 #### Monday 11/3
-- Presentations #7
-- Kinetic Being check-in
+- Kinetic Being final crit
 
 #### Wednesday 11/5
-- Work time
-- Kinetic Being work-in-progress
+- Presentations #7
+- Workshop: [buttons, toggles, and knobs](guide/interface.md)
+- Exercise: Change a pattern of lights using controls
 
 
 ### Week 11
 
 #### Monday 11/10
-- Presentations #8
-- Kinetic Being final crit
+- Workshop: [peer-to-peer networking](guide/networking.md)
+- Exercise: Play a game of "telephone" (review [strings in micropython](guide/microphython.md#strings))
+
 
 #### Wednesday 11/12
-- Workshop: [buttons, toggles, and knobs](guide/interface.md)
-- Exercise: Change a pattern of lights using controls
+- Presentations #8
+- Workshop: [IMUs](guide/imu.md)
+- Exercise: Control a servo with a remote control IMU
+- Begin [Telepresence](projects/telepresence.md) project
 
 
 ### THANKSGIVING BREAK
@@ -204,41 +208,36 @@ The material we will cover for working with electronics can be found online [her
 ### Week 12
 
 #### Monday 11/17
-- Presentations #9
-- Workshop: [peer-to-peer networking](guide/networking.md)
-- Exercise: Play a game of "telephone" (review [strings in micropython](guide/microphython.md#strings))
+- Telepresence project proposals due
+- Work time
 
 #### Wednesday 11/19
-- Begin [Telepresence](projects/telepresence.md) project
-- Workshop: [IMUs](guide/imu.md)
-- Exercise: Control a servo with a remote control IMU
+- Presentations #9
+- Work time
 
 
 ### Week 13
 
 #### Monday 12/1
-- Telepresence project proposals due
-- Presentations #10
 - Work time
 
 #### Wednesday 12/3
-- Presentations #10 continued
-- Work time
+- Presentations #10
+- Telepresence project work-in-progress 
 
 
 ### Week 14
 
 #### Monday 12/8
-- Work time
-- Telepresence project work-in-progress crits
+- Telepresence final crit
 
 #### Wednesday 12/10
-- Telepresence final crit
+- Wrap up
 
 
 ### Exam Week
 
 #### Friday 12/19
-- Telepresence documentation due for all projects
+- Final documentation due for all projects
 
 
