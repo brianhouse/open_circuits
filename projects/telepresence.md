@@ -1,14 +1,12 @@
-# Instrument
+# Telepresence
 
-For this project, you will make an "instrument" that you will use to "perform."
+For this project, you will make an interface that remotely controls an instrument. 
 
-"Instrument" is loosely defined. It can be musical in a traditional sense, or it can just make abstract noise. Or it might not make noise at all—its output might be lights.
+"Interface" means some combination of sensors, buttons, knobs, switches, and/or an IMU that you control in some way with your body. 
 
-The key point is that you will control the instrument with your body. This means it needs an interface of some kind. You might use sensors, such as range or light, but you can also use toggles, buttons, and knobs to make something that operates like something familiar from electronic music. You might also use an IMU to make your instrument respond to being moved around.
+"Instrument" is loosely defined. It can be musical in a traditional sense, or kinetic using servos, or a light show, or a robot...
 
-Regardless, your instrument should have a physical form. You can build this using the laser cutter or with traditional tools and whatever material you can find. Your instrument might sit on a table, it might be held, or it might be mounted directly on your body.
-
-How you design the relationship between the interface and the output is most important.
+The key point is that you will remotely control some mechanism that is experienced by an audience. How you design the relationship between the interface and the output is most important—what you design should be conceptually motivated.
 
 
 ## Proposal

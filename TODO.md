@@ -8,8 +8,12 @@
 - https://www.adafruit.com/product/5791
 - PCA9685 wings
 - batteries
+- cables (micro to USB-C)
 
 https://www.amazon.com/Make-Embedded-Projects-Hardware-Technology/dp/1449389716/ref=tmm_pap_swatch_0
+
+
+prep MCUs
 
 
 ## test

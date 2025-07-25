@@ -8,6 +8,8 @@ To "respond" is to use a microntroller to take input from one or more sensors (r
 
 The way that your object responds to its environment should not only be aesthetically interesting, it should have a conceptual or poetic purpose. For example, an object that lights up when it gets dark outside might be functional, but why does it do this? Is it scared of the dark? Is it a comment on humans' disrespect of diural cycles? Does it create patterns that remind you of cars passing on the street when you were young? In other words, how can you utilize a simple relationship between input and output to express something about the world?
 
+**The electronics should be integrated in the object—we should not see the microcontroller.**
+
 ## Proposal
 
 Your proposal should be a Google Slides / Keynote / PowerPoint presentation that consists of:

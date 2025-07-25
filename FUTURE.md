@@ -14,18 +14,14 @@ RESPONSIVE OBJECT
 - Neopixels (light) limits
 - Piezos (sound)
 
-INSTRUMENT
+KINETIC SCULPTURE
+- laser cutting
+- servos
+
+TELEPRESENCE
 - input interface: switches, knobs, buttons, touch
 - acceleration and orientation
-- laser cutting
-
-ENTANGLERS
 - networking
-- Servos (movement) how?
-- soldering and prototyping?
-
-(if Instrument gets off-loaded to its own course, need a third project)
-
 
 
 ## future
