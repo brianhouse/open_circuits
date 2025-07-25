@@ -3,34 +3,27 @@
 ## order
 
 - draftboard
-- esps
-- neopixels?
-- https://www.adafruit.com/product/5791
-- PCA9685 wings
-- batteries
-- cables (micro to USB-C)
-
-https://www.amazon.com/Make-Embedded-Projects-Hardware-Technology/dp/1449389716/ref=tmm_pap_swatch_0
+- black gaff tape
 
 
-prep MCUs
-
-
-## test
+## prep and test
 
 - test USB / BAT with the range sensor
 - is it 2048 or 4096?
 --> instrument unit is weak
 
-- test peer communication
+
+- prep MCUs
+
+- how's those continuous servos doing?
+
+
+## artist list
+
+audit it. get rid of "design" type stuff, didnt go over well
 
 
 ## more
 
 draftboard tracking
 - glowforge materials management for scraps (proper bin, for big and for small)
-
-"sensors vs actuators"
-
-https://medium.com/spatial-pixel/periodic-table-of-spatial-computing-3f40ed162b2e
-

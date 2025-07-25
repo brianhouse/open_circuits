@@ -4,7 +4,7 @@ An IMU is an "Inertial Measurement Unit"—it's actually three sensors in one, a
 
 This comes in the form `heading` (which direction it's pointing relative to the surface of the earth), `pitch` (how much it's angled up or down) and `roll` (how much it's angled side to side). Each of these is a degree value, 0-360.
 
-The IMU we are using is a bno055. Because it's more advanced, unlike other sensors and switches, this one uses a pair of data transfer pins on the ESP32 called SCL and SDA, the last two pins on the top row. To connect it, we use these along with power and ground.
+The IMU we are using is a BNO055. Because it's more advanced, unlike other sensors and switches, this one uses a pair of data transfer pins on the ESP32 called SCL and SDA, the last two pins on the top row. To connect it, we use these along with power and ground.
 
 ![](img/imu.png)
 

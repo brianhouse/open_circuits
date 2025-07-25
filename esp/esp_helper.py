@@ -110,6 +110,8 @@ def send(message):
 def receive():
     try:
         sender, msg = mesh.recv(0)
+        if sender is None:
+            return None, None
         return bin_to_hex(sender), msg.decode()
     except NameError:
         raise Exception("Wifi not started")
@@ -226,3 +228,4 @@ class Smoother():
 def map(value, in_min, in_max, out_min, out_max):
     value = (value - in_min) / float(in_max - in_min)
     return (value * (out_max - out_min)) + out_min
+

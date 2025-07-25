@@ -14,7 +14,7 @@ read -p "Erase $PORT [y/N]? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     echo "Flashing..."
-    python -m esptool --chip esp32 --port $PORT --baud 115200 write_flash --flash_mode keep --flash_size keep --erase-all 0x1000 firmware-esp32-GENERIC.bin
+    python -m esptool --chip esp32 --port $PORT --baud 115200 write-flash --flash-mode keep --flash-size keep --erase-all 0x1000 firmware-esp32-GENERIC.bin
     echo "--> done"
 else
     echo "Exiting..."
