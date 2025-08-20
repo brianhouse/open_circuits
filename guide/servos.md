@@ -59,12 +59,16 @@ wheel.stop()			# stop the wheel
 
 ## Attaching things to servos
 
-Ideas?
+Servo "horns" can be screwed in to the rotating shaft. In turn, they can be hot glued, taped, screwed, or nailed into draftboard or whatever other material you want to use. Using the templates found in "servo_horns.svg," you can either laser cut a hole in draftboard that matches the horn you want to use, or you can engrave the shape (which partially cuts away the wood, giving a depression in which you can glue the horn).
+
+The bodies of the servos can be glued or screwed into draftboard—"servo_bodies.svg" has the outline of the two body shapes that you can incorporate into your designs.
 
 
-## Inkscape template
+## Inkscape templates
 
-[servos.svg](cuts/servos.svg)
+[servo_bodies.svg](cuts/servo_bodies.svg)
+
+[servo_horns.svg](cuts/servo_horns.svg)
 
 
 <!-- 
