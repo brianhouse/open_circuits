@@ -76,19 +76,20 @@ ACCEL_RADIUS_MSB_ADDR = const(0x68)
 MAG_RADIUS_LSB_ADDR = const(0x69)
 MAG_RADIUS_MSB_ADDR = const(0x6A)
 
+
 class BNO055_BASE:
 
     def __init__(self, i2c, address=0x28, crystal=True, transpose=(0, 1, 2), sign=(0, 0, 0)):
         self._i2c = i2c
         self.address = address
         self.crystal = crystal
-        self.mag = lambda : self.scaled_tuple(0x0e, 1/16)  # microteslas (x, y, z)
-        self.accel = lambda : self.scaled_tuple(0x08, 1/100)  # m.s^-2
-        self.lin_acc = lambda : self.scaled_tuple(0x28, 1/100)  # m.s^-2
-        self.gravity = lambda : self.scaled_tuple(0x2e, 1/100)  # m.s^-2
-        self.gyro = lambda : self.scaled_tuple(0x14, 1/16)  # deg.s^-1
-        self.euler = lambda : self.scaled_tuple(0x1a, 1/16)  # degrees (heading, roll, pitch)
-        self.quaternion = lambda : self.scaled_tuple(0x20, 1/(1<<14), bytearray(8), '<hhhh')  # (w, x, y, z)
+        self.mag = lambda: self.scaled_tuple(0x0e, 1 / 16)  # microteslas (x, y, z)
+        self.accel = lambda: self.scaled_tuple(0x08, 1 / 100)  # m.s^-2
+        self.lin_acc = lambda: self.scaled_tuple(0x28, 1 / 100)  # m.s^-2
+        self.gravity = lambda: self.scaled_tuple(0x2e, 1 / 100)  # m.s^-2
+        self.gyro = lambda: self.scaled_tuple(0x14, 1 / 16)  # deg.s^-1
+        self.euler = lambda: self.scaled_tuple(0x1a, 1 / 16)  # degrees (heading, roll, pitch)
+        self.quaternion = lambda: self.scaled_tuple(0x20, 1 / (1 << 14), bytearray(8), '<hhhh')  # (w, x, y, z)
         self._mode = _CONFIG_MODE
         try:
             chip_id = self._read(_ID_REGISTER)
@@ -102,7 +103,7 @@ class BNO055_BASE:
         self.mode(_CONFIG_MODE)
         try:
             self._write(_TRIGGER_REGISTER, 0x20)
-        except OSError: # error due to the chip resetting
+        except OSError:  # error due to the chip resetting
             pass
         # wait for the chip to reset (650 ms typ.)
         time.sleep_ms(700)
@@ -115,7 +116,7 @@ class BNO055_BASE:
         self.mode(_NDOF_MODE)
 
     def scaled_tuple(self, addr, scale, buf=bytearray(6), fmt='<hhh'):
-        return tuple(b*scale for b in ustruct.unpack(fmt, self._readn(buf, addr)))
+        return tuple(b * scale for b in ustruct.unpack(fmt, self._readn(buf, addr)))
 
     def temperature(self):
         t = self._read(0x34)  # Celcius signed (corrected from Adafruit)
@@ -183,7 +184,6 @@ class BNO055_BASE:
         self._write(MAG_RADIUS_MSB_ADDR, buf[21])
 
         self.mode(lastMode)
-
 
     # read byte from register, return int
     def _read(self, memaddr, buf=bytearray(1)):  # memaddr = memory location within the I2C device
