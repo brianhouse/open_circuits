@@ -6,15 +6,16 @@
 
 - draftboard
 - black gaff tape
+- screwdrivers
 
 
 ## prep and test
 
+- prep MCUs
+
+
 - test USB / BAT with the range sensor
 - is it 2048 or 4096?
-
-
-- prep MCUs
 - how's those continuous servos doing?
 
 

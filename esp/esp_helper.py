@@ -189,16 +189,17 @@ class Servo():
     def position(self, degrees):
         try:
             current_duty = servos.position(self.id)
-            current_degrees = map(current_duty, 491, 1965, 0.0, 180.0)
+            current_degrees = map(current_duty, 470.0, 1965.0, 0.0, 180.0)
             delta_degrees = abs(degrees - current_degrees)
-            servos.position(self.id, degrees)
+            servos.position(self.id, degrees=degrees)
             sleep(.0035 * delta_degrees)
         except NameError:
             raise Exception("Servos not started")
 
     def speed(self, speed):
         try:
-            servos.position(self.id, (speed * 90.0) + 90)
+            speed = map(speed, -1.0, 1.0, -.25, .25)
+            servos.position(self.id, map(speed, -1.0, 1.0, 0.0, 180.0))
         except NameError:
             raise Exception("Servos not started")
 

@@ -3,7 +3,7 @@ https://github.com/adafruit/micropython-adafruit-pca9685
 
 The freq argument sets the PWM signal frequency in Hz. Analog servos usually expect this to be 50, but digital servos can often handle higher frequencies, resulting in smoother movements.
 
-The min_us and max_us arguments set the range of the signal’s duty that the servo accepts. This is different between different servo models, but usually they are centerd at 1500µs.
+The min_us and max_us arguments set the range of the singnal’s duty that the servo accepts. This is different between different servo models, but usually they are centerd at 1500µs.
 """
 
 
@@ -14,7 +14,7 @@ import math
 
 class Servos:
 
-    def __init__(self, i2c, address=0x40, freq=50, min_us=500, max_us=2500, degrees=180):
+    def __init__(self, i2c, address=0x40, freq=200, min_us=575, max_us=2400, degrees=180):
         self.period = 1000000 / freq
         self.min_duty = self._us2duty(min_us)
         self.max_duty = self._us2duty(max_us)
