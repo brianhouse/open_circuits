@@ -30,7 +30,7 @@ A photocell measures the light level. Hook it up with 2k resistor and use an ana
 from esp_helper import *
 
 while True:
-    value = A2.read() / 4096.0  
+    value = A2.read() / 4095
     print(value)
     sleep(.1)    # sleep for stability
 ```
@@ -40,7 +40,7 @@ while True:
 
 Ultrasonic range / distance / presence finder! Detects if something is in front of it, from 6 inches to about 20 feet, at a resolution of about an inch. Use an analog input (A2, A3, A4).
 
-Note that the power for this sensor comes from the "USB" pin (if it's plugged in) or the "BAT" pin (if it's running via battery).
+Note that this sensor requires 5v rather than the 3v we use in other circuits. We can get this via the "USB" pin (if it's plugged in) or the "BAT" pin (if it's running via battery).
 
 ![](img/range.png)
 
@@ -100,7 +100,7 @@ window = 50      # sample for 50ms if testing for a threshold
 while True:
     start_time = ticks_ms()
     high = 0
-    low = 4096
+    low = 4095
 
     while ticks_ms() - start_time < window:
         sample = A2.read()
@@ -109,7 +109,7 @@ while True:
         elif sample < low:
             low = sample
 
-    level = 100 * ((high - low) / 4096.0)
+    level = 100 * ((high - low) / 4095)
     print(level)
 ```
 
