@@ -6,7 +6,13 @@
 ## order
 
 - draftboard
-- electronics
+
+
+## assemble
+
+- servo wings
+- piezo amps?
+- make yellow wire bin
 
 
 ## more

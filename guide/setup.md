@@ -2,7 +2,7 @@
 
 To write code for our ESP32s, we will be using Micropython via the Thonny IDE. 
 
-<!-- ## Driver
+## Driver (Windows only)
 
 First, we have to download and install the [ESP driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads) that will allow your machine to communicate with your ESP over a USB port. Download the driver that matches your operating system, open the .zip file, and launch the installer file inside. You may need to give the installer permission via your System Settings:
 
@@ -11,7 +11,7 @@ First, we have to download and install the [ESP driver](https://www.silabs.com/d
 </p>
 
 When this is finished installing, **restart your machine**, and then plug in your ESP.
- -->
+
 ## Thonny
 
 Download and install the [Thonny IDE](https://thonny.org). After opening the program, go to `Tools > Options` and choose `Interpreter`. Choose "MicroPython (ESP32)" for the interpreter, and find your microcontroller under "Port". It will likely have "usbserial" in the title:

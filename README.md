@@ -84,6 +84,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 2    
 
 #### Monday 9/8
+<!-- Safety Trainings -->
 <!-- remind everyone to sign up for presentations -->
 - Workshop: [breadboards](guide/breadboards.md) and [sensors](guide/sensors.md)
 - Exercise: plot the response of several different sensors
@@ -99,16 +100,15 @@ The material we will cover for working with electronics can be found online [her
 ### Week 3
 
 #### Monday 9/15
-<!-- - Safety Trainings ? -->
 - Presentations #1
 - Workshop: [Neopixels](guide/neopixels.md)
 - Exercise: Make a looping light pattern
 
 #### Wednesday 9/17
-<!-- distribute keys -->
 - Workshop: Sound with [piezos](guide/piezos.md)
 - Exercise: Make a melody
 - Begin [Responsive Object](projects/responsive_object.md) project
+<!-- distribute keys, end of class -->
 
 
 ### Week 4
