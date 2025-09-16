@@ -1,11 +1,10 @@
 # TODO
 
-- print pinouts
 
+## changes
 
-## order
+show BAT/USB in wiring diagram for range sensor
 
-- draftboard
 
 
 ## assemble

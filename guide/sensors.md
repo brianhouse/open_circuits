@@ -119,7 +119,7 @@ while True:
 
 The ESP32 has the built-in ability to measure the "capacitance" on several of its pins. Hooking a wire from one of these to a conductive surface can therefore serve as a touch sensor that responds to skin contact, liquid level, humidity, or material composition.
 
-Use a GPIO Pin (13, 12, 27, 33, 15, 32, 14, 21). To set up a pin to measure capacitance, use the `CAP()` function.
+Use a GPIO Pin (12, 27, 33, 15, 32, 14, 21). To set up a pin to measure capacitance, use the `CAP()` function.
 
 Try taping wires from the pins to aluminum foil using conductive tape in order to create touch pads with a larger sensing area.
 

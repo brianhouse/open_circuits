@@ -196,6 +196,7 @@ The material we will cover for working with electronics can be found online [her
 
 
 #### Wednesday 11/12
+<!-- yael observation -->
 - Presentations #8
 - Workshop: [IMUs](guide/imu.md)
 - Exercise: Control a servo with a remote control IMU

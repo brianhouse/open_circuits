@@ -2,13 +2,21 @@
 
 The [piezoelectric effect](https://en.wikipedia.org/wiki/Piezoelectricity) is a property of some materials to respond mechanically to electricity. In this case, a small ceramic disc, when glued to a larger metal one, will bend. Do this fast enough, and at a specific frequency, and you have a very basic speaker—one that can be controlled directly from a microcontroller.
 
-Hookup is simple—connect the piezo to ground and to a GPIO pin of your choice. You may need to strip some insulation off the ends of the wires, and/or [tin](soldering.md#tinning) them. Your piezo may or may not have a plastic housing around it.
-
 ![](img/piezo_bend.png)
 
 
+## Piezo amp
+
+While a piezo will work when it's directly connected to a GPIO pin, this will bend it in only one direction. A piezo amplifier doubles the volume by switching polarity on the piezo according to the signal.
+
+To use it, hook ground and power to the amplifier board, and then connect signal to a GPIO pin of your choice (12, 27, 33, 15, 32, 14, 21). 
+
+![](img/piezo.png)
+
 
 ###### Code
+
+Set up your GPIO pin using `TONE()`
 
 Play a major scale:
 ```py
@@ -22,22 +30,16 @@ G = 392
 A = 440
 B = 494
 C2 = 523
-R = 1
+R = 500000
 
 tune = C, D, E, F, G, A, B, C2
 
 beeper = TONE(27)
 
-
-n = 0
 while True:
-
-    beeper.freq(tune[n])
-    sleep(.5)    
-    n += 1
-    if n == len(tune):
-        break
-    
+    for note in range(len(tune)):
+        beeper.freq(tune[note])
+        sleep(.5)
 
 beeper.freq(R)
 beeper.deinit()
@@ -52,10 +54,10 @@ from random import randint
 beeper = TONE(27)
 
 while True:
-    beeper.freq(randint(500, 10000))     # random frequency between 500 and 10,000
-    sleep(map(randint(1, 100) / 100.0)   # sleep a random duration between .01 and 1 seconds
+    beeper.freq(randint(500, 1000))     # random frequency between 500 and 1,000
+    sleep(randint(1, 100) / 100.0)   # sleep a random duration between .01 and 1 seconds
 
-beeper.freq(1)
+beeper.freq(500000)
 beeper.deinit()
 ```
 
@@ -71,7 +73,7 @@ while True:
     beeper.freq(frequency)
     sleep(.1)
 
-beeper.freq(1)
+beeper.freq(500000)
 beeper.deinit()
 ```
 

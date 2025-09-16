@@ -1,6 +1,6 @@
 # Neopixels
 
-NeoPixels are colored lights that we can control with the ESP32s. Unlike regular LEDs, which are simply on and off, NeoPixels can be any color and brightness. They can be single lights, but they also come in strands, all of the lights of which can be controlled via a single pin on a microcontroller.
+NeoPixels are colored lights that we can control with the ESP32s. Unlike regular LEDs, which are simply on and off, NeoPixels can be any color and brightness. They can be single lights, but they also come in strands, all of the lights of which can be controlled via a single GPIO pin on a microcontroller.
 
 In the code, NeoPixels are represented as a [list](micropython.md#tuples-and-lists). Each item in the list corresponds to a pixel, and it's set to a color. In code, colors are often represented by a tuple of three values, one each for red, green, and blue. Conventionally, these values range from 0 to 255, and by mixing them together, all colors are possible. So, for example, red is `255, 0, 0`, green is `0, 255, 0`, and blue is `0, 0, 255`. Cyan would be `0, 255, 255`, and a deep purple is `158, 22, 113`. 
 
@@ -9,7 +9,7 @@ To explore colors, open a browser and google "color picker". Look at the RGB val
 
 ## Strips
 
-NeoPixel strips have three wires to connect: power, ground, and control. Connect power to 3.3v, ground to ground, and control to the GPIO pin of your choice via 470 ohm resistor.
+NeoPixel strips have three wires to connect: power, ground, and control. Connect power to 3.3v, ground to ground, and control to the GPIO pin of your choice (12, 27, 33, 15, 32, 14, 21) via 470 ohm resistor.
 
 
 ![](img/neopixel_strip.png)

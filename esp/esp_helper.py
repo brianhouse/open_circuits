@@ -19,7 +19,7 @@ A4 = ADC(Pin(36), atten=ADC.ATTN_11DB)
 # A37 = ADC(Pin(37), atten=ADC.ATTN_11DB)
 
 
-# I/O Pins: 13 (also LED), 12, 27, 33, 15, 32, 14, 21
+# I/O Pins: 13 (also LED, but not CAP), 12, 27, 33, 15, 32, 14, 21
 def IN(pin_n):
     return Pin(pin_n, Pin.IN)
 
@@ -29,7 +29,7 @@ def OUT(pin_n):
 
 
 def CAP(pin_n):
-    return TouchPad(Pin(pin_n))
+    return TouchPad(Pin(pin_n))  # 13 doesn't work
 
 
 def TONE(pin_n):
