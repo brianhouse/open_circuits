@@ -1,4 +1,8 @@
 
+need readings.
+
+//
+
 
 need examples of servo mechanics -- how to hook it up and how to make it move
 

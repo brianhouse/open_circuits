@@ -121,6 +121,17 @@ while True:
     sleep(1)
 ```
 
+```py
+# 60% chance of 'yes', 40% chance of 'no'
+while True:
+    if random() < .60: 
+        print("yes")
+    else:
+        print("no")
+    sleep(1)
+
+```
+
 
 ### `randint()`
 

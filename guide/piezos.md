@@ -37,28 +37,20 @@ tune = C, D, E, F, G, A, B, C2
 beeper = TONE(27)
 
 while True:
-    for note in range(len(tune)):
-        beeper.freq(tune[note])
+    for note in tune:
+        beeper.freq(note)
         sleep(.5)
-
-beeper.freq(R)
-beeper.deinit()
-
 ```
 
 Random robot:
 ```py
 from esp_helper import *
-from random import randint
 
 beeper = TONE(27)
 
 while True:
     beeper.freq(randint(500, 1000))     # random frequency between 500 and 1,000
     sleep(randint(1, 100) / 100.0)   # sleep a random duration between .01 and 1 seconds
-
-beeper.freq(500000)
-beeper.deinit()
 ```
 
 Mapping a sensor value to frequency:
@@ -72,9 +64,6 @@ while True:
     frequency = map(sensor_value, 0, 4095, 100, 1000)  # scale 0–4095 to 0–10
     beeper.freq(frequency)
     sleep(.1)
-
-beeper.freq(500000)
-beeper.deinit()
 ```
 
 
