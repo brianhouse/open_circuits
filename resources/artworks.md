@@ -31,8 +31,11 @@
 - [Material Expressions no. 1](https://www.laurasplan.com/projects/material-expressions-1) (Laura Splan, 2016)
 - [Make a Baby](https://luckydragons.org/category/make-a-baby/) (Lucky Dragons, 2004)
 - [Can't Help Myself](https://www.guggenheim.org/teaching-materials/teaching-modern-and-contemporary-asian-art/sun-yuan-孙-原-and-peng-yu-彭-禹) (Sun Yuan & Peng Yu, 2016)
-
-
+- [Reusable Universes](https://www.messymix.com/reusable-universes/) (Shih Chieh Huang, 2017)
+- [Trailing](https://www.michelgignac.art/trailing) (Alia Shahab and Michel Gignac, 2019)
+- [Dune](https://www.studioroosegaarde.net/project/dune) (Daan Roosegaarde, 2007)
+- [Unwanted Ecology](https://nanditakumar.com/rt-portfolios/sounding-the-invisible-an-elegant-symbiosis/) (Nandita Kumar, 2017)
+- [Soundwall](https://vimeo.com/19780802) (Peter Vogel, 2009)
 
 
 

@@ -127,6 +127,7 @@ The material we will cover for working with electronics can be found online [her
 #### Monday 9/29
 - Responsive Object check-in <!-- individual at desk -->
 - Work time
+<!-- next time, cover documentation here -->
 
 #### Wednesday 10/1
 - Presentations #3
@@ -137,6 +138,7 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 10/6
 - Responsive Object final crit
+<!-- documentation workshop -->
 
 #### Wednesday 10/8
 - Workshop: [Vector Drawing](inkscape.md)

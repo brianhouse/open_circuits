@@ -19,3 +19,5 @@ a moving robot or a plotter arm?
 turtle graphics is ideal
 
 sensors, networks, controls from OC
+
+state machine

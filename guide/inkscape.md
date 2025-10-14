@@ -1,6 +1,6 @@
 # Inkscape
  
-Inkscape is a free vector graphics editor for GNU/Linux, Windows and macOS. You can download Inkscape [here](https://inkscape.org/release/inkscape-1.2.2/).
+Inkscape is a free vector graphics editor for GNU/Linux, Windows and macOS. You can download Inkscape [here](https://inkscape.org/release/).
 
 <!-- A video tutorial can be found [here](https://drive.google.com/file/d/1h6DkFrqTs8azBbxr2fY-hahtvEaqBuQK/view?usp=drive_link), which you can follow as you read the instructions. -->
 
