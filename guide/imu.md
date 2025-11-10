@@ -27,15 +27,17 @@ while True:
 
     if imu_calibrated():
         heading, pitch, roll = get_orientation()
-        print(int(pitch), int(roll))
         acceleration = get_accel()
+        print("heading ", int(heading), "\tpitch ", int(pitch), "\troll ", int(roll), "\taccel ", acceleration)
         if acceleration > 5:
             LED.on()  # turn LED on if the sensor is moved
         else:
             LED.off()
+        # servo_wheel.speed(map(pitch, 0, 90, 0., 1.))  # example of mapping parameter
     else:
         LED.on()   # indicate whether we still need to calibrate by leaving the LED on
     sleep(.1)
+
 ```    
 
 #### Calibration

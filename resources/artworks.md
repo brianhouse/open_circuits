@@ -21,7 +21,7 @@
 - [Laser Mice](https://www.kanno.so/project/lasermice) (So Kanno, 2018)
 - [In Love With the World](https://www.anickayistudio.biz/exhibitions/in-love-with-the-world) (Anicka Yi, 2021)
 - [BeatJazz system](https://www.youtube.com/user/onyxashanti) (Onyx Ashanti, 2008–2023)
-- [Robotic Chair](https://raffaello.name/projects/robotic-chair/) (Raffaello D'Andrea, 2004)
+- [Robotic Chair](https://maxdean.portraitcanada.ca/max-dean/robotic-chair/) (Max Dean, 2004)
 - [Carboard Boxes](https://www.zimoun.net) (Zimoun)
 - [Various](https://alanrath.org) (Alan Rath)
 - [Chorus for the Untrained Operator](https://www.triangleline.com/chorus) (Peter Bussigel, 2016)

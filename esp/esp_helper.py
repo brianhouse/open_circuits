@@ -7,6 +7,8 @@ from time import sleep, ticks_ms
 from random import random, randint, choice
 from urequests import get, post
 
+CHANNEL = 1
+
 # PINS
 # https://learn.adafruit.com/adafruit-esp32-feather-v2/pinouts
 
@@ -53,6 +55,7 @@ def start_wifi():
     global sta
     global udp
     sta = network.WLAN(network.STA_IF)
+    sta.config(channel=CHANNEL)
     sta.active(True)
     print("MAC address is", bin_to_hex(sta.config('mac')))
     mesh = espnow.ESPNow()
@@ -92,7 +95,7 @@ def send_udp(ip, message, port=5005):
 def add_peer(hex_mac):
     try:
         bin_mac = hex_to_bin(hex_mac)
-        mesh.add_peer(bin_mac)
+        mesh.add_peer(bin_mac, channel=CHANNEL)
     except NameError:
         raise Exception("Wifi not started")
 
@@ -229,4 +232,5 @@ class Smoother():
 def map(value, in_min, in_max, out_min, out_max):
     value = (value - in_min) / float(in_max - in_min)
     return (value * (out_max - out_min)) + out_min
+
 

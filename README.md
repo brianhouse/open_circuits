@@ -183,6 +183,7 @@ The material we will cover for working with electronics can be found online [her
 
 #### Monday 11/3
 - Kinetic Being final crit
+<!-- installing 2nd floor -->
 
 #### Wednesday 11/5
 - Presentations #7
