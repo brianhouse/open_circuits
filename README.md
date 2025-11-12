@@ -206,9 +206,6 @@ The material we will cover for working with electronics can be found online [her
 - Begin [Telepresence](projects/telepresence.md) project
 
 
-### THANKSGIVING BREAK
-
-
 ### Week 12
 
 #### Monday 11/17
@@ -218,6 +215,8 @@ The material we will cover for working with electronics can be found online [her
 #### Wednesday 11/19
 - Presentations #9
 - Work time
+
+### THANKSGIVING BREAK
 
 
 ### Week 13
@@ -233,10 +232,11 @@ The material we will cover for working with electronics can be found online [her
 ### Week 14
 
 #### Monday 12/8
-- Telepresence final crit
+- Work time
+- Wrap up
 
 #### Wednesday 12/10
-- Wrap up
+- Telepresence final crit
 
 
 ### Exam Week

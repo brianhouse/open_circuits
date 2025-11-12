@@ -55,8 +55,8 @@ def start_wifi():
     global sta
     global udp
     sta = network.WLAN(network.STA_IF)
-    sta.config(channel=CHANNEL)
     sta.active(True)
+    sta.config(channel=CHANNEL)
     print("MAC address is", bin_to_hex(sta.config('mac')))
     mesh = espnow.ESPNow()
     mesh.active(True)
