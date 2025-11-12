@@ -209,12 +209,13 @@ The material we will cover for working with electronics can be found online [her
 ### Week 12
 
 #### Monday 11/17
-- Telepresence project proposals due
 - Work time
+- Soldering workshop
 
 #### Wednesday 11/19
 - Presentations #9
-- Work time
+- Telepresence project proposals due
+
 
 ### THANKSGIVING BREAK
 
