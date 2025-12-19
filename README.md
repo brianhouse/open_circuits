@@ -233,6 +233,7 @@ The material we will cover for working with electronics can be found online [her
 ### Week 14
 
 #### Monday 12/8
+<!-- evaluations! -->
 - Work time
 - Wrap up
 

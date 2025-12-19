@@ -103,9 +103,13 @@ def add_peer(hex_mac):
 def send(message):
     try:
         try:
-            mesh.send(None, message)
-        except Exception:
-            print("Can't send")
+            result = mesh.send(None, message, True)
+            if result:
+                print("Sending ok")
+            else:
+                print("Sending failed")
+        except Exception as e:
+            print("Can't send:", e)
     except NameError:
         raise Exception("Wifi not started")
 
@@ -118,6 +122,8 @@ def receive():
         return bin_to_hex(sender), msg.decode()
     except NameError:
         raise Exception("Wifi not started")
+    except Exception as e:
+        print("Error:", e)
 
 
 def bin_to_hex(bin_mac):
@@ -232,5 +238,9 @@ class Smoother():
 def map(value, in_min, in_max, out_min, out_max):
     value = (value - in_min) / float(in_max - in_min)
     return (value * (out_max - out_min)) + out_min
+
+
+
+
 
 
